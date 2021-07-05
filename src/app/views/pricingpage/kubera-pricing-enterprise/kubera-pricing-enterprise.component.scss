@@ -1,0 +1,419 @@
+/*  Common For All and for mobile */
+.enterprise-pricing {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(0px, auto);
+  grid-gap: 2rem;
+}
+
+ul li {
+  padding-bottom: 24px;
+}
+
+.business-title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.business-pricing-card {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.teams-title {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.teams-pricing-card-1 {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.teams-pricing-card-2 {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+}
+
+.free-title {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+}
+
+.free-pricing-card-1 {
+  grid-column: 1 / 2;
+  grid-row: 8 / 9;
+}
+
+.free-pricing-card-2 {
+  grid-column: 1 / 2;
+  grid-row: 9 / 10;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+  .enterprise-pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 2rem;
+  }
+
+  .business-title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .business-pricing-card {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+
+  .teams-title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .teams-pricing-card-1 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .teams-pricing-card-2 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .free-title {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .free-pricing-card-1 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .free-pricing-card-2 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1500px) {
+} // optional
+
+@media screen and (min-width: 1900px) {
+} // optional
+
+// start latest change on pricing section
+
+.business-pricing-card {
+  padding: 40px 25px !important;
+  grid-column: auto;
+  grid-row: auto;
+  justify-content: flex-start !important;
+  p:first-child {
+    margin-bottom: 30px;
+  }
+}
+.free-pricing-card-1 {
+  padding: 30px 25px !important;
+  p {
+    margin-bottom: 0;
+  }
+}
+.teams-pricing-card-1 {
+  padding: 50px 25px 40px !important;
+}
+.list-unstyled {
+  padding-top: 25px;
+  margin-bottom: 50px;
+  li {
+    padding-bottom: 12px !important;
+    span {
+      margin-right: 7px;
+      margin-left: 10px;
+    }
+  }
+}
+.teams-pricing-card-1 .list-unstyled {
+  margin-bottom: 84px;
+}
+.enterprise-pricing {
+  display: flex;
+  align-items: flex-end;
+}
+.box-orange,
+.box-purple,
+.box-transparent {
+  width: calc(100% / 3);
+}
+.box-orange {
+  margin: 0;
+}
+.box-purple {
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.txt-business-price p,
+.txt-standard-price p {
+  margin-bottom: 0;
+}
+.cursor {
+  cursor: pointer;
+}
+.box-transparent h4 {
+  margin-bottom: 16px;
+}
+.modal-content {
+  background-image: radial-gradient(
+      circle at 100px 150px,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 0.005%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 300px 350px,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 0.005%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 870px 300px,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.8%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 70px 30px,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.8%,
+      transparent 100%
+    ),
+    repeating-radial-gradient(
+      circle at 80% 10%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.8%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 0.005%,
+      transparent 100%
+    ),
+    radial-gradient(circle at 20px 40px, rgba(133, 0, 172, 0.11) 0%, rgba(133, 0, 172, 0.11) 5%, transparent 60%),
+    radial-gradient(
+      circle at 50px 90%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 20px,
+      transparent 0.005%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 45% 85%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 75% 80%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 45% 80%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 45% 30%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+    linear-gradient(0deg, #191428, #191428);
+}
+.modal-content .modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem 3rem;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+::ng-deep .modal-body p {
+  color: #fff;
+  width: 100%;
+}
+::ng-deep .modal-body h2 {
+  color: #fff;
+  margin: 20px 0;
+}
+button:focus {
+  outline: none;
+}
+.close {
+  color: #ffffff;
+}
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.txt-business-price,
+.txt-standard-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  margin-bottom: 7px;
+  flex-wrap: wrap;
+}
+.txt-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.free-pricing-card-1 {
+  padding: 30px 25px 96px !important;
+}
+.free-pricing-card-1 .list-unstyled {
+  margin-bottom: 113px;
+}
+.standard-price {
+  margin-bottom: 0;
+  margin-right: 7px;
+}
+.business-price {
+  margin-bottom: 0;
+  margin-right: 7px;
+}
+
+.text-error-style {
+  margin: 0 auto;
+}
+
+.txt-business-price button {
+  color: #e9700d;
+}
+
+.txt-standard-price button {
+  color: #9d36cc;
+}
+
+.txt-business-price button,
+.txt-standard-price button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 10px 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 4px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+.txt-business-price button:hover,
+.txt-standard-price button:hover {
+  background-color: #fff;
+  border-color: transparent;
+  box-shadow: 0px 4px 50px rgba(255, 255, 255, 0.5);
+}
+
+// end latest change on pricing section
+@media (max-width: 1100px) {
+  .list-unstyled li span {
+    margin-left: 0;
+  }
+  .list-unstyled li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .enterprise-pricing {
+    flex-wrap: wrap;
+  }
+  .box-orange,
+  .box-purple,
+  .box-transparent {
+    width: 60%;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 767px) {
+  .enterprise-pricing {
+    flex-direction: column;
+  }
+  .box-orange,
+  .box-purple,
+  .box-transparent {
+    width: 100%;
+  }
+  .free-pricing-card-1 {
+    padding: 30px 25px 30px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-unstyled li {
+    padding-bottom: 12px !important;
+    font-size: 14px;
+  }
+  .list-unstyled li span {
+    margin-right: 7px;
+    margin-left: 0;
+  }
+  .teams-pricing-card-1 {
+    padding: 35px 15px 40px !important;
+  }
+  .business-pricing-card {
+    padding: 35px 15px 40px !important;
+  }
+  .box-purple p {
+    margin-bottom: 0;
+  }
+}

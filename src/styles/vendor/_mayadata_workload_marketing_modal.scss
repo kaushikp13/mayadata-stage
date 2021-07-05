@@ -1,0 +1,36 @@
+/*  Common For All and for mobile */
+.workload-marketing-video .modal-content {
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+}
+
+.workload-marketing-video {
+  max-width: 90%;
+}
+
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .workload-marketing-video {
+    max-width: 90%;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {
+
+  .workload-marketing-video {
+    max-width: 1500px;
+  }
+} // optional

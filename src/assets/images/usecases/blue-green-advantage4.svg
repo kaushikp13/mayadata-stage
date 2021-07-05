@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="77px" viewBox="0 0 114 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>BG - Ad 04</title>
+    <desc>Created with Sketch.</desc>
+    <g id="BG---Ad-04" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9" transform="translate(2.000000, 3.000000)" stroke-width="3">
+            <g id="Group-9-Copy-3">
+                <g id="Group-2">
+                    <rect id="Rectangle" stroke="#0A025D" fill="#FEFEFE" x="1.5" y="1.5" width="107" height="69" rx="10"></rect>
+                    <path d="M11,59 L99.5,59" id="Line-Copy" stroke="#684FF1" stroke-linecap="round"></path>
+                </g>
+            </g>
+            <polyline id="Path-14-Copy" stroke="#684FF1" stroke-linecap="round" points="11 59 27.9117822 41.3246832 45.0245246 44 66.411233 25.8391293 72.8430164 28.2986508 97.9746536 14"></polyline>
+        </g>
+    </g>
+</svg>

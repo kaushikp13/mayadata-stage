@@ -1,0 +1,16 @@
+<div class="section-container workloads-faq-section" *ngIf="workloadFaqs">
+  <div class="container">
+    <h2 class="text-center h1">{{workloadFaqs.title}}</h2>
+    <div class="accordion-list pt-5" id="listOfAccordion">
+      <div class="accordion-item" *ngFor="let faq of workloadFaqs.faqs">
+        <div class="accordion-item-head">
+          <span class="icon mi mi-x" aria-hidden="true"></span>
+          <p class="text mb-0">{{faq.head}}</p>
+        </div>
+        <div class="accordion-item-body">
+          <p>{{faq.body}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

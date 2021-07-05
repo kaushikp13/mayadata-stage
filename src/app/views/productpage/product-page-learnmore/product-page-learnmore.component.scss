@@ -1,0 +1,129 @@
+/*  Common For All and for mobile */
+.learnmore-box {
+  cursor: pointer;
+}
+.learn-more-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 75px;
+}
+
+.learnmore-box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 2rem;
+}
+
+.box-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.learnmore-box p {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ffffff;
+  opacity: 0.9;
+  min-height: 50px;
+}
+// span.lear-img {
+//   mix-blend-mode: color-dodge;
+// }
+.lear-img img {
+  mix-blend-mode: color-dodge;
+  transition: opacity 0s;
+}
+.learnmore {
+  padding-top: 100px;
+}
+.kubera-btn {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.box-link {
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    transition: 0.5s all ease-in-out;
+    span {
+      opacity: 0;
+      margin-left: 10px;
+      transition: 0.5s all ease-in-out;
+    }
+  }
+}
+.learnmore-box:hover .box-link a {
+  color: #e9700d;
+}
+.learnmore-box:hover .box-link a span {
+  opacity: 1;
+}
+/*  Tablet  */
+
+@media (max-width: 767px) {
+  .learn-more-title {
+    font-size: 24px;
+  }
+  .learnmore {
+    padding-top: 50px;
+    padding: 50px 15px 15px;
+  }
+  .box-title {
+    font-size: 20px;
+  }
+  .kubera-btn a {
+    width: 100%;
+    display: block;
+  }
+  .kubera-btn a .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .learnmore-box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+  .learnmore-box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(320px, auto);
+    grid-gap: 2rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+} // optional
+
+@media screen and (min-width: 1900px) {
+} // optional

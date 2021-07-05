@@ -1,0 +1,53 @@
+<div class="main-wrapper">
+  <div class="main-inner">
+    <div class="banner-wrapper">
+      <!-- <div class="section-container d-flex justify-content-center align-items-center career-hero-section"
+        [style.background-image]="'url(' + heroImageUrl + ')'"></div> -->
+      <div class="container">
+        <div class="row">
+          <div class="banner-text">
+            <h1 class="banner-title">{{careerPageIntro.title}}</h1>
+            <p class="banner-content">{{careerPageIntro.description}}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section-container">
+      <div class="container">
+        <div class="row">
+          <div class="opening-wrapper">
+            <div class="col-md-6 pb-3 pb-md-5 job-opening-box" *ngFor="let job_opening of job_openings">
+              <h3 class="job_opening_title">{{ job_opening.opening_title}}</h3>
+              <h4 class="job-opening_location">
+                <span><img lazyLoad="assets/images/careers/location.svg" /></span>
+                <p>{{ job_opening.location_type}}</p>
+              </h4>
+              <h4 class="job-opening_time">
+                <span><img lazyLoad="assets/images/careers/time.svg" /></span>
+                <p>{{ job_opening.job_type}}</p>
+              </h4>
+              <a class="job-opening-detail" routerLink={{job_opening.url}}>Details <svg width="15" height="12"
+                  viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 6H13.5M13.5 6L9 1.5M13.5 6L9 10.5" stroke="white" stroke-opacity="0.6"
+                    stroke-width="1.5" />
+                </svg></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="have-question">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center align-items-center flex-column">
+          <h2 class="question">Have a question?</h2>
+          <a href="/contactus"><button class="btn btn-primary">Contact us</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

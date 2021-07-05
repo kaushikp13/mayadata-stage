@@ -1,0 +1,106 @@
+.kubera-pricing-block {
+  max-width: 560px;
+  margin: auto;
+}
+.table-title {
+  h2 {
+    span {
+      color: #a1a6c1;
+      display: unset !important;
+    }
+  }
+}
+.price-block-title h2 {
+  font-size: 36px;
+  line-height: 120%;
+}
+.switch {
+  display: inline-block;
+  height: 48px;
+  position: relative;
+  width: 360px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background: rgba(255, 255, 255, 0.1);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background: linear-gradient(273.96deg, #e9700d 7.39%, #f39242 99.41%);
+  color: #fff;
+  bottom: 0px;
+  content: "Enterprise";
+  height: 48px;
+  left: 0px;
+  position: absolute;
+  transition: 0.4s;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input:checked + .slider {
+  /*   background-color: #66bb6a; */
+}
+
+input:checked + .slider:before {
+  transform: translateX(180px);
+  content: "Cloud";
+}
+
+.slider.round {
+  border-radius: 12px;
+}
+
+.slider.round:before {
+  border-radius: 24px;
+}
+
+.switch .label {
+  position: absolute;
+  right: -16px;
+  background-color: #ca2c2c;
+  padding: 2px 8px;
+  width: 48px;
+  height: 16px;
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  transform: rotate(45deg);
+}
+
+.section-container {
+  position: relative;
+}
+.section-container:after {
+  content: "";
+  background-image: url("assets/images/pricing/cube-2.png");
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 80px;
+  height: 130px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-container:after {
+    display: none;
+  }
+}

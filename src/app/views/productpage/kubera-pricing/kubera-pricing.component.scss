@@ -1,0 +1,125 @@
+/*  Common For All and for mobile */
+
+.pricing-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(0px, auto);
+}
+
+.pricing-box {
+  max-height: 316px;
+  height: auto;
+  max-width: 273px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 16px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.pricing-prior-benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  height: 80px;
+  margin: auto;
+}
+
+.pricing-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 4px;
+  margin: auto;
+}
+
+.pricing-block {
+  padding: 6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+
+a.pricing-cta-link,
+a.pricing-cta-link:hover {
+  text-decoration: none;
+}
+
+.pricing-overview {
+  position: relative;
+}
+
+.pricing-overview__bg-img {
+  position: absolute;
+  top: 15%;
+  left: 0px;
+  max-width: 700px;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pricing-amount {
+  font-size: 98px;
+}
+
+.enterprise-pricing-description {
+  flex: 1 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+  .pricing-box {
+    max-height: 316px;
+    height: 316px;
+    max-width: 273px;
+    width: 273px;
+  }
+}
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .pricing-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(0px, auto);
+  }
+
+  .pricing-block {
+    padding: 6px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1500px) {
+}
+
+// optional
+
+@media screen and (min-width: 1900px) {
+}
+
+// optional

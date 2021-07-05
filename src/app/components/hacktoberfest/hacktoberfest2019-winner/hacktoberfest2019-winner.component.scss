@@ -1,0 +1,87 @@
+/* Development Classes */
+.b-con {
+  border: 1px dotted grey;
+}
+
+.b-row {
+  border: 1px dashed blue;
+}
+
+.b-col {
+  border: 1px dotted green;
+}
+
+.b-gen {
+  border: 1px dotted grey;
+}
+
+/* End of Development Classes*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+section {
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.section2 {
+  background-image: url(/assets/images/hacktoberfest2019/section2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.section4 {
+  background-image: url(/assets/images/hacktoberfest2019/section3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.laptop,
+.tshirt {
+  max-width: 350px;
+}
+
+
+
+.colored-border-bottom {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-image: linear-gradient(0.25turn, rgb(255, 249, 34), rgb(255, 0, 128), rgba(56, 2, 155, 0));
+  border-image-slice: 1;
+  width: fit-content;
+}
+
+.weekly-winner {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+a.hacktoberfest-winner:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+
+  .laptop,
+  .tshirt {
+    max-width: 100%;
+  }
+
+  .section2,
+  .section4 {
+    background: none;
+  }
+}

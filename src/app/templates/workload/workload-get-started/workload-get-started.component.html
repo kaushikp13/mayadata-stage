@@ -1,0 +1,13 @@
+<section *ngIf="getStarted" class="section-container bg-tertiary text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center align-items-center flex-column text-center get-started-section">
+        <h2>{{ getStarted.title }}</h2>
+        <p>{{ getStarted.description }}</p>
+        <a href={{getStarted.cta.ctaLink}} target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-primary">{{ getStarted.cta.ctaText }}</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

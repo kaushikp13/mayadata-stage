@@ -1,0 +1,156 @@
+<form (ngSubmit)="applyForPartnership()" [formGroup]="partnersForm">
+  <div class="form-field-wrapper">
+    <div class="input-block">
+      <!-- <label for="firstname" class="font-weight-bold">First Name<span>*</span></label> -->
+      <input type="text" class="form-control form-control-lg" [ngClass]="{
+        'invalid_input':firstname.invalid && (firstname.touched || firstname.dirty)
+        }" id="firstname" formControlName="firstname" required placeholder="First Name*">
+      <div class="form-control-feedback" *ngIf="firstname.errors && (firstname.dirty || firstname.touched)">
+        <span *ngIf="firstname.errors.required" class="text-danger"><small>First Name is required</small></span>
+      </div>
+    </div>
+    <div class="input-block">
+      <!-- <label for="lastname" class="font-weight-bold">Last Name<span>*</span></label> -->
+      <input type="text" class="form-control form-control-lg" [ngClass]="{
+        'invalid_input':lastname.invalid && (lastname.touched || lastname.dirty)
+        }" id="lastname" formControlName="lastname" required placeholder="Last Name*">
+      <div class="form-control-feedback" *ngIf="lastname.errors && (lastname.dirty || lastname.touched)">
+        <span *ngIf="lastname.errors.required" class="text-danger"><small>Last Name is required</small></span>
+      </div>
+    </div>
+
+
+    <div class="input-block">
+      <!-- <label for="email" class="font-weight-bold">Work Email<span>*</span></label> -->
+      <input type="email" class="form-control form-control-lg" [ngClass]="{
+        'invalid_input':email.invalid && (email.touched || email.dirty)
+        }" id="email" formControlName="email" required placeholder="Work Email*">
+      <div class="form-control-feedback" *ngIf="email.errors && (email.dirty || email.touched)">
+        <span *ngIf="email.errors.required" class="text-danger"><small>Work Email is required</small></span>
+      </div>
+      <div *ngIf="!email.errors?.required">
+        <div class="form-control-feedback" *ngIf="(email.invalid && (email.dirty || email.touched))">
+          <span *ngIf="email.invalid" class="text-danger"><small>Invalid format</small></span>
+        </div>
+      </div>
+    </div>
+    <div class="input-block">
+      <!-- <label for="company" class="font-weight-bold">Company Name<span>*</span></label> -->
+      <input type="text" class="form-control form-control-lg" [ngClass]="{
+        'invalid_input':company.invalid && (company.touched || company.dirty)
+        }" id="company" formControlName="company" required placeholder="Company Name*">
+      <div class="form-control-feedback" *ngIf="company.errors && (company.dirty || company.touched)">
+        <span *ngIf="company.errors.required" class="text-danger"><small>Company Name is required</small></span>
+      </div>
+    </div>
+
+
+    <div class="input-block">
+      <!-- <label for="jobtitle" class="font-weight-bold">Job Title</label> -->
+      <input type="text" class="form-control form-control-lg" [ngClass]="{
+        'invalid_input':jobtitle.invalid && (jobtitle.touched || jobtitle.dirty)
+        }" id="jobtitle" formControlName="jobtitle" placeholder="Job Title">
+    </div>
+    <div class="input-block">
+      <!-- <label for="contact_number" class="font-weight-bold d-block">Contact Number</label> -->
+      <ngx-intl-tel-input [cssClass]="'contact-field form-control form-control-lg'"
+        [preferredCountries]="preferredCountries" [enableAutoCountrySelect]="false" [enablePlaceholder]="true"
+        [searchCountryFlag]="false" [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+        [selectFirstCountry]="false" [selectedCountryISO]="CountryISO.UnitedStates" [maxLength]="15"
+        [tooltipField]="TooltipLabel.Name" [phoneValidation]="true" [separateDialCode]="separateDialCode"
+        name="contact_number" [ngClass]="{
+          'invalid_input':contact_number.invalid && (contact_number.touched || contact_number.dirty)
+          }" formControlName="contact_number" id="ngx-intl-tel-input" placeholder="Contact Number">
+      </ngx-intl-tel-input>
+      <div class="form-control-feedback" *ngIf="contact_number.invalid">
+        <span *ngIf="contact_number.invalid" class="text-danger"><small>Invalid format</small></span>
+      </div>
+    </div>
+
+    <div class="input-block">
+      <textarea class="form-control tarea" rows="5" id="comments" formControlName="comments"
+        placeholder="Comment"></textarea>
+    </div>
+
+    <div class="checkbox-wrapper" formGroupName="partnerGroup">
+      <label class="label-title">What kind of partner are you? <span class="font-italic" style="font-style:italic">(
+          <span>*</span>You can choose more than one field )</span>
+      </label>
+
+      <div class="checkbox-block">
+        <input class="form-check-input" type="checkbox" id="technologypartner" formControlName="technologypartner">
+        <label class="form-check-label" for="technologypartner">
+          Technology Partner - select this if you provide a cloud-native software component
+        </label>
+      </div>
+      <div class="checkbox-block">
+        <input class="form-check-input" type="checkbox" id="platformpartner" formControlName="platformpartner">
+        <label class="form-check-label" for="platformpartner">
+          Platform Partner - select this if you provide Kubernetes as a Service
+        </label>
+      </div>
+      <div class="checkbox-block">
+        <input class="form-check-input" type="checkbox" id="workloadpartner" formControlName="workloadpartner">
+        <label class="form-check-label" for="workloadpartner">
+          Workload Partner - select this if you provide a stateful application for Kubernetes
+        </label>
+      </div>
+      <div class="checkbox-block">
+        <input class="form-check-input" type="checkbox" id="consultingpartner" formControlName="consultingpartner">
+        <label class="form-check-label" for="consultingpartner">
+          Consulting Partner - select this if you provide integration services for Kubernetes
+        </label>
+      </div>
+      <div class="invalid-feedback"
+        *ngIf="partnersForm.controls['partnerGroup'].errors && partnersForm.controls['partnerGroup'].errors.requireOneCheckboxToBeChecked">
+        At least one checkbox is required to check</div>
+    </div>
+    <!-- <div class="row pb-4">
+      <div class="col-12 col-md-12">
+        <label for="textarea" class="font-weight-bold">Comments</label>
+        <textarea class="form-control" rows="5" id="comments" formControlName="comments"></textarea>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-12 text-left">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+<!-- Modal -->
+<div class="modal fade" id="partnerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" (click)="close()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex justify-content-center align-items-center flex-column" style="height: 400px;">
+        <h2 class="text-uppercase text-dark-blue text-center">Thanks for signing up for partnership</h2>
+        <p class="text-dark-blue text-center">You will receive an email shortly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="partnerModalFailure" tabindex="-1" role="dialog" aria-labelledby="partnerModalFailure"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" (click)="close()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex justify-content-center align-items-center flex-column" style="height: 400px;">
+        <h2 class="text-uppercase text-danger text-center">Error</h2>
+        <p class="text-danger text-center">please try again.</p>
+      </div>
+    </div>
+  </div>
+</div>

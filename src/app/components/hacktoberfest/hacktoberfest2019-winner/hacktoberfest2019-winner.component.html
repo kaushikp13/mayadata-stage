@@ -1,0 +1,35 @@
+<section>
+  <picture>
+    <source media="(max-width: 767.99998px)" srcset="assets/images/hacktoberfest2019/bg-winner-mobile.png">
+    <img src="assets/images/hacktoberfest2019/bg-winner.png" alt="hacktoberfest2019" class="img-fluid"
+      style="width:100%;height:auto">
+  </picture>
+</section>
+
+<section style="background-color: #152347;">
+  <div class="container py-5 text-white">
+    <div class="row px-3 px-md-5 text-center text-white d-flex justify-content-center align-items-center">
+      <a class="text-center text-white hacktoberfest-winner" href="https://github.com/openebs/jiva/pull/244" target="_blank">
+        <h5>Checkout the PR of the Hacktoberfest Winner</h5>
+      </a>
+    </div>
+    <div class="row p-3 p-md-5">
+      <div class="col-12">
+        <div class="colored-border-bottom">
+          <h2 class="text-uppercase h3">Our Weekly Winners</h2>
+        </div>
+        <div class="row px-5 pt-5">
+          <div class="col"></div>
+          <div class="col-12 col-md-3 d-flex justify-content-center align-items-center flex-column mb-3"
+            *ngFor="let winner of weekly_winners">
+            <a href={{winner.profile}} target="_blank">
+              <img src={{winner.img}} alt={{winner.name}} class="img-fluid text-center weekly-winner">
+              <h5 class="text-uppercase text-center text-white pt-3">{{winner.name}}</h5>
+            </a>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

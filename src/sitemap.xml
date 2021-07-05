@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url><loc>https://mayadata.io/</loc></url>
+  <url><loc>https://mayadata.io/aboutus</loc></url>
+  <url><loc>https://mayadata.io/careers</loc></url>
+  <url><loc>https://mayadata.io/careers/junior-recruiter</loc></url>
+  <url><loc>https://mayadata.io/careers/manager-people-operations</loc></url>
+  <url><loc>https://mayadata.io/careers/program-manager</loc></url>
+  <url><loc>https://mayadata.io/careers/solution-architect</loc></url>
+  <url><loc>https://mayadata.io/careers/support-engineer</loc></url>
+  <url><loc>https://mayadata.io/careers/support-engineer-manager</loc></url>
+  <url><loc>https://mayadata.io/careers/technical-marketing-engineer</loc></url>
+  <url><loc>https://mayadata.io/careers/user-adoption-lead</loc></url>
+  <url><loc>https://mayadata.io/contactus</loc></url>
+  <url><loc>https://mayadata.io/get-pricing</loc></url>
+  <url><loc>https://mayadata.io/getting-started</loc></url>
+  <url><loc>https://mayadata.io/news</loc></url>
+  <url><loc>https://mayadata.io/open-source</loc></url>
+  <url><loc>https://mayadata.io/partners</loc></url>
+  <url><loc>https://mayadata.io/partners/apply-for-partnership</loc></url>
+  <url><loc>https://mayadata.io/icp</loc></url>
+  <url><loc>https://mayadata.io/privacy-policy</loc></url>
+  <url><loc>https://mayadata.io/product</loc></url>
+  <url><loc>https://mayadata.io/product/integrations/mulebot</loc></url>
+  <url><loc>https://mayadata.io/product/integrations/mulebot/policy</loc></url>
+  <url><loc>https://mayadata.io/resources</loc></url>
+  <url><loc>https://mayadata.io/terms</loc></url>
+  <url><loc>https://mayadata.io/workloads/</loc></url>
+  <url><loc>https://mayadata.io/workloads/kafka</loc></url>
+  <url><loc>https://mayadata.io/hacktoberfest</loc></url>
+  <url><loc>https://mayadata.io/usecases/blue-green-deployment</loc></url>
+  <url><loc>https://mayadata.io/usecases/ci-cd</loc></url>
+  <url><loc>https://mayadata.io/usecases/multi-cloud</loc></url>
+  <url><loc>https://mayadata.io/usecases/hyper-scale</loc></url>
+  <url><loc>https://mayadata.io/usecases/cross-az</loc></url>
+  <url><loc>https://mayadata.io/usecases/statefulsets</loc></url>
+  <url><loc>https://mayadata.io/usecases/deployments</loc></url>
+  <url><loc>https://mayadata.io/usecases</loc></url>
+</urlset>

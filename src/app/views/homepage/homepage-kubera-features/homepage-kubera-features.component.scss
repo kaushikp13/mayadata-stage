@@ -1,0 +1,48 @@
+.section-container {
+  padding: 60px 0px;
+}
+
+.feature {
+  position: relative;
+}
+
+
+.feature-img {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
+}
+
+/*  Common For All and for mobile */
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+  .feature-img {
+    max-width: 380px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .feature-img {
+    max-width: 480px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

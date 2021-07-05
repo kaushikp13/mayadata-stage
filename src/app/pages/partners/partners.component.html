@@ -1,0 +1,214 @@
+<div class="main-wrapper">
+  <section [style.background-image]=" isViewLarge ?  'url(' + partnersBgImageUrl + ')' : '' " class="bgImage banner-sec"
+    *ngIf="partnerPageIntro">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 col-sm-12 partner-top">
+          <h1 class="font-weight-normal text-white pb-3">{{partnerPageIntro.title}}</h1>
+          <p class="text-white">{{partnerPageIntro.description}}</p>
+          <div class="btn-wrapper">
+            <a href="/partners/apply-for-partnership" class="btn btn-primary">Become a partner</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="partner-category">
+    <div class="container">
+      <div class="row">
+        <h2 class="category-title">Partner categories</h2>
+        <div class="partner-box-wrapper">
+          <a pageScroll href="#kubernetes-distros" class="partner-box text-decoration-none">
+            <div>
+              <h2>Kubernetes distros</h2>
+              <p>MayaData software runs in the user space - on any Kubernetes distro without modification. </p>
+            </div>
+          </a>
+          <a pageScroll href="#cloud-and-system-providers" class="partner-box text-decoration-none">
+            <div>
+              <h2>Cloud and system providers</h2>
+              <p>Run on bare metal, on virtualized Kubernetes, or in the cloud. We follow the workload. </p>
+            </div>
+          </a>
+          <a pageScroll href="#workload-partners" class="partner-box text-decoration-none">
+            <div>
+              <h2>Workload partners</h2>
+              <p>OpenEBS and Litmus are extremely flexible. Select from flexible storage engines and chaos tests that
+                best meet your workload’s needs.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="container technology-partner">
+      <div class="row justify-content-start" *ngIf="technologyPartners">
+        <div class="col-md-12 pb-4 technology-partner-title-block">
+          <h2 class="partner-title" id="kubernetes-distros">Kubernetes distros</h2>
+        </div>
+        <div class="col-4 col-md-3 col-lg-3 pb-4 technology-partner--card-block"
+          *ngFor="let technologyPartner of technologyPartners">
+          <div class="d-flex justify-content-center align-items-center p-4 partners-card"
+            *ngIf="technologyPartner.websiteUrl">
+            <a href={{technologyPartner.websiteUrl}} target="_blank" rel="no-referrer"
+              class="d-block technology-partner--link">
+              <img lazyLoad={{technologyPartner.imgUrl}} alt={{technologyPartner.imgAlt}}
+                class="img-fluid technology-partner-img h-100">
+            </a>
+          </div>
+          <div *ngIf="!technologyPartner.websiteUrl"
+            class="d-flex justify-content-center align-items-center p-4 partners-card">
+            <img lazyLoad={{technologyPartner.imgUrl}} alt={{technologyPartner.imgAlt}}
+              class="img-fluid technology-partner-img">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="checkout-wrapper">
+          <div class="partner-checkout">
+            <div class="checkout-doc">
+              <span><img lazyLoad="assets/images/partners/technologypartners/rancher.png" alt="Target Image" /></span>
+            </div>
+            <div class="checkout-content">
+              <h3 class="doc-title">Rancher</h3>
+              <p>Whether you are running Rancher’s K3S or RKE, MayaData’s Kubera Propel can accelerate the performance
+                of
+                your workloads and Kubera Chaos can ensure workload resilience, all while retaining the portability and
+                ease of use of Rancher for management.
+              </p>
+            </div>
+          </div>
+          <div class="partner-checkout">
+            <div class="checkout-doc">
+              <span><img lazyLoad="assets/images/partners/platformpartners/openshift.png" alt="Target Image" /></span>
+            </div>
+            <div class="checkout-content">
+              <h3 class="doc-title">OpenShift</h3>
+              <p>Kubera Propel (based on OpenEBS) is used on Red Hat’s OpenShift by workloads and teams that prefer
+                Container Attached Storage to shared everything storage; common examples include Cassandra, Kafka, and
+                PostgreSQL. Propel Chaos (based on Litmus Chaos) is the most popular open source chaos engineering
+                product based on an open source CNCF project and can work closely with OpenShift Pipelines (Tekton).</p>
+            </div>
+          </div>
+          <div class="partner-checkout">
+            <div class="checkout-doc">
+              <span><img lazyLoad="assets/images/partners/technologypartners/vmware.png" alt="Target Image" /></span>
+            </div>
+            <div class="checkout-content">
+              <h3 class="doc-title">VMware Tanzu</h3>
+              <p>Whatever your current or future flavor of VMware’s Tanzu, Kubera Propel (based on OpenEBS) and Kubera
+                Chaos (based on Litmus Chaos) have you covered with the most popular Container Attached Storage and
+                Kubernetes native chaos engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container py-3 py-sm-4 py-lg-5">
+      <div class="row">
+        <div class="col-md-12 pb-4">
+          <h2 class="partner-title" id="cloud-and-system-providers">Cloud and system providers</h2>
+        </div>
+      </div>
+      <div class="row justify-content-start partner-logo" *ngIf="platformPartners">
+        <div class="col-4 col-md-3 col-lg-3 pb-4" *ngFor="let platformPartner of platformPartners">
+          <div class="d-flex justify-content-center align-items-center p-4 partners-card">
+            <img lazyLoad={{platformPartner.imgUrl}} alt={{platformPartner.imgAlt}} class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <div class="marketplace">
+        <div class="marketplace-left col-md-8 col-lg-8">
+          <h3 class="market-title">Kubera Propel - available from Volterra for their distributed cloud services</h3>
+          <p>Kubera Propel has been selected by the global service provider Volterra as a foundation for their services.
+            Kubera Propel’s high performance and resilient block storage supports the many offerings of Volterra,
+            including Volt Stack and a widely adopted app delivery offering as well.</p>
+        </div>
+        <div class="marketplace-right col-md-4 col-lg-4">
+          <img lazyLoad="assets/images/partners/vol.png" alt="marketplace" />
+        </div>
+      </div>
+    </div>
+
+    <div class="workload-partner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 pb-4">
+            <h2 class="partner-title" id="workload-partners">Workload Partners</h2>
+            <div class="checkout-wrapper">
+              <div class="partner-checkout">
+                <div class="checkout-doc">
+                  <span><img lazyLoad="assets/images/partners/workload-1.png" alt="Target Image" /></span>
+                </div>
+                <div class="checkout-content">
+                  <h3 class="doc-title">Cassandra</h3>
+                  <p>The most popular distributed database on Kubernetes.</p>
+                  <div class="doc-link">
+                    <a routerLink="/workloads/cassandra-on-kubernetes">Link <img
+                        lazyLoad="assets/images/home/link.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="partner-checkout">
+                <div class="checkout-doc">
+                  <span><img lazyLoad="assets/images/partners/workload-2.png" alt="Target Image" /></span>
+                </div>
+                <div class="checkout-content">
+                  <h3 class="doc-title">MinIO</h3>
+                  <p>Add object storage with a great API to your cluster.</p>
+                  <div class="doc-link">
+                    <a routerLink="/workloads/minio-on-kubernetes">Link <img lazyLoad="assets/images/home/link.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="partner-checkout">
+                <div class="checkout-doc">
+                  <span><img lazyLoad="assets/images/partners/workload-3.png" alt="Target Image" /></span>
+                </div>
+                <div class="checkout-content">
+                  <h3 class="doc-title">Kafka</h3>
+                  <p>Run event-driven workloads at the power of Kubernetes.</p>
+                  <div class="doc-link">
+                    <a routerLink="/workloads/kafka-on-kubernetes">Link <img lazyLoad="assets/images/home/link.png"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="partner-checkout">
+                <div class="checkout-doc">
+                  <span><img lazyLoad="assets/images/partners/workload-4.png" alt="Target Image" /></span>
+                </div>
+                <div class="checkout-content">
+                  <h3 class="doc-title">Percona</h3>
+                  <p>Kubernetes is ready for Postgres, MariaDB, MySQL, and even MongoDB.</p>
+                  <div class="doc-link">
+                    <a href="https://docs.openebs.io/docs/next/percona.html" target="_blank"
+                      rel="noopener noreferrer">Link <img lazyLoad="assets/images/home/link.png"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-container become-sec">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-md-12 d-flex justify-content-center align-items-center flex-column become-partner">
+            <h2 class="text-center text-white pb-4 become-title">Interested in becoming a MayaData partner?</h2>
+            <a href="/partners/apply-for-partnership">
+              <button class="btn btn-primary">Become a partner</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

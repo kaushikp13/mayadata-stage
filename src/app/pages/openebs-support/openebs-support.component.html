@@ -1,0 +1,337 @@
+<div class="page-wrapper">
+  <!-- Hero Section -->
+  <div class="section-container hero-section ebs-support-hero">
+
+    <div
+      class="col-12 col-lg-12 hero-sec d-flex justify-content-start justify-content-md-center align-items-center align-items-md-start flex-column">
+      <h1 class="text-white kubernete-title">
+        OpenEBS <span>is the Most Deployed Open Source Container Attached Storage Solution for Kubernetes</span></h1>
+      <div class="hero-image-wrapper">
+        <div class="left-image">
+          <div class="left-window">
+            <!-- LeftWindow -->
+            <ng-lottie containerClass="moving-box moving-box-second-class leftbox" [styles]="stylesLeftWindow"
+              [options]="optionsLeftWindow" (animationCreated)="animationCreated($event)">
+            </ng-lottie>
+          </div>
+          <div class="cube">
+            <!-- Cube -->
+            <ng-lottie containerClass="moving-box moving-box-second-class cube-animate" [styles]="styles"
+              [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie>
+          </div>
+          <div class="poly">
+            <!-- Poly -->
+            <ng-lottie containerClass="moving-box moving-box-second-class poly-animate" [styles]="stylesPoly"
+              [options]="optionsPoly" (animationCreated)="animationCreated($event)"></ng-lottie>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center video-poster">
+          <div class="video" (click)="openModal(template)">
+            <span></span>
+            <div class="overlay">
+            </div>
+          </div>
+        </div>
+        <div class="right-image">
+          <div class="right-top">
+            <!-- RightWindow -->
+            <ng-lottie containerClass="moving-box moving-box-second-class right-win-animate"
+              [styles]="stylesRightWindow" [options]="optionsRightWindow" (animationCreated)="animationCreated($event)">
+            </ng-lottie>
+          </div>
+          <div class="right-bottom">
+            <!-- graph -->
+            <ng-lottie containerClass="moving-box moving-box-second-class graph-animate" [styles]="stylesGraph"
+              [options]="optionsGraph" (animationCreated)="animationCreated($event)"></ng-lottie>
+            <!-- Triangle -->
+            <ng-lottie containerClass="moving-box moving-box-second-class tringle-cube" [styles]="stylesTriangle"
+              [options]="optionsTriangle" (animationCreated)="animationCreated($event)">
+            </ng-lottie>
+          </div>
+        </div>
+
+      </div>
+      <div class="hero-text">
+        <ng-lottie containerClass="moving-box moving-box-second-class bottom-desktop text-hero"
+          [options]="optionsBottom" (animationCreated)="animationCreated($event)"></ng-lottie>
+
+
+        <ng-lottie containerClass="moving-box moving-box-second-class bottom-mobile" [options]="optionsBottomMobile"
+          (animationCreated)="animationCreated($event)"></ng-lottie>
+      </div>
+      <div class="hero-buttons">
+
+        <a ngClass={{GTM.TRIGGERS.OPENEBSSUPPORT}} class="btn btn-primary hero-btn-primary"
+          onclick="Calendly.showPopupWidget('https://calendly.com/mayadata/discuss-openebs-and-kubera');return false;"
+          href="">
+          Talk to us
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <ng-template #template>
+    <div class="close-x-wrapper">
+      <button type="button" class="close close-x text-white" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="p-0">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item"
+          src="https://player.vimeo.com/video/545410722?autoplay=1&title=0&byline=0&portrait=0" allow=autoplay></iframe>
+      </div>
+    </div>
+  </ng-template>
+
+  <!-- Hero Section End -->
+
+  <!-- Licensed Support start -->
+  <section class="section-container supoort-all-time">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center text-white kubera-pricing-block">
+            <h2>Get Enterprise Support</h2>
+            <p>MayaData offers enterprise support for OpenEBS.</p>
+          </div>
+          <app-supportpage></app-supportpage>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <!-- <app-kubera-pricing-enterprise></app-kubera-pricing-enterprise> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Licensed Support END -->
+
+  <!-- 24x7 support start -->
+
+
+  <!-- 24x7 support END -->
+
+  <!-- Simplify your journey start -->
+  <div class="inner-wrapper">
+    <section class="section-container workload">
+      <div class="container">
+        <div class="row">
+          <div class="workload-wrapper">
+            <div class="Workload-left">
+              <div class="right-title">
+                <h2>Simplify your journey to <span>Stateful Workloads on Kubernetes</span></h2>
+                <h3>OpenEBS is the most popular open source block storage layer for Kubernetes. It's the lowest latency,
+                  highest throughput, most flexible data storage available.</h3>
+              </div>
+            </div>
+            <div class="Workload-right">
+              <div class="work-load-image">
+                <img lazyLoad="assets/images/openebs-support/work-load-image-full-image.png" alt="Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section-container openEBS-sec">
+      <div class="container data-agility-section">
+        <div class="row kubera-connect">
+          <div class="main-content-storage col-12 col-md-6 col-lg-6 " *ngFor="let storage of storages;let index= index"
+            [ngClass]="{'devices_storage': windowSize < 1025, 'device_active1' : (tab1 == true && index == 0),  'device_active2' :(tab2 == true&& index == 1) , 'device_active3' : (tab3 == true&& index == 3)}"
+            (click)="addClass(index)">
+            <div class="openEBS-oep-storages--card">
+              <div *ngIf="index != 2" class="openEBS-oep-storages--imgblock">
+                <img lazyLoad={{storage.imageUrl}} alt={{storage.alt}} class="img-fluid openEBS-storages-icons" />
+              </div>
+              <div *ngIf="index != 2" class="box-text-div">
+                <p class="openEBS-oep-storages-title">
+                  {{storage.title}}</p>
+                <p class="openEBS-benefit-content">{{storage.description}}</p>
+
+                <div *ngIf="index == 0 && index != 2 && index != 3 && index != 1" class="openebs-video"
+                  [innerHTML]="videoTagLeader">
+                </div>
+                <div *ngIf="index == 1 && index != 2 && index != 3 && index != 0 " class="openebs-video"
+                  [innerHTML]="videoTagSpeed">
+                </div>
+                <div *ngIf="index == 3 && index != 2 && index != 1 && index != 0" class="openebs-video"
+                  [innerHTML]="videoTagKubernetes">
+                </div>
+              </div>
+            </div>
+            <div class="video-storage">
+              <div *ngIf="index == 0 && index != 3  && index != 1" class="openebs-video" [innerHTML]="videoTagLeader">
+              </div>
+              <div *ngIf="index == 1 && index != 3 && index != 2 && index != 0" class="openebs-video"
+                [innerHTML]="videoTagSpeed">
+              </div>
+              <div *ngIf="index == 3 && index != 2 && index != 1 && index != 0" class="openebs-video"
+                [innerHTML]="videoTagKubernetes">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simplify your journey END -->
+
+    <section class="openebs-logo-wrapper">
+      <div class="openebs-logo-title">
+        <h1><span>OpenEBS</span> is used in production</h1>
+        <h6>by Leading Enterprises</h6>
+      </div>
+
+      <div class="section-container company-section" style="padding: 50px 0px" *ngIf="companies">
+        <div class="container">
+          <div class="row ">
+
+            <div *ngFor="let company of companies.list" class="col-6 col-md-4 col-lg-2 company pb-4 pb-md-0">
+              <!-- <a routerLink={{company.cta.ctaLink}}> -->
+              <div class="company--image-block">
+                <img [lazyLoad]="company.imageSrc" [alt]="company.name" />
+              </div>
+              <!-- </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  <section class="customer-wrapper">
+    <div class="container">
+      <div class="row our-customer">
+        <div class="col-12 col-md-4 customer-box">
+          <div class="inner-box">
+            <div class="cust-icon">
+              <img lazyLoad="assets/images/openebs-support/download.png" alt="Image" />
+            </div>
+            <div class="cust-desc">
+              <h2>25 Million+</h2>
+              <p>Downloads</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 customer-box">
+          <div class="inner-box">
+            <div class="cust-icon">
+              <img lazyLoad="assets/images/openebs-support/github.png" alt="Image" />
+            </div>
+            <div class="cust-desc">
+              <h2>6.8k+</h2>
+              <p>Stars on Github</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 customer-box">
+          <div class="inner-box">
+            <div class="cust-icon">
+              <img lazyLoad="assets/images/openebs-support/users.png" alt="Image" />
+            </div>
+            <div class="cust-desc">
+              <h2>500+</h2>
+              <p>Contributors</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- OpenEBS is used in Production by Leading Enterprises Start -->
+  <section class="section-container company-section" style="padding: 50px 0px">
+    <div class="container">
+      <div class="testimonial-left">
+
+      </div>
+      <div class="testimonial-wrapper">
+        <div class="section-container content-slider">
+          <div class="container">
+            <div class="row">
+              <div class="col-5 testimonial-left">
+                <h3>What users
+                  are saying
+                  <span>about OpenEBS</span>
+                </h3>
+              </div>
+              <div class="col-7 testimonial-right">
+                <div class="inner-slider">
+                  <carousel>
+                    <slide *ngFor="let slide of silderContent">
+                      <div class="slider-wrapper" [ngStyle]="{'min-height': isSupportValue ? '360px' : '300px'}">
+                        <div class="slider-image">
+                          <img lazyLoad="{{slide.image}}" alt="{{slide.alt_text}}" class="p-3">
+                        </div>
+                        <div class="lead">
+                          <img lazyLoad="assets/images/home/quotes.png" alt="Image" />
+                          <h6>{{slide.content}}</h6>
+                          <h3>{{slide.authorName}}</h3>
+                          <p>{{slide.authorContent}}</p>
+                        </div>
+                      </div>
+                    </slide>
+                  </carousel>
+                </div>
+                <div class="testi-cube">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- OpenEBS is used in Production by Leading Enterprises END -->
+
+  <section class="section-container workload-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center text-white kubera-pricing-block usage-workload">
+            <h2><span>OpenEBS</span> is used for Many Workloads</h2>
+            <!-- <p>After summarizing the use-cases from the list of adopters.</p> -->
+
+          </div>
+        </div>
+      </div>
+      <div class="row graph-table-wrapper">
+        <div class="col-12 graph">
+          <div class="graph-title">
+            <h3>Most commonly used workloads over which OpenEBS is used:</h3>
+          </div>
+          <span>
+            <img lazyLoad="assets/images/openebs-support/graph-svg.svg" alt="Image" />
+          </span>
+        </div>
+        <div class="col-12 table">
+          <span>
+            <img lazyLoad="assets/images/openebs-support/table-image.png" alt="Image" />
+          </span>
+          <div class="table-title">
+            <h3>Snapshot of some of OpenEBS Enterprise adopters and their workloads:</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row btn-wrapper">
+        <div class="col-12">
+          <a href="https://github.com/openebs/openebs/blob/master/ADOPTERS.md" target="_blank">
+            <button class="btn btn-primary">Share your OpenEBS use case with us</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-openebs-survey-section></app-openebs-survey-section>
+</div>

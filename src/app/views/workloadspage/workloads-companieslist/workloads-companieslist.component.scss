@@ -1,0 +1,30 @@
+.icon-list-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-width: 100px;
+  max-width: 110px;
+  width: 15%;
+  filter: grayscale(100%);
+}
+
+.icon img {
+  width: 100%;
+}
+
+.fontLogoName {
+  font-size: 20px;
+}

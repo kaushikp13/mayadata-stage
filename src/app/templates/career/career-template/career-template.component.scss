@@ -1,0 +1,116 @@
+// .main-wrapper {
+
+//   // background: url("assets/images/careers/career-sub-bg.png") no-repeat;
+//   // background-color: #1F1831;
+//   // background-size: cover;
+// }
+.main-wrapper {
+  padding-top: 40px;
+}
+.back a {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.back a i {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 3px;
+}
+.careear-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-top: 40px;
+}
+.tags {
+  display: flex;
+}
+.job-location,
+.job-time {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.job-location {
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+.job-location span:first-child,
+.job-time span:first-child {
+  margin-right: 10px;
+  display: inline-block;
+}
+.careear-content {
+  background: #fff;
+  margin-top: 30px;
+  padding: 60px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+::ng-deep {
+  .careear-content p {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: #0d0c12;
+  }
+  .careear-content h2 {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #0d0c12;
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+  .careear-content ul {
+    padding-left: 20px;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .careear-content {
+    padding: 30px;
+  }
+  .container {
+    width: 96%;
+  }
+}
+
+/*  Mobile */
+@media (max-width: 767px) {
+  .careear-title {
+    font-size: 50px;
+  }
+  .tags {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .job-location {
+    margin-right: 30px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .careear-title {
+    font-size: 40px;
+  }
+}

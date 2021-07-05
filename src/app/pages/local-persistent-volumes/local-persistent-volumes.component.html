@@ -1,0 +1,435 @@
+<!-- Hero Section -->
+<div class="section-container hero-local-persistent-sectio">
+  <div class="container">
+    <div class="row py-md-4">
+      <div
+        class="col-12 col-lg-6 pb-4 pb-lg-0  d-flex justify-content-start justify-content-md-center align-items-center align-items-md-start flex-column">
+        <h1 class="text-white local-persistent-title">
+          Dynamic LocalPV
+          Provisioners
+          for Kubernetes</h1>
+        <h4 class="text-white pb-4 sub-title">Storage for Distributed
+          Applications
+        </h4>
+        <div class="hero-buttons">
+          <a routerLink="/openebs-support" class="btn btn-primary text-white hero-btn-primary">
+            OpenEBS Support
+          </a>
+          <a class="btn btn-outline-primary hero-btn-primary ml-4"
+            onclick="Calendly.showPopupWidget('https://calendly.com/mayadata/discuss-openebs-and-kubera');return false;"
+            href="">
+            Talk to us
+          </a>
+
+        </div>
+
+      </div>
+      <div class="col-12 col-lg-6 hero-video">
+        <div class="h-100 m-auto d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center image-poster">
+            <img lazyLoad="assets/images/local-persistent-volumes/hero-image.png" />
+          </div>
+        </div>
+        <!-- <div class="h-100 m-auto d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center video-poster">
+            <div class="video" (click)="openModal(template)">
+              <span></span>
+              <div class="overlay">
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #template>
+  <div class="close-x-wrapper">
+    <button type="button" class="close close-x text-white" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="p-0">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://player.vimeo.com/video/545410722?title=0&byline=0&portrait=0"></iframe>
+    </div>
+  </div>
+</ng-template>
+
+<!-- Hero Section End -->
+
+<!-- OpenEBS is used in Production by Leading Enterprises Start -->
+<section class="section-container company-section" style="padding: 50px 0px">
+  <div class="container">
+    <div class="col-12 cloud-title">
+      <h4>{{companies.title}}</h4>
+    </div>
+    <div class="row logo-wrapper">
+
+      <div *ngFor="let company of companies.list" class="col-6 col-md-4 col-lg-2 company pb-4 pb-md-0">
+        <div class="company--image-block">
+          <img [lazyLoad]="company.imageSrc" [alt]="company.name" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- OpenEBS is used in Production by Leading Enterprises END -->
+
+<!-- Simplify your journey start -->
+
+<section class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="local-wrapper">
+        <div class="col-12 col-lg-6 pb-4 local-left">
+          <img lazyLoad="assets/images/local-persistent-volumes/mid-des-image.png" alt="Image" />
+        </div>
+        <div class="col-12 col-lg-6 pb-4 local-right">
+          <div class="right-title">
+            <h2>Gets out of the way of
+              super-fast NVMe SSDs
+              and cloud storage</h2>
+            <h3>Deploy & operate performance
+              sensitive workloads at any scale.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row local-box-wrapper">
+      <div class="col-md-4 col-12 local-box" *ngFor="let feature of features">
+        <div class="local-box-top">
+          <div class="local-box-top-left">
+            <img [lazyLoad]="feature.imageSrc" [alt]="feature.imageAlt" />
+          </div>
+          <h2>{{feature.featureTitle}}
+          </h2>
+        </div>
+        <div class="local-box-bottom">
+          <p>{{feature.featureContent}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row our-customer">
+      <div class="col-12 col-md-4 customer-box">
+        <div class="inner-box">
+          <div class="cust-icon">
+            <img lazyLoad="assets/images/openebs-support/download.png" alt="Image" />
+          </div>
+          <div class="cust-desc">
+            <h2>25 Million+</h2>
+            <p>Downloads</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 customer-box">
+        <div class="inner-box">
+          <div class="cust-icon">
+            <img lazyLoad="assets/images/openebs-support/github.png" alt="Image" />
+          </div>
+          <div class="cust-desc">
+            <h2>6.8k+</h2>
+            <p>Stars on Github</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 customer-box">
+        <div class="inner-box">
+          <div class="cust-icon">
+            <img lazyLoad="assets/images/openebs-support/users.png" alt="Image" />
+          </div>
+          <div class="cust-desc">
+            <h2>500+</h2>
+            <p>Contributors</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Simplify your journey END -->
+
+<!-- Tab section -->
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="benefit-wrapper">
+        <div class="tab-wrapper-top user-journey">
+          <div id="Tab1">
+            <ul class="nav nav-pills">
+              <li [ngClass]="{'active':Tab1}" (click)="selectTab('Tab1')">
+                <div data-toggle="tab" class="h-100">App Developers</div>
+              </li>
+              <li [ngClass]="{'active':Tab2}" (click)="selectTab('Tab2')">
+                <div data-toggle="tab" class="h-100">Platform Team</div>
+              </li>
+              <li [ngClass]="{'active':Tab3}" (click)="selectTab('Tab3')">
+                <div data-toggle="tab" class="h-100">Infrastructure Team</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div class="col-md-6 journy-left">
+
+              <div class="propel" [ngClass]="{'opacity-full':Tab1}">
+                <div class="title">
+                  <h2><span>Example User Journey:</span></h2>
+                  <h3>How <span>Application Developers</span> benefit From OpenEBS LVM LocalPV</h3>
+                </div>
+                <div class="key-features">
+                  <h2>Key benefits</h2>
+                  <ul>
+                    <li><span>01.</span> Capacity based provisioning</li>
+                    <li><span>02.</span> Mapping of devices to workloads for efficient performance</li>
+                    <li><span>03.</span> Zero touch from hardware deployment to PVCs fulfilled</li>
+                  </ul>
+                  <a routerLink="/openebs-support" class="btn btn-primary">Support Options</a>
+                </div>
+              </div>
+              <div class="propel" [ngClass]="{'opacity-full':Tab2}">
+                <div class="title">
+                  <h2><span>Example User Journey:</span></h2>
+                  <h3>How <span>Platform Team</span> benefit From OpenEBS LVM LocalPV</h3>
+                </div>
+                <div class="key-features">
+                  <h2>Key benefits</h2>
+                  <ul>
+                    <li><span>01.</span> Capacity based provisioning</li>
+                    <li><span>02.</span> Improved utilization</li>
+                    <li><span>03.</span> Mapping of devices to workloads for efficient performance</li>
+                    <li><span>04.</span> Zero touch from hardware deployment to PVCs fulfilled</li>
+                  </ul>
+                  <a routerLink="/openebs-support" class="btn btn-primary">Support Options</a>
+                </div>
+              </div>
+              <div class="propel" [ngClass]="{'opacity-full':Tab3}">
+                <div class="title">
+                  <h2><span>Example User Journey:</span></h2>
+                  <h3>How <span>Infrastructure Team</span> benefit From OpenEBS LVM LocalPV</h3>
+                </div>
+                <div class="key-features">
+                  <h2>Key benefits</h2>
+                  <ul>
+                    <li><span>01.</span> Shared views into capacity deployed and available</li>
+                    <li><span>02.</span> Clear division of concerns - via hand off of inventory of VGs to Platform team
+                    </li>
+                  </ul>
+                  <a routerLink="/openebs-support" class="btn btn-primary">Support Options</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 journy-right">
+              <div class="tab-content tb-1" [ngClass]="{'tb-active':Tab1}">
+                <div class="tab-content-inner">
+                  <h2>Increased Agility & Control</h2>
+                  <ul>
+                    <li>End to end dynamic provisioning</li>
+                    <li>Flexibility of control</li>
+                  </ul>
+                  <div class="highlighted">
+                    <p>Software Developers</p>
+                    <p>Data Scientist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content tb-2" [ngClass]="{'tb-active':Tab2}">
+                <div class="tab-content-inner">
+                  <div class="tab-2-left">
+                    <h2>Supported customers receive</h2>
+                    <ul>
+                      <li>System wide analysis</li>
+                      <li>Capacity alerts & projections</li>
+                      <li>Storage class based analysis</li>
+                    </ul>
+                  </div>
+                  <div class="tab-2-center">
+                    <img src="../../../assets/images/local-persistent-volumes/orange-arrow.png" />
+                  </div>
+                  <div class="tab-2-right">
+                    <h2>OpenEBS LocalPV LVM</h2>
+                    <ul>
+                      <li>Pooling of local node storage</li>
+                      <li>CSI provisioning</li>
+                      <li>Capacity, QoS and topology based scheduling</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content tb-3" [ngClass]="{'tb-active':Tab3}">
+                <div class="tab-content-inner">
+                  <div class="tab-3-left">
+                    <h2>Kubernetes driven provisioning</h2>
+                    <ul>
+                      <li>Tagged devices pooled</li>
+                      <li>Automated provisioning</li>
+                      <li>Devices & volumes managed</li>
+                    </ul>
+                  </div>
+                  <div class="tab-3-right">
+                    <h2>OpenEBS Device LocalPV</h2>
+                    <!-- <div class="arrow"></div> -->
+                    <ul>
+                      <li>Uses tags for pooling</li>
+                      <li>Created LVM PV -> VGs</li>
+                      <li>Southbound CSI for AWS</li>
+                    </ul>
+                  </div>
+                  <div class="tab-3-bottom">
+                    <span class="indicate">
+                      <img src="../../../assets/images/local-persistent-volumes/orange-arrow.png"></span>
+                    <!-- <span><img src="../../../assets/images/local-persistent-volumes/curve-arrow.png"></span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Tab section End -->
+
+
+<!-- <div class="journey-box-btn">
+  <a href="#" class="btn btn-primary">Schedule a Demo</a>
+</div> -->
+
+
+<!-- OpenEBS LocalPV Provisioners -->
+<div class="local-provisioner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 provisioner-top">
+        <h3>Get to know OpenEBS LocalPV Provisioners</h3>
+        <p>OpenEBS provides Dynamic PV provisioners for Kubernetes Local Volumes. A local volume
+          implies that storage is available only from a single node. A local volume represents a mounted local storage
+          device such as a disk, partition or directory. For distributed applications that do not need storage level
+          replication OpenEBS LocalPV is the most efficient option as it gives higher
+          performance. OpenEBS LocalPV offers of four types of provisioners:
+        </p>
+      </div>
+
+      <div class="col-12 provision-box-wrapper">
+        <div class="col-md-6 provision-box">
+          <div class="provision-logo">
+            <img src="../../../assets/images/local-persistent-volumes/openebs-logo.png" alt="Image" />
+          </div>
+          <div class="provision-box-title">
+            <h2>Hostpath</h2>
+          </div>
+          <div class="provision-box-content">
+            <p>OpenEBS LocalPV Hostpath allows your applications to access hostpath via StorageClass,
+              PVC, and PV. This provides you the flexibility to change the PV providers without having to
+              redesign your Application YAML.
+            </p>
+            <ul class="provision-list">
+              <li>Data protection using the Velero Backup and Restore.</li>
+              <li>Protect against hostpath security vulnerabilities by asking the hostpath completely from
+                the application YAML and pod.</li>
+            </ul>
+          </div>
+          <div class="provision-box-btn">
+            <a href="https://docs.openebs.io/docs/next/uglocalpv-hostpath.html" target="_blank"
+              class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 provision-box">
+          <div class="provision-logo">
+            <img src="../../../assets/images/local-persistent-volumes/openebs-logo.png" alt="Image" />
+          </div>
+          <div class="provision-box-title">
+            <h2>Device LocalPV</h2>
+          </div>
+          <div class="provision-box-content">
+            <p>OpenEBS LocalPV Device provisioner allows your applications to use the block devices
+              available on the node to persist data.
+            </p>
+            <ul class="provision-list">
+              <li>Dynamic Volume provisioner as opposed to a Static Provisioner. </li>
+              <li>Better management of the Block Devices used for creating LocalPVs by OpenEBS
+                NDM. NDM provides capabilities like discovering Block Device properties, setting up
+                Device Filters, metrics collection and ability to detect if the Block Devices have moved
+                across nodes.</li>
+            </ul>
+          </div>
+          <div class="provision-box-btn">
+            <a href="https://docs.openebs.io/docs/next/uglocalpv-device.html" target="_blank"
+              class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 provision-box">
+          <div class="provision-logo">
+            <img src="../../../assets/images/local-persistent-volumes/openebs-logo.png" alt="Image" />
+          </div>
+          <div class="provision-box-title">
+            <h2>ZFS LocalPV</h2>
+          </div>
+          <div class="provision-box-content">
+            <p>OpenEBS LocalPV Device provisioner allows your applications to use LocalPVs backed by
+              ZFS pools on the node to persist data.</p>
+            <ul class="provision-list">
+              <li>All data consistency and pooling benefits of ZFS</li>
+              <li>Snapshots and clone capabilities</li>
+            </ul>
+          </div>
+          <div class="provision-box-btn">
+            <a href="https://github.com/openebs/zfs-localpv" target="_blank" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 provision-box">
+          <div class="provision-logo">
+            <img src="../../../assets/images/local-persistent-volumes/openebs-logo.png" alt="Image" />
+          </div>
+          <div class="provision-box-title">
+            <h2>LVM LocalPV</h2>
+          </div>
+          <div class="provision-box-content">
+            <p>OpenEBS LocalPV Device provisioner allows your applications to use LocalPVs backed by
+              LVM pools on the node to persist data.</p>
+            <ul class="provision-list">
+              <li>High availability and pooling benefits of LVM</li>
+              <li>Snapshots and clone capabilities</li>
+            </ul>
+          </div>
+          <div class="provision-box-btn">
+            <a href="https://github.com/openebs/lvm-localpv" target="_blank" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- OpenEBS LocalPV Provisioners End -->
+
+
+<!-- Let us help you run data on Kubernetes -->
+
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center text-white global-title">Let us help you run data on Kubernetes</h2>
+        <div class="global-wrapper">
+          <a class="btn btn-primary hero-btn-primary ml-4"
+            onclick="Calendly.showPopupWidget('https://calendly.com/mayadata/discuss-openebs-and-kubera');return false;"
+            href="">
+            Talk to us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Let us help you run data on Kubernetes End -->

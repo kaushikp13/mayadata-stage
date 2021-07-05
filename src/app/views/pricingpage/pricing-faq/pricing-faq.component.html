@@ -1,0 +1,26 @@
+<div class="section-container" style="position: relative;">
+  <div class="container">
+    <div class="d-block d-md-flex align-items-center">
+      <h2 class="h1 text-left text-white mb-4 mb-md-0">{{allFAQs.title}}</h2>
+      <!-- <div class="h-100">
+        <ul class="list-unstyled d-flex text-white align-items-center mb-0 pl-md-5" id="faqOptions">
+          <li class="px-3 faq-option" [attr.data-tag]="TAGS.all">All</li>
+          <li class="px-3 faq-option" [attr.data-tag]="TAGS.billing">Billing</li>
+          <li class="px-3 faq-option" [attr.data-tag]="TAGS.opensource">Open source</li>
+          <li class="px-3 faq-option" [attr.data-tag]="TAGS.usageandsupport">Usage and Support</li>
+        </ul>
+      </div> -->
+    </div>
+    <div class="accordion-list pt-5" id="listOfAccordion">
+      <div class="accordion-item px-5" *ngFor="let faq of workloadFaqs; let i = index">
+        <div class="accordion-item-head" [attr.data-faq-gtm]="GTM.TRIGGERS.PRICINGFAQ">
+          <p class="text-white mb-0 font-weight-bold">{{faq.head}}</p>
+          <span class="icon mi mi-x text-white" aria-hidden="true"></span>
+        </div>
+        <div class="accordion-item-body">
+          <p class="py-2 mb-0" [innerHTML]="singleBodyPara" *ngFor="let singleBodyPara of faq.body"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

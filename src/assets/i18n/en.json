@@ -1,0 +1,425 @@
+{
+  "openings": {
+    "java-python-developer": {
+      "job-title": "Java/Python Engineer",
+      "job-type": "Full Time",
+      "skills": {
+        "languages": "Expert in Java and/or mastery of Python and Javascript/Jquery",
+        "databases": "MySQL or Oracle",
+        "OS": "User level experience on any Linux flavour",
+        "desc1": "Excellent time-management and multi-tasking. Capable of juggling multiple projects and related complexities at the same time",
+        "desc2": "Learn something new every day."
+      },
+      "desired-experience": {
+        "desc1": "A minimum of 3 years of formal industry/professional experience in software development",
+        "desc2": "Candidate must absolutely be in sync with recent frameworks and trends",
+        "desc3": "Exposure to CloudStack or OpenStack is a definite plus",
+        "desc4": "Prior experience in Storage application is a plus"
+      }
+    },
+    "technical-writer": {
+      "job-title": "Kubernetes / OSS Technical Writer",
+      "job-type": "Intern",
+      "job-description": "Create and update the user documentation related to Kubernetes and OpenEBS project",
+      "responsibilities": {
+        "desc1": "Participate in Kubernetes and OpenEBS community slack channels and understand user’s need.",
+        "desc2": "Create and/or update the user documentation."
+      },
+      "skills": {
+        "desc1": "Enthusiastic about and proficient in Kubernetes, Docker technologies.",
+        "desc2": "Excellent communication skills in English.",
+        "desc3": "Excellent writing skills in English.",
+        "desc4": "Must have submitted some documentation or code PRs to Open Source projects",
+        "desc5": "Must be from B.Tech/B.E/M.C.A background. Final year students also can apply"
+      }
+    },
+    "devops": {
+      "job-title": "Software Engineer - DevOps",
+      "job-type": "Full Time",
+      "job-location": "Bangalore",
+      "job-description": "The DevOps Engineer will work side-by-side with OpenEBS developer community and will be primarily responsible for developing tools for validation of the commits and automation of OpenEBS Deployments. The ideal candidate believes in exploring alternatives and quickly prototyping to validate hypothetical architectures or solutions. The ideal candidate is passionate about the concept of infrastructure as code and leverages modern tools to define, build and manage virtual infrastructure in the cloud",
+      "responsibilities": {
+        "desc1": "Lead efforts in automation, continuous deployment of OpenEBS along-side popular container orchestration engines like K8s, Docker Swarm, Mesosphere etc.",
+        "desc2": "Plan, implement and keep the OpenEBS CI pipeline up to date with the new features being added to the project.",
+        "desc3": "Defining and providing the yaml files for deploying Persistent Containers like MySQL, Postgress, Hadoop etc., using OpenEBS.",
+        "desc4": "Research new promising tools and technologies, and ways to more elegantly/ efficiently solve problems.",
+        "desc5": "Contribute to the OpenEBS community development efforts – Participation in Tech Talks/Sessions, Blogs, etc."
+      },
+      "skills": {
+        "desc1": "2-4 years of experience in DevOps Engineering or Software Development (Java/Python/Golang preferred).",
+        "desc2": "Bachelors or Masters Degree in Computer Science, Electrical Engineering, Information Systems, or similar.",
+        "desc3": "Have a solid understanding of Linux systems, hosts, networks, security, applications and proficiency in shell scripting (Shell/Bash, JavaScript, Python).",
+        "desc4": "Experienced with tools like TravisCI, Jenkins, etc.",
+        "desc5": "Excellent oral and written communication skills.",
+        "desc6": "Strong interpersonal skills, with the ability to work across the organization and interact effectively at all levels of management and peers."
+      },
+      "desired-experience": {
+        "desc1": "Prior experience with Storage Technologies, Products and Solutions is highly desired",
+        "desc2": "Prior experience of Storage Testing tools like fio, vdbench, iozone, iotest etc., is preferred",
+        "desc3": "Prior experience with Cloud related technologies VMWare, VirtualBox, Amazon AWS",
+        "desc4": "Prior experience with tools like Vagrant, Terraform, Ansible.",
+        "desc5": "Understanding of deploying applications on Dockers, Kubernetes, etc., is highly desired",
+        "desc6": "Understanding of AGILE software development methodologies and use of standard software development tool suites. (e.g., JIRA, Confluence, Github Enterprise, etc.)",
+        "desc7": "Contributed to OpenSource Projects.",
+        "desc8": "Worked in startups or small product teams."
+      }
+    },
+    "devops-remote": {
+      "job-title": "Software Engineer - DevOps",
+      "job-type": "Full Time",
+      "job-location": "Remote",
+      "job-description": "The DevOps Engineer will work side-by-side with OpenEBS developer community and will be primarily responsible for developing tools for validation of the commits and automation of OpenEBS Deployments. The ideal candidate believes in exploring alternatives and quickly prototyping to validate hypothetical architectures or solutions. The ideal candidate is passionate about the concept of infrastructure as code and leverages modern tools to define, build and manage virtual infrastructure in the cloud",
+      "responsibilities": {
+        "desc1": "Lead efforts in automation, continuous deployment of OpenEBS along-side popular container orchestration engines like K8s, Docker Swarm, Mesosphere etc.",
+        "desc2": "Plan, implement and keep the OpenEBS CI pipeline up to date with the new features being added to the project.",
+        "desc3": "Defining and providing the yaml files for deploying Persistent Containers like MySQL, Postgress, Hadoop etc., using OpenEBS.",
+        "desc4": "Research new promising tools and technologies, and ways to more elegantly/ efficiently solve problems.",
+        "desc5": "Contribute to the OpenEBS community development efforts – Participation in Tech Talks/Sessions, Blogs, etc."
+      },
+      "skills": {
+        "desc1": "2-4 years of experience in DevOps Engineering or Software Development (Java/Python/Golang preferred).",
+        "desc2": "Bachelors or Masters Degree in Computer Science, Electrical Engineering, Information Systems, or similar.",
+        "desc3": "Have a solid understanding of Linux systems, hosts, networks, security, applications and proficiency in shell scripting (Shell/Bash, JavaScript, Python).",
+        "desc4": "Experienced with tools like TravisCI, Jenkins, etc.",
+        "desc5": "Excellent oral and written communication skills.",
+        "desc6": "Strong interpersonal skills, with the ability to work across the organization and interact effectively at all levels of management and peers."
+      },
+      "desired-experience": {
+        "desc1": "Prior experience with Storage Technologies, Products and Solutions is highly desired",
+        "desc2": "Prior experience of Storage Testing tools like fio, vdbench, iozone, iotest etc. is preferred",
+        "desc3": "Prior experience with Cloud related technologies VMWare, VirtualBox, Amazon AWS",
+        "desc4": "Prior experience with tools like Vagrant, Terraform, Ansible.",
+        "desc5": "Understanding of deploying applications on Dockers, Kubernetes, etc., is highly desired",
+        "desc6": "Understanding of AGILE software development methodologies and use of standard software development tool suites. (e.g., JIRA, Confluence, Github Enterprise, etc.)",
+        "desc7": "Contributed to OpenSource Projects.",
+        "desc8": "Worked in startups or small product teams."
+      }
+    },
+    "marketing-automation-specialist": {
+      "job-title": "B2B Marketing Automation Specialist",
+      "job-type": "Full Time",
+      "start-date": "Immediate",
+      "location": "Bangalore",
+      "about-mayadata": "MayaData (www.mayadata.io) is a Cloud Native Computing Foundation member that delivers data agility through the open source container attached storage OpenEBS (www.openebs.io), the open source chaos engineering solution Litmus (www.openebs.io/litmus), and Kubera (https://director.mayadata.io) for visibility, control, and automation of stateful workloads on Kubernetes. MayaData commercial offering is called the MayaData Data Agility Platform or MDAP which combines all three solutions with proactive support. Community and commercial offerings deploy easily on any Kubernetes distribution and are available as default options in offerings from Rancher, IBM Cloud Private, Red Hat OpenShift, Kontena Pharos, StackPointCloud, and the leading cloud vendors including managed Kubernetes offerings from Google, Amazon, IBM, Microsoft Azure and others. Non-MayaData contributors to OpenEBS include JD.com, Cisco, Red Hat, IBM and other leading users and developers of Kubernetes.",
+      "the-role": "As our community of users is growing exponentially, with thousands of unique site visitors a month and with a lead base of 30,000+, MayaData needs to set up a marketing automation system and lead nurturing process to better communicate with its users and prospective customers. Therefore we are looking for a data-driven and technically savvy lead nurturing and marketing automation specialist to join the team at our Bangalore office.",
+      "the-role1": "Part of our sales and marketing team, the Marketing Automation Specialist will own the whole process as a key contributor to the team and will work in close collaboration with other members of the team such as our content creation specialist, community manager, web and graphic designers, sales and pre-sales representatives.",
+      "the-role2": "You will build and constantly improve MayaData’s marketing operations, launch and monitor campaigns, identify and help score leads and generate the appropriate and relevant reports. In collaboration with our system engineers, software developers and database administrators, you'll make sure the supporting systems and databases are available, updated and integrated with other tools used in the company.",
+      "requirements": {
+        "desc": "The ideal candidate is someone who has experience with marketing automation software such as HubSpot, Pardot, Marketo and others (we are using AgileCRM for now), experience in B2B, dealing with Enterprise customers and skilled for dealing with data and understanding buying persona.",
+        "sub-desc": "Skillsets/Prerequisites we’re looking for: ",
+        "desc1": "3-8 Years of marketing experience in businesses selling to Enterprise customers;",
+        "desc2": "2 Years of experience in setting up and/or managing a marketing automation system; ",
+        "desc3": "A good understanding of the relevant data required to support the platform and the campaigns;",
+        "desc4": "Experience in setting up or being part of a lead acquisition process on across various sources (landing pages, website, blogs, remarketing, AdWords, paid advertising, trade shows, etc), engagement mechanisms, lead segmentation and lead scoring activities; ",
+        "desc5": "Have leveraged or contributed to tailored content creation (website, landing pages, email, white papers, etc) and its optimization to support the marketing automation processes;",
+        "desc6": "Ability to generate reports, track performance and read a sales funnel; ",
+        "desc7": "Having used marketing automation for A/B Testing;",
+        "desc8": "Experience working with Agile or being part of a DevOps team is a plus."
+      }
+    },
+    "senior-go-developer": {
+      "job-title": "Senior Go Developer",
+      "job-type": "Full Time",
+      "Experience": "4 to 8 years",
+      "location": "Bangalore",
+      "about-position": "Mayadata is looking for senior level Golang Developer to join our team and work with our open source cloud native storage solution OpenEBS. We are looking for someone that has experience with building Go micro services and distributed systems.",
+      "about-position1": "You'll be part of a highly capable and motivated team working on solving the hard problems of scalability, availability, and performance on a Kubernetes storage platform.",
+      "requirements": {
+        "desc": "ESSENTIAL POSITION RESPONSIBILITIES",
+        "desc1": "Work closely with OpenEBS and Kubernetes storage community to ensure product requirements are understood well;",
+        "desc2": "Write clean, modular, robust code to implement the desired requirements; ",
+        "desc3": "Ensure high level of quality;",
+        "desc4": "Take full ownership of the project from design to implementation and deployment ; ",
+        "desc5": "Collaboration with other open source communities;"
+      },
+      "skills": {
+        "desc": "QUALIFICATION & EXPERIENCE:",
+        "desc1": "4-8 years of product development experience;",
+        "desc2": "Experience with web technologies, Go, Python, Java, Linux, Shell scripting, MySQL and noSql DB, Docker, Kubernetes; ",
+        "desc3": "Experience in architecting & building real-time, large scale micro-services applications;",
+        "desc4": "Deep experience with Golang, experience in distributed systems and container technology is plus; ",
+        "desc5": "Ability to work both independently and in cooperation with others;",
+        "desc6": "Ability to instill and enforce best practices around product development;",
+        "desc7": "Ability to navigate large existing code, and improve it as it changes;",
+        "desc8": "A sense of urgency and ownership over the product;",
+        "desc9": "Great attitude towards work and people;",
+        "desc10": "Intellectually curious, passionate, and inventive;",
+        "desc11": "Focus on quality and simplicity, sweat the details, and delight our users;",
+        "desc12": "Motivated to solve problems in unique and innovative ways;"
+      }
+    },
+    "go-developer": {
+      "job-title": "Go Developer",
+      "job-type": "Full Time",
+      "Experience": "1 to  4 years",
+      "location": "Bangalore",
+      "about-position": "Mayadata is looking for mid level Golang Developer to join our team and work with our open source cloud native storage solution OpenEBS. We are looking for someone that has experience with building Go micro services and distributed systems.",
+      "about-position1": "You'll be part of a highly capable and motivated team working on solving the hard problems of scalability, availability, and performance on a Kubernetes storage platform.",
+      "requirements": {
+        "desc": "ESSENTIAL POSITION RESPONSIBILITIES",
+        "desc1": "Work closely with OpenEBS and Kubernetes storage community to ensure product requirements are understood well;",
+        "desc2": "Write clean, modular, robust code to implement the desired requirements; ",
+        "desc3": "Ensure high level of quality;",
+        "desc4": "Take full ownership of the project from design to implementation and deployment ; ",
+        "desc5": "Collaboration with other open source communities;"
+      },
+      "skills": {
+        "desc": "QUALIFICATION & EXPERIENCE:",
+        "desc1": "1-4 years of product development experience;",
+        "desc2": "Experience with web technologies, Go, Python, Java, Linux, Shell scripting, MySQL and noSql DB, Docker, Kubernetes; ",
+        "desc3": "Experience in building real-time, large scale micro-services applications;",
+        "desc5": "Ability to work both independently and in cooperation with others;",
+        "desc6": "Ability to instill and enforce best practices around product development;",
+        "desc7": "Ability to navigate large existing code, and improve it as it changes;",
+        "desc8": "A sense of urgency and ownership over the product;",
+        "desc9": "Great attitude towards work and people;",
+        "desc10": "Intellectually curious, passionate, and inventive;",
+        "desc11": "Focus on quality and simplicity, sweat the details, and delight our users;",
+        "desc12": "Motivated to solve problems in unique and innovative ways;"
+      }
+    },
+    "release-automation-engineer": {
+      "job-title": "Release Automation Engineer",
+      "job-type": "Full Time",
+      "location": "Bangalore",
+      "about-position": "Mayadata is looking for mid level Golang Developer to join our team and work with our open source cloud native storage solution OpenEBS. We are looking for someone that has experience with building Go micro services and distributed systems.",
+      "about-position1": "You'll be part of a highly capable and motivated team working on solving the hard problems of scalability, availability, and performance on a Kubernetes storage platform.",
+      "role": {
+        "desc": "As a release engineer, you are responsible for making releases of various product lines for the code bases in GitHub. You are responsible for writing bots in GitHub to increase the productivity in the code management cycle of merging Pull Requests, branching, tagging, triggering CI/CD pipelines etc."
+      },
+      "skills": {
+        "desc1": "Working knowledge of Kubernetes, GitHub;",
+        "desc2": "Linux OS, Maven, Shell scripting, Python;",
+        "desc3": "CI tools like Jenkins, Travis and GitLab;",
+        "desc4": "Docker, Ansible;",
+        "desc5": "Good communication skills;"
+      },
+      "Automation-skills": {
+        "desc1": "Shell, Python, Power Shell, Perl, Groovy scripting;",
+        "desc2": "Deployment tools: Ansible, Docker, Red-hat Open shift, Bamboo, Jenkins;",
+        "desc3": "Programming languages: Python (Must), Go ( will be a plus);",
+        "desc4": "Database: Oracle, Postgres, Mysql;",
+        "desc5": "Good systems/infrastructure knowledge of Linux;"
+      },
+      "candidate": {
+        "desc1": "Education- B.Tech/B.E/MCA;",
+        "desc2": "Relevant experience: 3 to 5 years as release engineer;",
+        "desc3": "Ability to work both independently and in cooperation with others;",
+        "desc4": "Ability to instill and enforce best practices around product development;",
+        "desc5": "A sense of urgency and ownership over the product;",
+        "desc6": "Great attitude towards work and people;",
+        "desc7": "Intellectually curious, passionate, and inventive;",
+        "desc8": "Focus on quality and simplicity, sweat the details, and delight our users;"
+      }
+    },
+    "release-automation-engineer-remote": {
+      "job-title": "Release Automation Engineer",
+      "job-type": "Full Time",
+      "location": "Remote",
+      "about-position": "Mayadata is looking for mid level Golang Developer to join our team and work with our open source cloud native storage solution OpenEBS. We are looking for someone that has experience with building Go micro services and distributed systems.",
+      "about-position1": "You'll be part of a highly capable and motivated team working on solving the hard problems of scalability, availability, and performance on a Kubernetes storage platform.",
+      "role": {
+        "desc": "As a release engineer, you are responsible for making releases of various product lines for the code bases in GitHub. You are responsible for writing bots in GitHub to increase the productivity in the code management cycle of merging Pull Requests, branching, tagging, triggering CI/CD pipelines etc."
+      },
+      "skills": {
+        "desc1": "Working knowledge of Kubernetes, GitHub;",
+        "desc2": "Linux OS, Maven, Shell scripting, Python;",
+        "desc3": "CI tools like Jenkins, Travis and GitLab;",
+        "desc4": "Docker, Ansible;",
+        "desc5": "Good communication skills;"
+      },
+      "Automation-skills": {
+        "desc1": "Shell, Python, Power Shell, Perl, Groovy scripting;",
+        "desc2": "Deployment tools: Ansible, Docker, Red-hat Open shift, Bamboo, Jenkins;",
+        "desc3": "Programming languages: Python (Must), Go ( will be a plus);",
+        "desc4": "Database: Oracle, Postgres, Mysql;",
+        "desc5": "Good systems/infrastructure knowledge of Linux;"
+      },
+      "candidate": {
+        "desc1": "Education- B.Tech/B.E/MCA;",
+        "desc2": "Relevant experience: 3 to 5 years as release engineer;",
+        "desc3": "Ability to work both independently and in cooperation with others;",
+        "desc4": "Ability to instill and enforce best practices around product development;",
+        "desc5": "A sense of urgency and ownership over the product;",
+        "desc6": "Great attitude towards work and people;",
+        "desc7": "Intellectually curious, passionate, and inventive;",
+        "desc8": "Focus on quality and simplicity, sweat the details, and delight our users;"
+      }
+    },
+    "python-developer": {
+      "job-title": "Python Developer",
+      "job-type": "Full Time",
+      "location": "Bangalore",
+      "about-position": "Mayadata is looking for a Python/Ansible developer to join our team in Bangalore and work with our open source cloud native storage solution OpenEBS. We are looking for someone that has experience in Python programming and super speed.",
+      "role": {
+        "desc": "As a core Python / GO developer , you'll be part of a highly capable and motivated team working on automating the Chaos Engineering of Kubernetes storage platform. You will develop Chaos modules for openebs/litmus and other projects in openebs GitHub organization."
+      },
+      "candidate": {
+        "desc1": "3-5 years of Python core coding experience;",
+        "desc2": "High aptitude and problem solving skills;",
+        "desc3": "Expert in working with Linux operating system;",
+        "desc4": "Ability to work both independently and in cooperation with others;",
+        "desc5": "Ability to instill and enforce best practices around product development;",
+        "desc6": "A sense of urgency and ownership over the product;",
+        "desc7": "Great attitude towards work and people;",
+        "desc8": "Intellectually curious, passionate, and inventive;",
+        "desc9": "Focus on quality and simplicity, sweat the details, and delight our users;"
+      },
+      "skills": {
+        "desc1": "Python programming expertise is a must;",
+        "desc2": "Handson experience with Ansible is a plus;",
+        "desc3": "Go knowledge is a plus;",
+        "desc4": "Databases - Should be having working knowledge in any one of the following databases;",
+        "desc5": "MySql, Postgres, MongoDb, Cassandra;",
+        "desc6": "Knowledge of Kubernetes is preferred;"
+      }
+    },
+    "python-developer-remote": {
+      "job-title": "Python Developer",
+      "job-type": "Full Time",
+      "location": "Remote",
+      "about-position": "Mayadata is looking for a Python developer to join our team in Bangalore and work with our open source cloud native storage solution OpenEBS. We are looking for someone that has experience in Python programming and super speed.",
+      "role": {
+        "desc": "As a core Python developer , you'll be part of a highly capable and motivated team working on automating the Chaos Engineering of Kubernetes storage platform. You will develop Chaos modules for openebs/litmus and other projects in openebs GitHub organization."
+      },
+      "candidate": {
+        "desc1": "3-5 years of Python core coding experience;",
+        "desc2": "High aptitude and problem solving skills;",
+        "desc3": "Expert in working with Linux operating system;",
+        "desc4": "Ability to work both independently and in cooperation with others;",
+        "desc5": "Ability to instill and enforce best practices around product development;",
+        "desc6": "A sense of urgency and ownership over the product;",
+        "desc7": "Great attitude towards work and people;",
+        "desc8": "Intellectually curious, passionate, and inventive;",
+        "desc9": "Focus on quality and simplicity, sweat the details, and delight our users;"
+      },
+      "skills": {
+        "desc1": "Python programming expertise is a must;",
+        "desc2": "Handson experience with Ansible is a plus;",
+        "desc3": "Go knowledge is a plus;",
+        "desc4": "Databases - Should be having working knowledge in any one of the following databases;",
+        "desc5": "MySql, Postgres, MongoDb, Cassandra;",
+        "desc6": "Knowledge of Kubernetes is preferred;"
+      }
+    },
+    "system-developer": {
+      "job-title": "System Engineer / Developer",
+      "job-type": "Full Time",
+      "start-date": "Immediate",
+      "location": "Remote",
+      "about-mayadata": "MayaData is a Cloud Native Computing Foundation member that delivers data agility through the open source container attached storage OpenEBS <a href='https://openebs.io' target='_blank'>(https://openebs.io)</a>, the open source chaos engineering solution Litmus <a href='https://litmuschaos.io' target='_blank'>(https://litmuschaos.io)</a>, and Kubera <a href='https://director.mayadata.io' target='_blank'>(https://director.mayadata.io)</a> for visibility, control, and automation of stateful workloads on Kubernetes. MayaData commercial offering is called the Kubera which combines all three solutions with proactive support. Community and commercial offerings deploy easily on any Kubernetes distribution and are available as default options in offerings from Rancher, IBM Cloud Private, Red Hat OpenShift, Kontena Pharos, StackPointCloud, and the leading cloud vendors including managed Kubernetes offerings from Google, Amazon, IBM, Microsoft Azure and others. Non-MayaData contributors to OpenEBS include JD.com, Cisco, Red Hat, IBM and other leading users and developers of Kubernetes.",
+      "the-role": "We are looking to add, for our ever-growing team, a systems engineer who who gets excited about building a container system that is capable of delivering low latency, high throughput performance in the realm of user space.",
+      "the-role1": "We are using a combination of C and RUST to build an abstraction that allows us to implement sophisticated rebuild and replication protocols across nodes but also on-disk data formats that are local to the node itself.",
+      "the-role2": "If you are interested in building cloud-native storage systems and want to be part of developing Container Attached Storage (CAS) systems – but have no RUST, experience then still do reach out! Motivation is far more important than the languages you are familiar with.",
+      "requirements": {
+        "sub-desc": "Skillsets/Prerequisites we’re looking for: ",
+        "desc1": "A deep interest in understanding the lower part of operating systems and its IO stack",
+        "desc2": "Interested working with the latest technology like NVMe, PDIMS, and NVme-of",
+        "desc3": "Does not shy away from chopping down some (b)tree’s to implement new and exciting things based on new HW capabilities",
+        "desc4": "Likes to work with Rust, C, and perhaps every now and again some higher level language"
+      }
+    },
+    "ansible-playbook-developer": {
+      "job-title": "Ansible Playbook Developer",
+      "job-type": "Full Time",
+      "location": "Bangalore",
+      "desired-experience": "1-3 years",
+      "about-position": "As an automation playbook and platform developer, you will be developing playbooks in Python, bash and ansible to automate production deployments, upgrades and chaos engineering.",
+      "role": {
+        "desc": "MayaData sponsored OpenEBS project is the most popular Open Source Container Attached Storage solution for Kubernetes. We are continuously innovating how data in Kubernetes environment can be made more agile to make the applications truly mobile in multi-cloud and hybrid-cloud deployments. We have a well established E2E automation team to test OpenEBS in production environments and are currently in the process of extending to more platforms and applications. We are looking for smart developers with Ansible Playbook development experience to join the E2E team."
+      },
+      "responsibilities": {
+        "desc1": "Build ansible playbooks",
+        "desc2": "Automate upgrades for various cloud platforms",
+        "desc3": "Work closely with DevOps engineers and automate what is not automated",
+        "desc4": "Work with OpenEBS Open Source community to help them and learn from them on how OpenEBS is being used",
+        "desc5": "Help outside open source contributors to contribute to OpenEBS E2E platform which is completely open sourced"
+      },
+      "skills": {
+        "desc1": "Good credentials in B.Tech/B.E",
+        "desc2": "Ansible",
+        "desc3": "Python",
+        "desc4": "Shell programming",
+        "desc5": "Strong debugging skills",
+        "desc6": "Very good aptitude skills",
+        "desc7": " Fluent communication in English, should be able to work with global teams"
+      },
+      "education": {
+        "desc": "B.Tech/MCA from a reputed university or college with outstanding academic record."
+      },
+      "pay-scale": {
+        "desc": "As per market standards. The pay will be competitive."
+      }
+    },
+    "technical-support-engineer": {
+      "job-title": "Technical Support Engineer",
+      "job-type": "Full Time",
+      "location": "Bangalore",
+      "eligibility": "2019/18 Batch - BE / BTech / BCA / B.Sc. Computer Science",
+      "about-mayadata": "MayaData is a Cloud Native Computing Foundation member that delivers data agility through the open source container attached storage OpenEBS <a href='https://openebs.io' target='_blank'>(https://openebs.io)</a>, the open source chaos engineering solution Litmus <a href='https://litmuschaos.io' target='_blank'>(https://litmuschaos.io)</a>, and Kubera <a href='https://director.mayadata.io' target='_blank'>(https://director.mayadata.io)</a> for visibility, control, and automation of stateful workloads on Kubernetes. MayaData commercial offering is called the Kubera which combines all three solutions with proactive support. Community and commercial offerings deploy easily on any Kubernetes distribution and are available as default options in offerings from Rancher, IBM Cloud Private, Red Hat OpenShift, Kontena Pharos, StackPointCloud, and the leading cloud vendors including managed Kubernetes offerings from Google, Amazon, IBM, Microsoft Azure and others. Non-MayaData contributors to OpenEBS include JD.com, Cisco, Red Hat, IBM and other leading users and developers of Kubernetes.",
+      "job-description": [
+        "Advocate customer requests and offer innovative ideas to improve product quality.",
+        "Troubleshoot and resolve issues",
+        "Document solutions to known issues",
+        "Develop a working knowledge of applicable support debugging tools",
+        "Work will be on a rotational shift basis, mostly on US timezone"
+      ],
+      "skills": [
+        "Excellent communication skills, both written and oral",
+        "Customer service skills",
+        "Task prioritization and time management"
+      ],
+      "preferred": "Good Knowledge on Kubernetes, Cloud Technologies, Storage Concepts, Linux/UNIX administration and troubleshooting.",
+      "notes": "You will be on probation for the first 3 months tentatively. Upon successful completion of probation period your employment will be confirmed."
+    }
+  },
+  "integrations": {
+    "title": "What is Mulebot?",
+    "description": "Mulebot app is one of the core areas of Kubera, covering the storage operational support of Kubernetes clusters. DevOps developers and admins get the analytics of their OpenEBS volumes deployed across multi-cloud kubernetes clusters right into their Slack channels. Its functionality extends beyond just simply providing alerts and providing a way to query any configuration and status from Slack, It goes all the way to interact with DevOps developers and admins to manage the yaml config files in their CI/CD system.",
+    "whatappdoes": {
+      "title": "What this app does?",
+      "description": {
+        "passage1": "Mulebot will enhance user's experience with the Kubera by allowing them to query the clusters' configuration of Kubera. First of all, user will install this app into his/her slack-workspace. During installation,user has to select a channel to post response for slash commands and alerts. (Note : Either select a channel in which you are present or create a new channel in your workspace first and then select that channel during installation), after selecting a Slack channel and clicking on authorize button, user will be redirected to <a href='https://director.mayadata.io' target='_blank' rel='noreferer'>https://director.mayadata.io</a> where user has to select the clusters from the list of available clusters (one or more) in order to specify which cluster information user wants in his/her selected Slack channel. User is prompted for authentication by <a href='https://director.mayadata.io' target='_blank' rel='noreferer'>https://director.mayadata.io</a> if the login has not happened already.",
+        "passage2": "User will be able to query the selected clusters in the selected channel only. User will not get any information outside that channel for the clusters mapped to that particular channel."
+      }
+    },
+    "integrate": {
+      "title": "How to integrate with Slack?",
+      "instruction": "Go through the following steps for integration:",
+      "steps": {
+        "step1": "Go to <a href='https://portal.mayadata.io' target='_blank'>MayaData Portal (portal.mayadata.io)</a> .",
+        "step2": "Log In / Sign Up to MayaData.",
+        "step3": "Click on “Go to Kubera” button.",
+        "step4": "In Kubera, click on ”Slack” on the left sidebar -> click on “Create a new Slack card” button.",
+        "step5": "Enter your Slack workspace credentials then enter your own Slack credentials.",
+        "step6": "Select a channel among the list of channels of your workspace to allow the bot to post the alerts and response to your queries.",
+        "step7": "Click on “Authorize” (you will be redirected to Kubera Slack configuration page to select clusters to map to the selected Slack channel).",
+        "step8": "Select one or more clusters from the list of clusters (clusters connected in Kubera) to map them to the selected Slack channel so that mulebot can post the alerts and respond to your queries related to these clusters in the selected Slack channel only."
+      },
+      "note": "Note - If you have not connected any cluster in Kubera, then you can proceed without selecting a cluster and can create a Slack connection. Once you have a connected cluster you can again edit and map a cluster with Slack connection from slack integration page."
+    },
+    "listofslashcommands": {
+      "title": "List of slash commands",
+      "instruction": "This is the slash commands that you can execute from your Slack windows.",
+      "commands": {
+        "command1": {
+          "command": "/maya get clusters ",
+          "brief": "- Display all clusters."
+        },
+        "command2": {
+          "command": "/maya get cluster [cluster-name]",
+          "brief": "- Display the details of a particular cluster."
+        },
+        "command3": {
+          "command": "/maya help",
+          "brief": " - Shows the list of all the available commands and their functionality."
+        }
+      },
+      "havequestion": "Have any questions? Run into an issue? Send us an email at",
+      "link": {
+        "href": "mailto:support@mayadata.io",
+        "content": "support@mayadata.io"
+      }
+    }
+  }
+}

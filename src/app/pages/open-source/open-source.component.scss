@@ -1,0 +1,391 @@
+.main-wrapper {
+  //  background: url('assets/images/open-source/page-shadow.png') no-repeat;
+  // background-color: #191428;
+  // background-size: cover;
+  margin-bottom: 50px;
+}
+.top-banner {
+  background: url("assets/images/open-source/banner-bg.png") no-repeat;
+  padding: 96px 0;
+  mix-blend-mode: color-dodge;
+  background-size: cover;
+  background-position: top right;
+}
+.banner-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  // font-size: 70px;
+  line-height: 120%;
+  color: #ffffff;
+  max-width: 600px;
+}
+.banner-content {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 0.9;
+  max-width: 501px;
+}
+.our-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.our-content p {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 0.9;
+  width: 501px;
+}
+.our-inner-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.our-list {
+  padding-left: 0;
+}
+.our-list li {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  position: relative;
+  list-style: none;
+  padding-left: 15px;
+}
+.our-list li:before {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: 6px;
+  background: #f39242;
+  border-radius: 50%;
+  top: 12px;
+  left: 0;
+}
+.con-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120%;
+  color: #ffffff;
+  max-width: 637px;
+}
+.contribution-content p {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 0.9;
+  max-width: 501px;
+}
+.tech-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  color: #ffffff;
+  width: 35%;
+}
+.tech-content p,
+.tech-content a {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 0.9;
+  width: 60%;
+}
+.tech-content a {
+  color: #f39242;
+  text-decoration: none;
+  border: none;
+}
+.technology-list-wrapper li {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.tech-img {
+  width: 20%;
+}
+.tech-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+ul.technology-list-wrapper {
+  padding-left: 0;
+  margin-top: 30px;
+}
+.card {
+  position: relative;
+  display: block;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: transparent;
+  background-clip: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+img.big-logo {
+  width: 298px;
+  height: auto;
+  display: block;
+}
+.opensource-wrapper {
+  position: relative;
+  padding: 80px 0 110px;
+}
+.opensource-wrapper::before {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 86px;
+  background: url("assets/images/open-source/kubernetes-logo-medium.png") no-repeat;
+  right: 0;
+}
+.opensource-wrapper::after {
+  position: absolute;
+  content: "";
+  height: 220px;
+  width: 86px;
+  background: url("assets/images/open-source/kubernetes-half.png") no-repeat;
+  right: 0;
+  bottom: 0;
+}
+.contribution {
+  padding-bottom: 40px;
+}
+.show-mobile {
+  display: none;
+}
+.technology {
+  position: relative;
+}
+.technology::before {
+  position: absolute;
+  content: "";
+  height: 769px;
+  width: 100%;
+  bottom: 0;
+  background: url("assets/images/open-source/footer.png") no-repeat;
+  left: 0;
+  opacity: 0.4;
+}
+
+.wpdk-title {
+  width: 50%;
+}
+
+.wpdk-content {
+  width: 48%;
+  p {
+    width: 100%;
+  }
+}
+/*  Common For All and for mobile */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .banner-title {
+    font-size: 60px;
+    max-width: 545px;
+  }
+  .banner-content {
+    font-size: 16px;
+    max-width: 425px;
+  }
+  .top-banner {
+    padding: 70px 0;
+  }
+  .tech-content {
+    width: 75%;
+    flex-direction: column;
+  }
+  .tech-title {
+    width: 100%;
+  }
+  .tech-content p,
+  .tech-content a {
+    width: 100%;
+  }
+  // .opensource-images {
+  //   position: absolute;
+  //   right: 10%;
+  //   top: 30%;
+  // }
+  img.big-logo {
+    width: 185px;
+    height: auto;
+    display: block;
+    margin-top: 150px;
+  }
+  .opensource-wrapper::before {
+    background-size: 47px;
+  }
+  .our-title {
+    font-size: 50px;
+  }
+  .opensource-wrapper::after {
+    height: 220px;
+    width: 55px;
+    right: 0;
+    background-size: 100%;
+    bottom: -50px;
+  }
+  .top-banner {
+    background: url("assets/images/open-source/tablet-banner.png") no-repeat;
+    mix-blend-mode: hard-light;
+    background-position: right;
+  }
+}
+
+@media (max-width: 991px) {
+  .our-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .our-list li:before {
+    top: 10px;
+  }
+  .con-title {
+    font-size: 50px;
+  }
+  .contribution-content p {
+    font-size: 16px;
+  }
+}
+
+/*  Mobile */
+@media (max-width: 767px) {
+  .banner-title {
+    font-size: 50px;
+    max-width: 545px;
+  }
+  .our-title {
+    font-size: 40px;
+  }
+  .our-content p {
+    font-size: 16px;
+    width: auto;
+  }
+  .con-title {
+    font-size: 40px;
+  }
+  .technology-list-wrapper li {
+    flex-direction: column;
+  }
+  .tech-content {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .tech-content p {
+    text-align: left !important;
+  }
+  .top-banner {
+    background: url("assets/images/open-source/mobile-banner.png") no-repeat;
+    mix-blend-mode: hard-light;
+  }
+}
+
+@media (max-width: 576px) {
+  .show-mobile {
+    display: block;
+  }
+  .opensource-wrapper::after,
+  .opensource-wrapper::before {
+    display: none;
+  }
+  .opensource-images {
+    order: -1;
+  }
+  .card.opensource-card {
+    position: relative;
+  }
+  img.small-logo {
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    width: 50px;
+  }
+  img.big-logo {
+    margin-top: 20px;
+  }
+  .opensource-wrapper {
+    padding: 0px 0 110px;
+  }
+  .show-mobile img.big-logo {
+    width: 99px;
+    margin-left: auto;
+  }
+  .our {
+    margin-top: 40px;
+  }
+  .contribution {
+    padding-bottom: 0;
+  }
+  .opensource-wrapper {
+    padding: 0px 0 80px;
+  }
+}
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1500px) {
+}
+
+// optional
+
+@media screen and (min-width: 1900px) {
+}
+
+// optional

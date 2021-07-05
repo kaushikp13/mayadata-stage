@@ -1,0 +1,49 @@
+$dark-gray: #4d4e5a;
+$dark-blue: #001959;
+$yellow: #f8bb00;
+$light-blue: #d3e9fd;
+$gray: #7d7e8d;
+$blue: #0063ff;
+$white: #ffffff;
+
+// New Color Theme
+$violet: #8500ac;
+$safety-orange: #f37207;
+$plump-purple: #613dc1;
+$shadow-blue: #858ae3;
+$russian-violet: #2c0735;
+
+// New theme Color;
+$primary: $violet;
+$secondary:$russian-violet;
+$tertiary: $safety-orange;
+$purple: $plump-purple;
+$shadow-blue: $shadow-blue;
+$light: $light-blue;
+$dark: $dark-gray;
+
+//Color maps
+$theme-colors: ();
+$theme-colors: map-merge(("primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "light": $light-blue,
+    "dark": $dark-gray,
+    "white": $white,
+    "gray": $gray,
+    "lightblue": $light-blue,
+    "darkgray": $dark-gray,
+    "shadowblue": $shadow-blue,
+    "purple": $purple),
+  $theme-colors);
+
+:export {
+  primary: $russian-violet;
+  secondary: $violet;
+  tertiary: $safety-orange;
+  purple: $plump-purple;
+  shadowblue: $shadow-blue;
+  light: $light-blue;
+  dark: $dark-gray;
+  white: $white;
+}

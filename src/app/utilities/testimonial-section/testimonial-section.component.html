@@ -1,0 +1,17 @@
+<div class="inner-slider">
+  <carousel>
+    <slide *ngFor="let slide of silderContent">
+      <div class="slider-wrapper" [ngStyle]="{'min-height': isSupportValue ? '360px' : '500px'}">
+        <div class="slider-image" style="height: 200px;width: 200px">
+          <img lazyLoad="{{slide.image}}" alt="{{slide.alt_text}}" class="p-3">
+        </div>
+        <div class="lead">
+          <img lazyLoad="assets/images/home/quotes.png" alt="Image" />
+          <h6>{{slide.content}}</h6>
+          <h3>{{slide.authorName}}</h3>
+          <p>{{slide.authorContent}}</p>
+        </div>
+      </div>
+    </slide>
+  </carousel>
+</div>

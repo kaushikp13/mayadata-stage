@@ -1,0 +1,188 @@
+/*  Common For All and for mobile */
+
+::ng-deep {
+    .inner-slider {
+        .carousel-indicators {
+            li {
+                height: 10px;
+                width: 10px;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+        }
+        .carousel-control-prev {
+            left: 20%;
+            bottom: 12px;
+            top: auto;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 40px;
+            width: 40px;
+            height: 40px;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .carousel-control-next {
+            right: 20%;
+            bottom: 12px;
+            top: auto;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 40px;
+            width: 40px;
+            height: 40px;
+            z-index: 99;
+            cursor: pointer;
+        }
+    }
+    .carousel-inner:focus,
+    .carousel.slide:focus,
+    .inner-slider:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.lead {
+    font-size: 1.09375rem;
+    font-weight: 300;
+}
+.inner-slider h6 {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+
+    text-align: left;
+    margin-bottom: 40px;
+}
+.lead h3 {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.647335px;
+    color: #ffffff;
+    opacity: 0.6;
+}
+.lead p {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.554859px;
+    color: #ffffff;
+    opacity: 0.4;
+}
+.inner-slider {
+    background: url("assets/images/home/slider-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.slider-wrapper {
+    display: flex;
+    padding: 30px 30px;
+    padding-bottom: 70px;
+    // min-height: 500px;
+}
+.slider-image img {
+    width: 200px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+}
+.slider-image {
+    margin-right: 30px;
+    height: 200px;
+    width: 200px;
+}
+.lead img {
+    margin-bottom: 30px;
+}
+
+/*  Mobile */
+
+@media (max-width: 767px) {
+    .inner-slider h6 {
+        font-size: 16px;
+    }
+    .lead h3 {
+        font-size: 18px;
+    }
+    .lead p {
+        font-size: 16px;
+    }
+    .slider-wrapper {
+        padding: 15px 15px 50px;
+        flex-direction: column;
+    }
+}
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+    ::ng-deep {
+        .inner-slider {
+            .carousel-indicators {
+                li {
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 100%;
+                    cursor: pointer;
+                }
+            }
+            .carousel-control-prev {
+                left: 40%;
+                bottom: 12px;
+                top: auto;
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 40px;
+                width: 40px;
+                height: 40px;
+                z-index: 99;
+                cursor: pointer;
+            }
+            .carousel-control-next {
+                right: 40%;
+                bottom: 12px;
+                top: auto;
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 40px;
+                width: 40px;
+                height: 40px;
+                z-index: 99;
+                cursor: pointer;
+            }
+        }
+        .carousel-inner:focus,
+        .carousel.slide:focus,
+        .inner-slider:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1500px) {
+} // optional
+
+@media screen and (min-width: 1900px) {
+} // optional

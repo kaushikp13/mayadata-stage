@@ -1,0 +1,12 @@
+<section *ngIf="partners" class="text-white section-container" style="background-color: #191428;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 d-flex justify-content-center align-items-start flex-column">
+        <img lazyLoad={{partners.partner.imgSrc}} alt={{partners.partner.imgAlt}} class="partners-img pb-4" />
+        <p *ngFor="let description of partners.partner.descriptions">
+          {{description}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

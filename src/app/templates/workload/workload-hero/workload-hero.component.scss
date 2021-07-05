@@ -1,0 +1,142 @@
+.video-poster {
+  background-image: url('assets/images/workloads/cassandra/poster.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--white);
+  background-position: center center;
+  border: none;
+  // box-shadow: 0px 0px 10px var(--light), 0px 0px 5px var(--light);
+  min-height: 240px;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video {
+  height: 70px;
+  width: 70px;
+  background-color: var(--tertiary);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+/*  Common For All and for mobile */
+.video:hover {
+  transition: all 0.35s ease-in-out;
+}
+
+.video span {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-bottom: 16px solid transparent;
+  border-top: 16px solid transparent;
+  border-left: 18px solid var(--white);
+}
+
+.overlay {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background-color: var(--tertiary);
+  opacity: 0.1;
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+}
+
+.overlay:hover {
+  height: 110px;
+  width: 110px;
+  opacity: 0.2;
+  transition: all 0.25s ease-in-out;
+}
+
+.bg-img-block, .bg-img-block img {
+  display: none;
+  visibility: hidden;
+}
+
+.bg-img-block {
+  position: relative;
+}
+
+.bg-img-block img {
+  position: absolute;
+  top:-100px;
+  right:0px;
+}
+
+.hero-section {
+  padding: 60px 0px;
+}
+
+.close-x-wrapper {
+  position: relative;
+}
+
+.close-x {
+  display: none;
+  visibility: hidden;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {
+  .hero-section {
+    padding: 80px 0px;
+  }
+  .video-poster {
+    min-height: 320px;
+  }
+
+}
+
+@media screen and (min-width:992px) {
+  .hero-section {
+    padding: 150px 0px;
+  }
+  .close-x {
+    position: absolute;
+    display: block;
+    visibility: visible;
+    top: 30px;
+    right: -30px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .video-poster {
+    max-width: 90%;
+  }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {
+  .bg-img-block, .bg-img-block img {
+    display: block;
+    visibility: visible;
+  }
+
+}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {
+
+} // optional
+
+
+
+@media screen and (min-width:2500px) {
+  .bg-img-block, .bg-img-block img {
+    display: none;
+    visibility: hidden;
+  }
+}

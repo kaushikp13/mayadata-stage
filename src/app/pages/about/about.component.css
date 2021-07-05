@@ -1,0 +1,1011 @@
+#app {
+  font-family: "Muli", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+.tag-line1 {
+  font-weight: 300;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 60px;
+  color: #663399;
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.person-name {
+  color: #707070;
+  margin-top: 0.9rem;
+}
+
+.advisor-section .advisor-img {
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.aboutus {
+  height: 375px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advisor-name {
+  text-decoration: none;
+  color: #001959;
+  font-size: 12px;
+}
+
+.advisor-designation {
+  text-decoration: none;
+  color: #001959;
+  font-size: 12px;
+}
+
+.about-mayadata {
+  box-shadow: 0 0 15px grey;
+  border-radius: 15px;
+  margin-top: 100px;
+  background-color: #fefefe;
+  padding: 0px 75px;
+}
+
+.about-mayadata-img img {
+  height: 500px;
+}
+
+.about-mayadata-text {
+  height: 500px;
+  background-color: #8d8df9;
+  color: #fefefe;
+  padding: 0px 40px;
+}
+
+.heading__about {
+  font-size: 42px;
+}
+
+.text__about {
+  font-size: 14px;
+}
+
+.data-agility-section {
+  margin-top: 100px;
+  padding: 10% 0%;
+}
+
+.icon-box {
+  box-shadow: 0 0 20px #d0d3e2;
+  margin: 45px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.heading__last {
+  font-size: 55px;
+  margin-bottom: 5%;
+}
+
+.title {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 60px;
+  font-size: calc(70px + ((4 * (100vw - 800px)) / 799));
+  letter-spacing: calc(0px + ((0.12 * (100vw - 800px)) / 799));
+  line-height: calc(32px + ((4 * (100vw - 800px)) / 799));
+  color: #263238;
+  position: relative;
+}
+
+.title1 {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  margin-top: -20px;
+  font-size: 50px;
+  color: #263238;
+  position: relative;
+}
+
+.title2 {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  left: 0px;
+  font-size: 20px;
+  color: #263238;
+  position: relative;
+}
+
+.headingm {
+  font-weight: 200;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  font-size: 30px;
+  color: #ffffff;
+  position: relative;
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+  background-color: #663399;
+  margin-left: 46%;
+}
+
+.circle {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.abt-pt2 {
+  padding-top: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 10%;
+  font-size: 55px;
+  color: #001959;
+  position: relative;
+}
+
+.abt-pt3 {
+  font-weight: 300;
+  text-align: left;
+  font-size: inherit;
+  color: #001959;
+  position: relative;
+}
+
+.about-desc {
+  font-weight: 300;
+  margin-top: 3%;
+  text-align: left;
+  font-size: inherit;
+  color: #1d1d1d;
+  position: relative;
+}
+
+.data-features {
+  margin-top: 3rem;
+  font-weight: 300;
+  text-align: center;
+  font-size: inherit;
+  color: #1d1d1d;
+  position: relative;
+}
+
+.culture {
+  font-weight: 200;
+  text-align: center;
+  margin-top: -3%;
+  font-size: 20px;
+  color: #1d1d1d;
+  position: relative;
+}
+
+.culture1 {
+  font-weight: 200;
+  text-align: left;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 20px;
+  color: #1d1d1d;
+  position: relative;
+}
+
+.culture3 {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  top: -1%;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+}
+
+.cir {
+  font-family: "Muli", sans-serif;
+  font-weight: 200;
+  top: -5%;
+  text-align: left;
+  margin-left: -3%;
+  margin-top: 1.5%;
+  color: #fff;
+  position: relative;
+}
+
+.about-img1 {
+  position: relative;
+}
+
+.imgbg {
+  z-index: -1;
+  margin-top: 100px;
+  position: relative;
+  left: 5px;
+  top: 0px;
+}
+
+.imgbgm {
+  z-index: -1;
+  margin-top: 75px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
+.imgbg1 {
+  margin-top: 100px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.imgbg2 {
+  z-index: 0;
+  margin-top: 30px;
+  position: absolute;
+  left: 100px;
+}
+
+.img3 {
+  margin-top: 65px;
+  position: relative;
+  left: -185px;
+  top: -25px;
+}
+
+.imgbg3 {
+  z-index: -1;
+  position: relative;
+  left: 0px;
+  top: -10px;
+}
+
+.bg1 {
+  z-index: -1;
+  position: absolute;
+  left: -30px;
+  top: 530px;
+}
+
+.bn {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 1.15rem 3rem;
+  background-color: #fff;
+  border-radius: 4rem;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+}
+
+.culture-img {
+  align-content: center;
+  position: relative;
+  margin-left: 23%;
+}
+
+.culture-title {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 55px;
+  color: #001959;
+  position: relative;
+}
+
+.contactus-div {
+  padding: 0px 20%;
+}
+
+.data-agility-heading {
+  padding-bottom: 30px;
+}
+
+.work-culture-heading {
+  padding-bottom: 30px;
+}
+
+.subheading__about {
+  font-size: 24px;
+}
+
+.leadership-team-div {
+  padding-bottom: 3rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: flex;
+}
+
+.advisor-img {
+  max-width: 200px;
+  width: auto;
+  height: 48px;
+}
+
+.advisors-div {
+  padding-bottom: 3rem;
+}
+
+.contactus-section {
+  background-color: #8d8df9;
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  padding: 3rem 0rem;
+}
+
+.leader {
+  height: 125px;
+  width: 125px;
+}
+
+.box-text-div {
+  margin: 0px 20px;
+}
+
+.headingm {
+  margin-bottom: 0%;
+  margin-top: 4.5rem;
+}
+
+.fixed-size-container {
+  max-width: 1140px;
+}
+
+.fixed-size {
+  width: 250px;
+  height: auto;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.benefits-icons {
+  height: 100px;
+}
+
+.leadership-section-container {
+  padding-bottom: 2%;
+}
+
+.avatars {
+  cursor: pointer;
+}
+
+.avatars img {
+  border-radius: 50%;
+}
+
+.team-tabs {
+  display: block;
+  padding: 55px;
+}
+
+.leader-lg {
+  height: 140px;
+  width: 140px;
+}
+
+.investors-section {
+  padding-bottom: 55px;
+}
+
+.investors__content-block {
+  max-width: 800px;
+  margin: auto;
+}
+
+.eight-roads-logo {
+  width: 220px;
+  height: 100%;
+}
+
+.investor-logo {
+  max-height: 100px;
+  height: 100%;
+}
+
+.leader-block-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: max-content;
+  grid-gap: 1rem;
+}
+
+/*      Normal Desktop    */
+.main-wrapper {
+  background: #1f1831;
+}
+.banner-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  /* font-size: 70px; */
+  line-height: 120%;
+  color: #ffffff;
+  max-width: 512px;
+}
+.banner-content {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 0.9;
+  max-width: 512px;
+}
+.about-banner {
+  background: url("assets/images/aboutus/shape/banner-about-bg.png") no-repeat;
+  padding: 94px 0;
+  background-size: 100% 100%;
+  position: relative;
+}
+.about-banner:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url("assets/images/aboutus/shape/banner-about-shadow.png") no-repeat;
+  left: 0;
+  top: 0;
+  background-size: 100% 100%;
+}
+
+.about-banner:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url("assets/images/aboutus/shape/banner-about-img.png") no-repeat;
+  right: 0;
+  top: 0;
+  background-size: cover;
+}
+
+.second-wrapper {
+  padding: 80px 0 40px;
+  background: url("assets/images/aboutus/shape/advisor-bg.png") no-repeat top center;
+  background-size: cover;
+  margin-top: -50px;
+}
+
+.have-question {
+  padding: 80px 0;
+  background: url("assets/images/aboutus/shape/question-about-bg.png") no-repeat top center;
+}
+.question {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0;
+  color: #fff;
+  margin-bottom: 80px;
+}
+.btn-question {
+  width: 165px;
+  height: 56px;
+  background: linear-gradient(273.96deg, #e9700d 7.39%, #f39242 99.41%);
+  border-radius: 4px;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  transition: 0.3s all ease-in-out;
+  border: 1px solid transparent;
+}
+.btn-question:hover {
+  border: 1px solid #fff;
+}
+
+@media (max-width: 1200px) {
+  .banner-title {
+    max-width: 450px;
+    font-size: 60px;
+  }
+  .banner-content {
+    font-size: 16px;
+    max-width: 425px;
+  }
+  .aboutus-content {
+    margin-top: 0 !important;
+    position: relative;
+    z-index: 9;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-banner:after {
+    background-size: 100% 100%;
+  }
+  .second-wrapper,
+  .have-question {
+    background-size: 100% 100%;
+  }
+  .tag-line1 {
+    font-size: 48px;
+  }
+
+  .headingm {
+    font-size: 30px;
+  }
+
+  .abt-pt2 {
+    font-size: 44px;
+  }
+
+  .abt-pt3 {
+    font-size: 44px;
+  }
+
+  .about-desc {
+    font-size: 16px;
+  }
+
+  .data-features {
+    font-size: 12px;
+  }
+
+  .culture {
+    font-size: 16px;
+  }
+
+  .about-img1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .img1 {
+    float: none;
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: left;
+  }
+
+  .bn {
+    font-size: 17px;
+    margin-top: 3rem;
+  }
+
+  .container-fluid1 {
+    padding: 0px;
+  }
+
+  .culture-img {
+    width: 100%;
+    height: auto;
+    margin-left: 1%;
+  }
+
+  .culture-title {
+    font-size: 44px;
+  }
+
+  .contactus-div {
+    padding: 0px;
+  }
+
+  .about-mayadata {
+    padding: 0;
+    margin-top: 50px;
+    height: 715px;
+  }
+
+  .aboutus {
+    height: auto;
+    background-size: contain;
+  }
+
+  .about-mayadata-img img {
+    height: 100%;
+    padding: 2rem 0rem;
+  }
+
+  .data-agility-section {
+    margin-top: 40px;
+    padding: 10% 0%;
+  }
+
+  .heading__about {
+    font-size: 27px;
+  }
+
+  .text__about {
+    font-size: 14px;
+  }
+
+  .icon-box {
+    margin: 0;
+  }
+
+  .data-agility-heading {
+    padding-bottom: 0px;
+  }
+
+  hr {
+    margin: 1rem 0rem 0.75rem 0rem;
+  }
+
+  .box-text-div {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .icon-top-box {
+    margin-top: 30px;
+  }
+
+  .work-culture-heading {
+    padding-bottom: 0px;
+  }
+
+  .subheading__about {
+    font-size: 20px;
+  }
+
+  /* p{
+    font-size: 14px;
+  } */
+  .leadership-team-div {
+    padding-bottom: 0rem;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .advisor-name {
+    font-size: 12px;
+  }
+
+  .advisor-img {
+    max-width: 175px;
+    width: auto;
+    height: 48px;
+  }
+
+  .advisors-div {
+    padding-bottom: 0rem;
+  }
+
+  .advisor-designation {
+    font-size: 10px;
+  }
+
+  .contactus-section {
+    height: 475px;
+    padding: 4rem 0rem;
+  }
+
+  .leader {
+    height: 70px;
+    width: 70px;
+  }
+
+  .leader-text {
+    font-size: 12px;
+  }
+
+  .headingm {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .about-mayadata-text {
+    height: 345px;
+    background-color: #8d8df9;
+    color: #fefefe;
+    padding: 0px 10px;
+  }
+
+  .about-mayadata-img {
+    height: 300px;
+    margin: auto;
+  }
+
+  .leadership-section {
+    margin-top: 30px;
+  }
+
+  .leader-text,
+  .cnt-txt {
+    font-size: 10px;
+  }
+
+  .fixed-size {
+    width: 135px;
+    height: auto;
+    font-size: 12px;
+  }
+
+  .leader-block-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .about-banner:after {
+    background: url("assets/images/aboutus/shape/mobile-about-banner.png") no-repeat;
+  }
+  .banner-title {
+    font-size: 50px;
+  }
+  .second-wrapper {
+    padding: 0px 0 40px;
+    margin-top: 0;
+  }
+  .question {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .aboutus-content {
+    padding: 0 15px;
+  }
+  .about-banner {
+    padding: 50px 0 94px;
+  }
+
+  .second-wrapper {
+    background: url("assets/images/aboutus/shape/sec-2-bg.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.9999px) {
+  .tag-line1 {
+    font-size: 52px;
+  }
+
+  .headingm {
+    font-size: 55px;
+  }
+
+  .abt-pt2 {
+    font-size: 48px;
+  }
+
+  .abt-pt3 {
+    font-size: 48px;
+  }
+
+  .about-desc {
+    font-size: 16px;
+  }
+
+  .data-features {
+    font-size: 12px;
+  }
+
+  .culture {
+    font-size: 18px;
+  }
+
+  .about-img1 {
+    width: 90%;
+    height: 70%;
+    position: relative;
+  }
+
+  .bn {
+    margin-top: 3rem;
+  }
+
+  .container-fluid1 {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .culture-img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .culture-title {
+    font-size: 48px;
+  }
+
+  .advisor-img {
+    max-width: 200px;
+    width: auto;
+    height: 48px;
+  }
+
+  .leader {
+    height: 80px;
+    width: 80px;
+  }
+
+  .leader-text,
+  .cnt-txt {
+    font-size: 17px;
+  }
+
+  .aboutus {
+    background-size: cover;
+  }
+
+  .aboutus-content {
+    margin-top: 35px;
+  }
+
+  .leader-block-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599.999px) {
+  .tag-line1 {
+    font-size: 60px;
+  }
+
+  .headingm {
+    font-size: 55px;
+  }
+
+  .abt-pt2 {
+    font-size: 70px;
+  }
+
+  .abt-pt3 {
+    font-size: 50px;
+  }
+
+  .about-desc {
+    font-size: 18px;
+  }
+
+  .data-features {
+    font-size: 14px;
+  }
+
+  .culture {
+    font-size: 22px;
+  }
+
+  .about-img1 {
+    width: 90%;
+    height: 80%;
+    position: relative;
+  }
+
+  .container-fluid1 {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .culture-img {
+    width: 100%;
+    height: 80%;
+  }
+
+  .culture-title {
+    font-size: 70px;
+  }
+
+  .aboutus {
+    background-size: contain;
+    margin-top: 80px;
+    margin-bottom: -80px;
+  }
+
+  .leadership-section {
+    margin-top: 100px;
+  }
+
+  .leader-block-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299.999px) {
+  .aboutus {
+    margin-top: 150px;
+    margin-bottom: -150px;
+  }
+
+  .aboutus-content {
+    margin-top: -80px;
+  }
+
+  .leader-block-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1600px) {
+  .tag-line1 {
+    font-size: 60px;
+  }
+
+  .headingm {
+    font-size: 55px;
+  }
+
+  .abt-pt2 {
+    font-size: 54px;
+  }
+
+  .abt-pt3 {
+    font-size: 54px;
+  }
+
+  .about-desc {
+    font-size: 24px;
+  }
+
+  .data-features {
+    font-size: 24px;
+  }
+
+  .culture {
+    font-size: 28px;
+  }
+
+  .about-img1 {
+    width: 60%;
+    height: 90%;
+    position: relative;
+  }
+
+  .container-fluid1 {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+
+  .culture-img {
+    width: 100%;
+    height: 90%;
+  }
+
+  .culture-title {
+    font-size: 54px;
+  }
+
+  .aboutus {
+    background-size: cover;
+    margin-top: 125px;
+    margin-bottom: 0px;
+  }
+
+  .leadership-section {
+    margin-top: 100px;
+  }
+
+  .leader-block-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .about-banner {
+    padding: 180px 0;
+  }
+}

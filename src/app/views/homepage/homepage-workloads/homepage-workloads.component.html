@@ -1,0 +1,24 @@
+<section class="section-container workload-section bg-light" *ngIf="workloads">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 pb-5">
+        <h2 class="h1 text-secondary text-center" [innerHTML]="workloads.title"></h2>
+        <div class="subtitle">
+          <h2 class="mt-4">{{workloads.subtitle}}</h2>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row d-flex justify-content-center m-auto">
+          <div *ngFor="let workload of workloads.list" class="col-6 col-md-4 col-lg-2 workload pb-4 pb-md-0">
+            <a class="workload__page-link" routerLink={{workload.page.url}}>
+              <div class="workload--image-block flex-column">
+                <img lazyLoad={{workload.imageSrc}} alt={{workload.name}} />
+                <p class="pt-2 font-weight-light"><span>{{workload.name}}</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

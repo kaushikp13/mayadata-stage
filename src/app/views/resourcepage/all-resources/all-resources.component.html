@@ -1,0 +1,18 @@
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4 py-4">
+        <div class="resource-items" #itemsRefs>
+          <div class="resource-select-item" *ngFor="let resourceItem of resourceItems"
+            [attr.data-resource-type]="resourceItem.type">
+            {{resourceItem.name}}
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 py-4" *ngFor="let resource of resources">
+        <app-resource-card [resource]="resource"></app-resource-card>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- style="background-color: #191428;color:white;" -->

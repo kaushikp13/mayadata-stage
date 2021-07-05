@@ -1,0 +1,95 @@
+<footer class="pt-4">
+  <section class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-7">
+          <app-footer-newsletter-form></app-footer-newsletter-form>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-5">
+          <h2 class="h1 text-white mb-5 footer-heading">Communities</h2>
+          <ul class="list-unstyled d-flex justify-content-between social-icons-block">
+            <li *ngFor="let socialIcon of socialIcons">
+              <a href={{socialIcon.url}} target="_blank" rel="noopener noreferrer">
+                <img lazyLoad={{socialIcon.src}} alt={{socialIcon.alt}} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="row pt-5 d-flex align-items-center footer-menu-wrapper">
+        <div class="col-12 col-md-6 col-lg-4 d-flex footer-logo">
+          <img lazyLoad="assets/images/home/mayadata-logo.svg" alt="MayaData Logo" class="footer-logo" />
+        </div>
+        <div class="col-12 col-lg-8 footer-menu">
+          <ul class="list-unstyled d-lg-flex justify-content-between text-white mb-0 ml-auto footer-links">
+            <li>
+              <a href="/product">Product</a>
+            </li>
+            <li>
+              <a href="/open-source">Open Source</a>
+            </li>
+            <li>
+              <a href="/resources">Workloads</a>
+            </li>
+            <li>
+              <a href="/aboutus">Company</a>
+            </li>
+            <li>
+              <a href="/resources">Resources</a>
+            </li>
+            <li>
+              <a href="https://blog.mayadata.io" target="_blank" rel="noopener noreferrer">Blog</a>
+            </li>
+            <li>
+              <a href="/pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="row d-flex align-items-center footer-bottom">
+        <div class="col-12 col-md-6 col-lg-4 d-flex copy-wrapper">
+          <div class="pl-4 copyright-text">
+            <p class="mb-0 text-white">Copyright @ MayaData</p>
+            <p class="mb-0 text-white">All rights reserved</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8 footer-bottom-right">
+          <ul class="list-unstyled d-lg-flex text-white mb-0 ml-auto footer-links">
+            <li>
+              <a href="/privacy-policy">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/terms">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="modal fade show" id="openebsnewsletterthanks" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered rounded-0" role="document">
+          <div class="modal-content text-center">
+            <div class="modal-header d-flex justify-content-center align-items-center bg-secondary-blue"
+              style="height:300px">
+              <h2 class="font-weight-bold">Successful</h2>
+            </div>
+            <div class="modal-body">
+              <p class="text-secondary-blue">Thank you for subscribing to the MayaData Newsletter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

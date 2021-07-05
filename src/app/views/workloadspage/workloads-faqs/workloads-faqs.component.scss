@@ -1,0 +1,98 @@
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #B8CFFF;
+  padding: 16px;
+  margin-bottom: 32px;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.accordion-item-head {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-item-head span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  background-color: transparent;
+  margin-right: 30px;
+}
+
+.accordion-item-body {
+  display: none;
+  padding-top: 16px;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+/*  Common For All and for mobile */
+.mi-x {
+  transform: rotate(-45deg);
+  transition: transform 0.2s linear;
+}
+
+.rotate-icon {
+  transform: rotate(0deg);
+  transition: transform 0.25s linear;
+}
+
+.accordion-item-body-active {
+  background-color: darkblue;
+  color: white;
+  transition: transform 0.25s ease-in-out;
+}
+
+
+.stick-ml {
+  display: none;
+}
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .stick-ml {
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    z-index: -1;
+    display: block;
+  }
+
+  .workloads-faq-section {
+    padding: 180px 0px 120px 0px;
+  }
+
+  .stick-ml img {
+    max-width: 500px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

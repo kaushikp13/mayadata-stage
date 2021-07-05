@@ -1,0 +1,32 @@
+<div class="container-fluid banner bg-primary py-2 py-sm-2" *ngIf="notification">
+  <div *ngIf="notification.externalURL" class="text-gray-5">
+    <a class="notification" href={{notification.notificationURL}} target="_blank" rel="noopener">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="d-flex justify-content-center align-items-center py-0 py-sm-1 my-auto">
+            <p class="mx-2 ml-lg-0 mr-lg-2 my-0 notification-text  text-white font-weight-normal"
+              [innerHtml]=" notification.notificationContent"></p>
+            <p class="my-auto text-left arrow text-white" style="font-size:24px">
+              <span><span class="mi mi-long-arrow-right"></span></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div *ngIf="!notification.externalURL">
+    <a class="notification" href={{notification.notificationURL}}>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="d-flex justify-content-center align-items-center py-0 py-sm-1">
+            <p class="mx-2 ml-lg-0 mr-lg-2 my-0 notification-text  text-white font-weight-normal"
+              [innerHtml]=" notification.notificationContent"> </p>
+            <p class="my-auto text-left arrow text-white" style="font-size:24px">
+              <span><span class="mi mi-long-arrow-right"></span></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

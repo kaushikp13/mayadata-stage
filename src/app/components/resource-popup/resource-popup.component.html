@@ -1,0 +1,236 @@
+<div (click)="open(resource.modalDataTarget)" class="text-white resource-url" *ngIf="resource.modalDataTarget">
+  <div class="badge-wrapper">
+    <div class="badge-1" [innerHTML]="resource.name"></div>
+  </div>
+  <img lazyLoad={{resource.image_url}} alt={{resource.image_alt}} class="img-fluid resource_img" />
+  <h5 class="pt-3">{{resource.title}}</h5>
+  <p>{{resource.subtitle}}</p>
+</div>
+
+<ng-template #gitlab let-modal>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body container workload-container">
+    <div class="row">
+      <div class="col-md-5 py-4 px-5 pl-md-5 pt-md-3 pb-md-0 pr-md-0">
+        <img src="assets/images/workloads/gitlab.png" class="workload-img" alt="Gitlab" />
+        <h4 class="font-weight-bold">OpenEBS for GitLab</h4>
+        <p>GitLab is a good solution for building On-Premise cloud native CI/CD platforms. GitLab contains multiple
+          stateful applications such as PostgreSQL, Redis and Minio.</p>
+        <a href="https://docs.openebs.io/docs/next/gitlab.html" target="_blank" rel="noopener">
+          <button class="btn btn-primary">Documentation</button>
+        </a>
+      </div>
+      <div class="col-md-7 p-5">
+        <h4 class="font-weight-bold">Advantages of using OpenEBS for Gitlab</h4>
+        <ul class="list-unstyled">
+          <li>OpenEBS acts a single storage platform for all stateful applications including Gitaly, Redis, PostgreSQL,
+            Minio and Prometheus.</li>
+          <li>OpenEBS volumes are highly available. Node loss, reboots and Kubernetes upgrades will not affect the
+            availability of peristent storage to the stateful applications.</li>
+          <li>Storage is scalable on demand. You can start with a small storage for all the databases required by GitLab
+            and scale it on demand.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #redis let-modal>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body container workload-container">
+    <div class="row">
+      <div class="col-md-5 py-4 px-5 pl-md-5 pt-md-3 pb-md-0 pr-md-0">
+        <img src="assets/images/workloads/redis.png" class="workload-img" alt="Redis" />
+        <h4 class="font-weight-bold">OpenEBS for Redis</h4>
+        <p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database,cache and message
+          broker.</p>
+        <a href="https://docs.openebs.io/docs/next/redis.html" target="_blank" rel="noopener">
+          <button class="btn btn-primary">Documentation</button>
+        </a>
+      </div>
+      <div class="col-md-7 padding-14">
+        <div class="embed-responsive embed-responsive-16by9 embed-video h-100">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RQLLGOyMuIM"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #nfs let-modal>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body container workload-container">
+    <div class="row">
+      <div class="col-md-5 py-4 px-5 pl-md-5 pt-md-3 pb-md-0 pr-md-0">
+        <img src="assets/images/workloads/nfs.png" class="workload-img" alt="NFS" />
+        <h4 class="font-weight-bold">Provisioning Read-Write-Many (RWM) PVCs</h4>
+        <p>NFS server provisioner stable helm chart is widely used for deploying NFS server on Kubernetes cluster.</p>
+        <a href="https://docs.openebs.io/docs/next/rwm.html" target="_blank" rel="noopener">
+          <button class="btn btn-primary">Documentation</button>
+        </a>
+      </div>
+      <div class="col-md-7 p-5">
+        <h4 class="font-weight-bold">Advantage of using NFS provisioner over OpenEBS cStor volumes</h4>
+        <ul class="list-unstyled">
+          <li>NFS data is replicated, highly available across zones if configured accordingly</li>
+          <li>Data in thin provisioned. Persistent volume mounts are configured at the required size and cStor physical
+            pools can be started with as low as one disk per pool instance and grow as the storage is used up</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<ng-template #elasticsearch let-modal>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body container workload-container">
+    <div class="row">
+      <div class="col-md-5 py-4 px-5 pl-md-5 pt-md-3 pb-md-0 pr-md-0">
+        <img src="assets/images/workloads/elasticsearch.png" class="workload-img" alt="ElasticSearch" />
+        <h4 class="font-weight-bold">OpenEBS for ElasticSearch</h4>
+        <p>EFK is the most popular cloud native logging solution on Kubernetes for On-Premise as well as cloud platforms
+        </p>
+        <a href="https://docs.openebs.io/docs/next/elasticsearch.html" target="_blank" rel="noopener">
+          <button class="btn btn-primary">Documentation</button>
+        </a>
+      </div>
+      <div class="col-md-7 padding-14">
+        <div class="embed-responsive embed-responsive-16by9 embed-video h-100">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OB8YU1L67Mo"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #mysql let-modal>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body container workload-container">
+    <div class="row">
+      <div class="col-md-5 py-4 px-5 pl-md-5 pt-md-3 pb-md-0 pr-md-0">
+        <img src="assets/images/workloads/mysql.png" class="workload-img" alt="MySQL" />
+        <h4 class="font-weight-bold">Managed database service like RDS</h4>
+        <p>MySQL is most ubiquitous and commonly used database. RDS is a service that make deploying and making MySQL
+          easy.</p>
+        <a href="https://docs.openebs.io/docs/next/mysql.html" target="_blank" rel="noopener">
+          <button class="btn btn-primary">Documentation</button>
+        </a>
+      </div>
+      <div class="col-md-7 padding-14">
+        <div class="embed-responsive embed-responsive-16by9 embed-video h-100">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s_Us4kW72PU"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #postgresql let-modal>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body container workload-container">
+    <div class="row">
+      <div class="col-md-5 py-4 px-5 pl-md-5 pt-md-3 pb-md-0 pr-md-0">
+        <img src="assets/images/workloads/postgresql.png" class="workload-img" alt="PostgreSQL" />
+        <h4 class="font-weight-bold">OpenEBS for PostgreSQL</h4>
+        <p>The PostgreSQL container used in the StatefulSet is sourced from CrunchyData.</p>
+        <a href="https://docs.openebs.io/docs/next/postgres.html" target="_blank" rel="noopener">
+          <button class="btn btn-primary">Documentation</button>
+        </a>
+      </div>
+      <div class="col-md-7 padding-14">
+        <div class="embed-responsive embed-responsive-16by9 embed-video h-100">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pasvq0Npff0"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #percona let-modal>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body container workload-container">
+    <div class="row">
+      <div class="col-md-5 py-4 px-5 pl-md-5 pt-md-3 pb-md-0 pr-md-0">
+        <img src="assets/images/workloads/percona.png" class="workload-img" alt="Percona" />
+        <h4 class="font-weight-bold">OpenEBS for Percona</h4>
+        <p>Percona is highly scalable and requires underlying persistent storage to be euqally scalable and performing.
+        </p>
+        <a href="https://docs.openebs.io/docs/next/percona.html" target="_blank" rel="noopener">
+          <button class="btn btn-primary">Documentation</button>
+        </a>
+      </div>
+      <div class="col-md-7 padding-14">
+        <div class="embed-responsive embed-responsive-16by9 embed-video h-100">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p3fGsLJKJsE"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #nuodb let-modal>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body container workload-container">
+    <div class="row">
+      <div class="col-md-5 py-4 px-5 pl-md-5 pt-md-3 pb-md-0 pr-md-0">
+        <img src="assets/images/workloads/nuodb.png" class="workload-img" alt="NuoDB" />
+        <h4 class="font-weight-bold">OpenEBS for NuoDB</h4>
+        <p>NuoDB’s distributed SQL database combines the elastic scale and continuous availability of the cloud with the
+          transactional consistency and durability that databases of record demand.</p>
+        <a href="https://docs.openebs.io/docs/next/nuodb.html" target="_blank" rel="noopener">
+          <button class="btn btn-primary">Documentation</button>
+        </a>
+      </div>
+      <div class="col-md-7 padding-14">
+        <div class="embed-responsive embed-responsive-16by9 embed-video h-100">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GN1nj7AofdE"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #mongodb let-modal>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body container workload-container">
+    <div class="row">
+      <div class="col-md-5 py-4 px-5 pl-md-5 pt-md-3 pb-md-0 pr-md-0">
+        <img src="assets/images/workloads/mongodb.png" class="workload-img" alt="MongoDB" />
+        <h4 class="font-weight-bold">OpenEBS for MongoDB</h4>
+        <p>MongoDB is a cross-platform document-oriented database.</p>
+        <a href="https://docs.openebs.io/docs/next/mongo.html" target="_blank" rel="noopener">
+          <button class="btn btn-primary">Documentation</button>
+        </a>
+      </div>
+      <div class="col-md-7 padding-14">
+        <div class="embed-responsive embed-responsive-16by9 embed-video h-100">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZdRZ4dAaHgs"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>

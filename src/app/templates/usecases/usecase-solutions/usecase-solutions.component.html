@@ -1,0 +1,19 @@
+<section class="section-container">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+        <div class="text-white">
+          <h2>{{solutions.title}}</h2>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <ul class="list-unstyled solution-wrapper">
+          <li *ngFor="let solution of solutions.solutions; let i = index;" class="mb-5 text-white solution"
+            [ngClass]="'solution-' + (i+1)">
+            <p style="font-size: 20px;" class="font-weight-light">{{solution}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

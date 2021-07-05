@@ -1,0 +1,20 @@
+<div class="container py-3 py-sm-4 py-lg-5">
+  <div class="row">
+    <div class="col-md-12 pb-4">
+      <h2 class="partner-title">Kubera supports all the major Kubernetes platforms</h2>
+    </div>
+  </div>
+
+  <div class="platform-wrapper">
+    <h4 class="sub-title">Explore how we work with</h4>
+    <div class="row justify-content-start" *ngIf="platformPartners">
+      <div class="col-4 col-md-3 col-lg-3 pb-4 platform-icon" *ngFor="let platformPartner of platformPartners">
+        <a routerLink={{platformPartner.cta.ctaLink}} fragment={{platformPartner.cta.fragment}}>
+          <div class="d-flex justify-content-center align-items-center p-4 partners-card">
+            <img lazyLoad="{{platformPartner.imgUrl}}" alt="{{platformPartner.imgAlt}}" class="img-fluid">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

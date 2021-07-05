@@ -1,0 +1,123 @@
+/*  Common For All */
+h3 span {
+  color: #001959;
+  font-weight: 800;
+}
+
+.company-section {
+  // background-color: #440363;
+}
+
+.company {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.company--image-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.company--image-block img {
+  opacity: 0.5;
+}
+
+.company--image-block:hover img {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.company:last-of-type {
+  padding-bottom: 0px;
+}
+
+.bloomberg {
+  font-size: 20px;
+  font-weight: 800;
+}
+.cloud-title h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.company-list-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.company-section {
+  position: relative;
+  z-index: 99;
+}
+@media (max-width: 1024px) {
+  .company {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .company-list-wrapper {
+    flex-wrap: wrap;
+  }
+  .company-list-item {
+    width: 25%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .company--image-block img {
+    max-width: 100%;
+  }
+  .company-list-item {
+    width: 33%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-list-item {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+// optional but preferable
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .bloomberg {
+    font-size: 24px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1500px) {
+}
+
+// optional
+
+@media screen and (min-width: 1900px) {
+}
+
+// optional

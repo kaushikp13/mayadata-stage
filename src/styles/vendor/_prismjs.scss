@@ -1,0 +1,25 @@
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/themes/prism-okaidia";
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #E6ECF1;
+  margin: 20px 0px;
+  display: block;
+  hyphens: none;
+  tab-size: 2;
+  direction: ltr;
+  font-size: 14px;
+  background: #0F0F11;
+  text-align: left;
+  word-break: normal;
+  -ms-hyphens: none;
+  font-family: "Source Code Pro", Consolas, Menlo, Monaco, Courier, monospace;
+  line-height: 1.4;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 2;
+  border-radius: 3px;
+  -webkit-hyphens: none;
+  font-weight: 300;
+}

@@ -1,0 +1,27 @@
+<section class="main-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12  markdown">
+        <div class="career-top">
+          <h6 class="back"><a [routerLink]="careerHeader.back_url"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+              Back</a></h6>
+          <h1 class="careear-title">{{careerHeader.title}}</h1>
+          <div class="tags">
+            <p *ngIf="careerHeader.job_location" class="job-location">
+              <span><img lazyLoad="assets/images/careers/location.svg" /></span>
+              <span>{{careerHeader.job_location}}</span>
+            </p>
+            <p *ngIf="careerHeader.job_type" class="job-time">
+              <span><img lazyLoad="assets/images/careers/time.svg" /></span>
+              <span> {{careerHeader.job_type}}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="careear-content">
+        <markdown [src]="careerHeader.contentPath" (error)="onError($event)">
+        </markdown>
+      </div>
+    </div>
+  </div>
+</section>

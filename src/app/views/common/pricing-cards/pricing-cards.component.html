@@ -1,0 +1,9 @@
+<div class="pricing-wrapper">
+  <div class="pricing-block" *ngFor="let pricingLevel of objectKeys(pricingOverview)">
+    <div class="text-white justify-content-center align-items-center flex-column text-center pricing-box"
+      [class.bg-primary]="pricingLevel === 'basic'" [class.bg-secondary]="pricingLevel === 'standard'"
+      [class.bg-tertiary]="pricingLevel === 'enterprise'">
+      <app-pricing-card [pricingLevelObj]="pricingOverview[pricingLevel]"></app-pricing-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="section-container journey-section" *ngIf="workloadJourney">
+  <div class="container">
+    <h1 class="dm-h1 text-center">{{workloadJourney.title}}</h1>
+    <div class="list-container">
+      <div class="list-of-items" id="listOfItems">
+        <div class="item list-item" *ngFor="let step of workloadJourney.steps; let i = index"
+          [class.active]="selectedIndex === i" (click)="setIndex(i)">
+          <div class="list-item-content">
+            <span>{{step.stepNumber}}</span>
+            <p>{{step.stepTitle}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-3 mountain-climber-section" id="mountainClimber">
+      <img lazyLoad={{step.image_url}} alt="mountain" class="img-fluid mountain-climber"
+        *ngFor="let step of workloadJourney.steps; let i = index" [class.show]="selectedIndex === i"
+        (click)="setIndex(i)" />
+    </div>
+    <div class="item-content-list pt-5" id="listOfItemContents">
+      <div class="workload-markdown item-content" *ngFor="let step of workloadJourney.steps; let i = index"
+        [class.show]="selectedIndex === i" (click)="setIndex(i)">
+        <markdown [src]="step.linkToMdFile" (error)="onError($event)">
+        </markdown>
+      </div>
+    </div>
+  </div>
+</div>

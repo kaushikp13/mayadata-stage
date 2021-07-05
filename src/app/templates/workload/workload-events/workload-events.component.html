@@ -1,0 +1,19 @@
+<section *ngIf="events.title && events.subtitle">
+  <div class="container section-container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-white event-intro-section">
+          <h2 class="h1">{{events.title}}</h2>
+          <p>{{events.subtitle}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section *ngIf="events">
+  <div [ngClass]="events.currentEvent || events.pastEvents ? 'section-container' : '' ">
+    <app-workload-current-event [currentEvent]="events.currentEvent" *ngIf="!isEventDateOver">
+    </app-workload-current-event>
+    <app-workload-past-events [pastEvents]="events.pastEvents"></app-workload-past-events>
+  </div>
+</section>

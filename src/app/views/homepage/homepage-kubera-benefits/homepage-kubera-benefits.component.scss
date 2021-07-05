@@ -1,0 +1,64 @@
+/*  Common For All and for mobile */
+.kubera-benefit-section {
+  position: relative;
+  padding: 60px 0px;
+}
+
+.kubera-benefit-section__bg-img {
+  position: absolute;
+  top: -10%;
+  left: 0px;
+  max-width: 700px;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.quotes--block {
+  max-width: 410px;
+  border-radius: 4px;
+}
+
+.quotes--text {
+  font-weight: 300;
+}
+
+.quotes--image-block {
+  height: 48px;
+  width: 48px;
+  background-color: cadetblue;
+  border-radius: 50%;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .kubera-benefit-section {
+    position: relative;
+    padding: 160px 0px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1500px) {
+}
+
+// optional
+
+@media screen and (min-width: 1900px) {
+}
+
+// optional

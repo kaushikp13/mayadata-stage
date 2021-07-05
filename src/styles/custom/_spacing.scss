@@ -1,0 +1,24 @@
+/*  Common For All and for mobile */
+.section-container {
+  padding: 40px 0px;
+}
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .section-container {
+    padding: 60px 0px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {} // optional

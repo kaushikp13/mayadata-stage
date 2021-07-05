@@ -1,0 +1,37 @@
+.solution-wrapper {
+  margin-top: 40px;
+}
+
+.solution {
+ margin-bottom: 80px;
+}
+
+.solution-1::before, .solution-2::before, .solution-3::before, .solution-4::before {
+  content: url(/assets/images/usecases/one.svg);
+  height: 120px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -40px;
+  margin-top: -40px;
+}
+
+.solution-1::before {
+  content: url(/assets/images/usecases/one.svg);
+}
+
+.solution-2::before {
+  content: url(/assets/images/usecases/two.svg);
+}
+
+
+.solution-3::before {
+  content: url(/assets/images/usecases/three.svg);
+}
+
+
+.solution-4::before {
+  content: url(/assets/images/usecases/four.svg);
+}

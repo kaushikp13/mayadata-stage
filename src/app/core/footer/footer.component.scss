@@ -1,0 +1,103 @@
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  line-height: 2.5;
+}
+
+ul li:nth-child(1) {
+  line-height: 1.75
+}
+
+ul li ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+ul li ul li:nth-child(1) {
+  line-height: 2.5;
+}
+
+a,
+a:hover {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.newsletter-input {
+  width: 450px;
+  background-color: transparent;
+  color: #fefefe;
+  font-size: 14px;
+  box-shadow: inset 0 0 0 1px #fefefe;
+}
+
+.newsletter-input::placeholder {
+  color: #fefefe;
+}
+
+.subscribe-btn {
+  background-color: #fefefe;
+  font-size: 14px;
+  padding: 12px 35px;
+}
+
+.section-block {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bottom-footer ul li:nth-child(1),
+.bottom-footer ul li ul li {
+  font-size: 12px;
+}
+
+/* Mobile */
+@media screen and (max-width:575.9998px) {
+  ul {
+    padding-left: 0;
+  }
+
+  .email--input-div {
+    width: 100%;
+  }
+
+  .newsletter-input {
+    width: 100%;
+  }
+
+  ul li ul li {
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width:480px) {}
+
+@media screen and (max-width:400px) {}
+
+/* Tablet */
+@media screen and (min-width:576px) {
+  ul {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  ul li {
+    font-size: 13px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width:1200px) {
+  ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1500px) {}

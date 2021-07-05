@@ -1,0 +1,93 @@
+.contact-form {
+  .input-text {
+    margin-bottom: 25px;
+    input {
+      margin-bottom: 0;
+      color: #fff;
+    }
+  }
+}
+#contactModal,
+#contactFailure {
+  .text-dark-blue {
+    color: #0d0c12;
+  }
+}
+
+.form-control-lg {
+  font-size: 14px;
+  height: 34px;
+}
+
+label {
+  font-size: 14px;
+}
+
+.left-input {
+  width: 47.5%;
+  margin-right: 2%;
+  display: inline-block;
+}
+
+.right-input {
+  width: 47.5%;
+  margin-left: 2%;
+  display: inline-block;
+}
+
+.full-input {
+  width: 99.5%;
+}
+
+.message {
+  height: 135px;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+  color: #fff;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+  box-shadow: none;
+  border-bottom: 1px solid gray;
+  padding: 0px;
+  margin-bottom: 2rem;
+}
+
+.btn-submit {
+  background: linear-gradient(273.96deg, #e9700d 7.39%, #f39242 99.41%);
+  border-radius: 4px;
+  padding: 12px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .left-input,
+  .right-input {
+    width: 100%;
+    margin: 0;
+  }
+
+  .full-input {
+    width: 100%;
+  }
+
+  .message {
+    height: 125px;
+  }
+}

@@ -1,0 +1,43 @@
+<section *ngIf="users" class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">{{users.title}}</h2>
+      </div>
+      <div class="col-12 d-flex justify-content-between align-items-center py-5 users-logo-section">
+        <div *ngFor="let user of users.list" class="d-flex m-auto logo-block">
+          <img lazyLoad={{user.img.imgSrc}} alt={{user.img.imgAlt}} class="logo" />
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-4 d-flex justify-content-end align-items-start">
+            <img lazyLoad={{users.list[0].img.imgSrc}} alt={{users.list[0].img.imgAlt}} class="logo-img" />
+          </div>
+          <div class="col-8">
+            <div class="bg-shadowblue p-4 user-info">
+              <h4>{{users.list[0].title}}</h4>
+              <p *ngFor="let desc of users.list[0].descriptions">{{desc}}</p>
+            </div>
+          </div>
+          <div class="col-12 user-quotes-section">
+            <div class="bg-primary text-white p-4 user-quotes">
+              <p>"{{users.list[0].userQuote.description}}"</p>
+              <div class="d-flex justify-content-start">
+                <div class="user-img" class="bg-secondary mr-3">
+                </div>
+                <div>
+                  <p class="font-weight-bold mb-2">{{users.list[0].userQuote.user.name}}</p>
+                  <p>
+                    <span class="mr-2">{{users.list[0].userQuote.user.designation}}</span>
+                    <span class="ml-2">{{users.list[0].userQuote.user.company}}</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

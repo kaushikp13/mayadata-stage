@@ -1,0 +1,54 @@
+<div class="main-wrapper">
+  <div [style.background-image]="'url(' + bgImageURL + ')'" class="news-hero-section">
+    <div class="container py-5">
+      <div class="row py-0 py-sm-3 py-lg-5">
+        <div class="col-md-12">
+          <div class="inthenews-div">
+            <h1 class="text-white font-weight-bold">In The News</h1>
+            <p>It takes a team to build something big. Join us at one of the fastest-growing companies providing
+              containerized storage solutions and supporting open source projects. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" *ngIf="news">
+          <div class="row py-4 news-box" *ngFor="let news of news">
+            <div
+              class="col-sm-3 d-flex justify-content-start align-items-center align-items-sm-start justify-content-lg-end align-items-lg-start pt-2">
+              <div class="news-img-div pb-4 pb-sm-0">
+                <!-- <img src={{news.newsImage}} class="img-fluid"> -->
+                <p class="news-date">
+                  <time>{{getFormatedDate(news.newsDate)}}</time>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-9 news-box-right">
+              <div>
+                <a href={{news.newsLink}} target="_blank" rel="noopener" class="news-title">
+                  <h2 class="news-title-text">{{ news.newsTitle}}
+                  </h2>
+                </a>
+                <p class="news-date mobile-show">
+                  <time>{{getFormatedDate(news.newsDate)}}</time>
+                </p>
+                <p class="text-left text-gray-3 news-content" [innerHTML]="news.newsContent"></p>
+                <a href={{news.newsLink}} target="_blank" rel="noopener" class="text-uppercase dotted-1 news-link">Read
+                  More</a>
+                <!-- <p class="pt-3 mb-0 news-date">
+                  <time>{{getFormatedDate(news.newsDate)}}</time>
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="load-more" (click)="loadMore()" *ngIf="allnews.length !== news.length">
+          <a><img lazyLoad="assets/images/news/load-more-loader.png" /> Load more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

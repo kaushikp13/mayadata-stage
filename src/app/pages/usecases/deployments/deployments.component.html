@@ -1,0 +1,49 @@
+<div class="section-container text-white deployment-section">
+  <div class="container">
+    <a routerLink="/resources" class="text-white">&lt; Back</a>
+    <h1 class="pt-2 pb-5 usecase-main-heading">Using OpenEBS for Deployments</h1>
+  </div>
+  <div class="container bg-white text-dark usecase-body-wrapper">
+    <div class="section-container usecase-body">
+      <div class="container pb-5">
+        <div class="section">
+          <h2>Replication by OpenEBS</h2>
+          <p>Stateful applications on Kubernetes deployed as “deployment” usually do not have the
+            replication
+            capabilities. It is expected that the
+            underlying storage system will handle the necessary replication and provides high availability. In such
+            cases,
+            OpenEBS volumes will have
+            three replicas.</p>
+        </div>
+      </div>
+
+      <div class="container pb-5">
+        <div class="section">
+          <h2>Typical examples of stateful applications that are deployed as
+            deployment include:</h2>
+          <ul>
+            <li>Grafana - to store the graphs metadata</li>
+            <li>Prometheus - to store the time series metrics</li>
+            <li>MySql with no replication - Percona</li>
+            <li>Jupyter ML books - Each Jupyter notebook pod is dedicated with an OpenEBS PV with replication underneath
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section">
+          <h2>OpenEBS vs LocalPV for statefulset</h2>
+          <p>There are multiple advantages of deploying statefulset with OpenEBS PVs as OpenEBS is an
+            integrated solution created to provide answers
+            For applications deployed as a Kubernetes deployment, replication is done by storage software. OpenEBS is
+            well
+            suited for achieving this
+            need. With OpenEBS, each volume will have a storage controller and up to three replicas, where the data is
+            synchronously replicated by the
+            controller to all the replicas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

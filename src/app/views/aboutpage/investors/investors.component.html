@@ -1,0 +1,16 @@
+<div class="container investors-section" *ngIf="investors">
+  <div class="row">
+    <div class="col-12 investor-top">
+      <h3 class="investor-title">Investors</h3>
+    </div>
+    <div class="col-12 investors__content-block">
+      <div class="investors-inner-block">
+        <div class="investor-block" *ngFor="let investor of investors">
+          <a href={{investor.investorSiteUrl}} target="_blank" rel="noopener noreferrer">
+            <img class="investor-logo" lazyLoad={{investor.investorImageURL}} alt={{investor.investorImageAlt}}>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>

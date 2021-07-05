@@ -1,0 +1,12 @@
+<h2 class="h1 text-white mb-5 footer-heading">Interested in our newsletter?</h2>
+<form class="form-inline py-3 py-md-0 newsletter-form" [formGroup]="leadForm" (ngSubmit)="formSubmit()"
+  id={{GTM.TRIGGERS.NEWSLETTER}} novalidate>
+  <input type="email" class="form-control form-control-lg newsletter-input w-100" aria-describedby="emailHelp"
+    placeholder="Enter Your Email" maxlength="250" name="email" id="email" formControlName="email" [ngClass]="{
+                    'valid_input':email.valid && (email.touched || email.dirty),
+                    'invalid_input':email.invalid && (email.touched || email.dirty
+                    || isFormEmpty)
+                    }">
+  <button type="submit" class="btn btn-primary btn-sm" id="slacksubmit" data-toggle="modal"
+    [disabled]="!leadForm.valid">Subscribe</button>
+</form>

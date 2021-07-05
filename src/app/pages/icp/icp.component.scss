@@ -1,0 +1,383 @@
+.points {
+  display: inline-flex;
+  height: 33px;
+  width: 33px;
+  background: transparent;
+  border: 2px #ffffff solid;
+  border-radius: 50%;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icp-video {
+  width: 700px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.play-btn {
+  background: #e8e8e8;
+  border-radius: 20rem;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  padding: 0;
+  margin: 0;
+  padding-top: 24px;
+}
+
+.ibm-marketplace a:hover {
+  text-decoration: none;
+}
+
+.ibm-marketplace span:hover {
+  border-bottom: 2px solid #fefefe;
+}
+
+#first_name:focus {
+  border: 1px solid #663399;
+}
+
+// .modal-content {
+//     width: 700px;
+//     border-radius: 0;
+// }
+.video-poster {
+  width: 85%;
+  height: 465px;
+  margin: auto;
+  border-radius: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 16px #c9c9c9;
+}
+
+.video-poster .play {
+  font-size: 44px;
+  color: #663399;
+  padding-left: 8px;
+  padding-top: 2px;
+}
+
+.play-icon {
+  font-size: 55px;
+  background: green;
+  padding: 1.5rem;
+  border-radius: 4rem;
+}
+
+.video {
+  background: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  color: default;
+  border: 1px solid #663399;
+}
+
+.icp-heading {
+  font-size: 44px;
+}
+
+.icp-heading__hero {
+  font-size: 41px;
+}
+
+// .icp-heading__link {
+//     font-size: 36px;
+// }
+.heading__padding {
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+// .heading__padding h2 {
+//     font-weight: 300;
+// }
+.video:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+label {
+  font-size: 14px;
+}
+
+.video span {
+  font-size: 32px;
+}
+
+.icp-hero-desc h2 {
+  font-size: 30px;
+}
+
+.icp-hero-desc img {
+  width: 65%;
+}
+
+.section-container {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.outline-btn {
+  background-color: transparent;
+  color: #001959;
+  border-radius: 3rem;
+  border: 1px solid #663399;
+  padding: 4px 23px;
+  font-size: 18px;
+  width: 120px;
+}
+
+.btn-maya {
+  background-color: #663399;
+  color: #fefefe;
+  border-radius: 3rem;
+  border: 1px solid #663399;
+  padding: 4px 23px;
+}
+
+.outline-btn:hover,
+.outline-btn:focus {
+  background-color: #663399;
+  color: #fefefe;
+}
+
+.bg-default-icp {
+  background-color: #001959;
+}
+
+.sub-heading__icp {
+  font-size: 27px;
+}
+
+.demo-section {
+  border-right: 1px solid grey
+}
+
+.form-group {
+  width: 55%;
+  display: block;
+  margin: auto;
+}
+
+.icp-form-block {
+  max-width: 450px;
+}
+
+.vimeo-video {
+  height: 400px;
+  width: 100%;
+}
+
+// .benefits-icp h2 {
+//   font-size: 28px;
+// }
+/* Mobile View */
+
+@media screen and (max-width:768px) {
+  .video-poster {
+    height: 176px;
+    width: 100%;
+  }
+
+  .video {
+    height: 75px;
+    width: 75px;
+  }
+
+  .video span {
+    font-size: 20px;
+  }
+
+  .icp-hero-desc {
+    text-align: center;
+  }
+
+  .icp-hero-desc img {
+    width: 85%;
+    text-align: center
+  }
+
+  .icp-hero-desc h2 {
+    font-size: 28px;
+  }
+
+  .points {
+    height: 25px;
+    width: 25px;
+    border: 1.5px #fefefe solid;
+    font-size: 0.9rem;
+  }
+
+  .section-container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .icp-video {
+    width: 100%;
+  }
+
+  .hero-sec {
+    padding-top: 0rem;
+  }
+
+  .m-px {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .icp-heading__hero {
+    font-size: 30px;
+  }
+
+  .icp-heading {
+    font-size: 20px;
+  }
+
+  .heading__padding {
+    padding: 1rem 0rem;
+  }
+
+  .play-btn {
+    height: 75px;
+    width: 75px;
+  }
+
+  .video-poster .play {
+    font-size: 28px;
+    color: #663399;
+    padding-left: 8px;
+    padding-top: 0px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .icm-demo-cloud {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid grey;
+  }
+
+  .form-row {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .demo-section {
+    border-right: none;
+  }
+
+  .form-group {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .video-height {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:576px) {}
+
+@media screen and (max-width:480px) {
+  .video-poster {
+    height: 176px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .video-poster {
+    height: 148px;
+  }
+}
+
+/*  Desktop View */
+
+@media screen and (min-width:768px) {
+  .modal-dialog {
+    max-width: 700px;
+  }
+
+  .icp-hero-desc {
+    padding-left: 5rem;
+    padding-right: 3rem;
+  }
+
+  .benefits-icp-individual {
+    padding-top: 2rem;
+  }
+
+  .text-desc {
+    font-size: 18px;
+  }
+
+  .hero-sec {
+    padding-top: 4rem;
+  }
+
+  .modal-xl {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .form-group {
+    width: 55%;
+    display: block;
+    margin: auto;
+  }
+
+  .video-height {
+    height: 380px;
+    width: 75%;
+  }
+}
+
+
+@media screen and (min-width:992px) {}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {
+  .video-height {
+    height: 400px;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width:1500px) {
+  .video-height {
+    height: 550px;
+    width: 75%;
+  }
+}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional
+
+.benefits-card {
+  border-radius: 10px; border: 1px solid rgba(102, 61, 219, 0.72);
+}
+
+.benefits-card:hover {
+  background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+  backdrop-filter: blur(10px);
+}

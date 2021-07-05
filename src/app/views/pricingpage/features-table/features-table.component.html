@@ -1,0 +1,46 @@
+<div class="section-container pricing-features-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="feature-table">
+          <ng-container *ngFor="let pricingFeature of objectKeys(features)">
+            <thead class="feature-table__head">
+              <tr class="feature-table__head-row">
+                <th class="text-left">
+                  <h2 class="h2">{{features[pricingFeature].title}}</h2>
+                </th>
+                <th>
+                  <h3 class="text-uppercase">Basic</h3>
+                </th>
+                <th>
+                  <h3 class="text-uppercase">Standard</h3>
+                </th>
+                <th>
+                  <h3 class="text-uppercase">Enterprise</h3>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="feature-table__body">
+              <tr class="feature-table__body-row" *ngFor="let feature of features[pricingFeature].items">
+                <td class="text-left feature-title d-flex justify-content-center align-items-center h-100">
+                  {{ feature.title }}</td>
+                <td [innerHTML]="feature.basic" class="text-tertiary d-flex justify-content-center align-items-center">
+                  <span></span>
+                </td>
+                <td [innerHTML]="feature.standard"
+                  class="text-primary d-flex justify-content-center align-items-center"></td>
+                <td [innerHTML]="feature.enterprise"
+                  class="text-secondary d-flex justify-content-center align-items-center"></td>
+              </tr>
+            </tbody>
+          </ng-container>
+        </table>
+        <div class="d-flex justify-content-center align-items-start flex-column my-3 py-3">
+          <p><span class="font-weight-bold mr-2">*</span>Coming Soon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img lazyLoad="assets/images/mayadata-landing/shadow-blue-oval-pricing-details-right.png" alt=""
+    class="pricing-features-details__bg-img d-none d-lg-block" />
+</div>

@@ -1,0 +1,26 @@
+//Abstracts
+@import "core/abstracts/functions";
+@import "core/abstracts/mixins";
+
+@import "core/abstracts/colors";
+// @import "core/marketing-extension/abstracts/colors";
+
+@import "core/abstracts/variables";
+@import "core/marketing-extension/abstracts/variables";
+
+@import "core/abstracts/root";
+@import "core/abstracts/print";
+
+//Base core/
+@import "core/base/reboot.scss";
+// @import "core/marketing-extension/base/fonts";
+@import "core/base/type";
+// @import "core/marketing-extension/base/type";
+
+//Layout core/
+@import "core/layout/navbar";
+@import "core/layout/nav";
+@import "core/layout/grid";
+
+//Utiliticore/es
+@import "core/utilities/utilities";

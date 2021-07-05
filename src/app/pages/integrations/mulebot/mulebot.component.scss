@@ -1,0 +1,65 @@
+mark {
+  background: #F1F9FF;
+  border-radius: 2px;
+}
+
+.slash-commands li {
+  list-style-type: circle;
+  margin-bottom: 2%;
+}
+
+.header {
+  margin-bottom: 3%;
+}
+
+.mulebot-screen {
+  margin: 10% 0;
+  text-align: center;
+}
+
+.mulebot-section {
+  max-width: 600px;
+  margin: auto;
+}
+
+/*  Common For All */
+
+/*  Mobile */
+
+@media screen and (max-width:575.9998px) {
+  .mulebot {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:480px) {}
+
+@media screen and (max-width:400px) {}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+  .mulebot {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .mulebot {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width:992px) {}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

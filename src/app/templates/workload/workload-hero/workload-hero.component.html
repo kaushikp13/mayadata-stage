@@ -1,0 +1,40 @@
+<div class="section-container hero-section" *ngIf="intro">
+  <div class="container">
+    <div class="row py-md-4">
+      <div
+        class="col-12 col-lg-6 pb-4 pb-lg-0  d-flex justify-content-start justify-content-md-center align-items-center align-items-md-start flex-column">
+        <h1 class="text-white">{{intro.title}}</h1>
+        <h4 class="text-white pb-4">{{intro.subtitle}}</h4>
+        <a *ngIf="intro.cta" target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-primary" (click)="scroll()">{{ intro.cta.ctaText }}</button>
+        </a>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div *ngIf="intro.video" class="h-100 m-auto d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center video-poster">
+            <div class="video" (click)="openModal(template)">
+              <span></span>
+              <div class="overlay">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #template>
+  <div class="close-x-wrapper">
+    <button type="button" class="close close-x text-white" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="p-0">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://player.vimeo.com/video/470077309?title=0&byline=0&portrait=0"></iframe>
+    </div>
+  </div>
+</ng-template>

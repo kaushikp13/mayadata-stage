@@ -1,0 +1,104 @@
+<!-- Hero Section -->
+<app-workload-hero [intro]="efk.intro"></app-workload-hero>
+<!-- Hero Section End -->
+
+<!-- Why Workload -->
+<!-- <app-why-workload [data]="efk.whyWorkload"></app-why-workload> -->
+<section class="section-container why-elastic-workload-section" *ngIf="efk.whyWorkload">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="why-elastic-workload">
+                    <h2 class="text-white">{{efk.whyWorkload.title}}</h2>
+                </div>
+                <p class="text-white elastic-content" [innerHtml]="efk.whyWorkload.description"></p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Workload End -->
+
+<!-- Workload How to Deploy -->
+<app-workload-how-to-deploy [data]="efk.workloadJourney"></app-workload-how-to-deploy>
+<!-- Workload How to Deploy End -->
+
+<!-- Workload Users -->
+<!-- <app-workload-users></app-workload-users> -->
+<!-- Workload Users End -->
+
+<!-- OpenEBS is used in Production by Leading Enterprises Start -->
+<section class="section-container company-section" style="padding: 50px 0px" *ngIf="companies">
+    <div class="container">
+        <div class="col-12 cloud-title">
+            <h4>{{companies.title}}</h4>
+        </div>
+        <div class="row ">
+
+            <div *ngFor="let company of companies.list" class="col-6 col-md-4 col-lg-3 elastic-company pb-4 pb-md-0">
+                <!-- <a routerLink={{company.cta.ctaLink}}> -->
+                <div class="elastic-company--image-block">
+                    <img [lazyLoad]="company.imageSrc" [alt]="company.name" />
+                </div>
+                <!-- </a> -->
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- OpenEBS is used in Production by Leading Enterprises END -->
+
+
+<!-- Workload Operators -->
+<app-workload-operators [data]="efk.operators"></app-workload-operators>
+<!-- Workload Operators End-->
+
+<!-- Workload Benefits -->
+<app-workload-benefits [data]="efk.benefits"></app-workload-benefits>
+<!-- Workload Benefits End -->
+
+<!-- Workload Resources -->
+<app-workload-resources [data]="efk.resources"></app-workload-resources>
+<!-- Workload Resources End-->
+
+<!-- Workload Events -->
+<app-workload-events [data]="efk.events"></app-workload-events>
+<!-- Workload Events End -->
+
+<!-- Workload Past Events -->
+<!-- <app-workload-past-events></app-workload-past-events> -->
+<!-- Workload Past Events End -->
+
+<!-- Workload FAQs -->
+<!-- <app-workload-faqs></app-workload-faqs> -->
+<!-- Workload FAQs End -->
+
+<!-- Workload Get Started -->
+<!-- <app-workload-get-started></app-workload-get-started> -->
+<!-- Workload Get Started End -->
+
+<!-- Workload Partners -->
+<!-- <app-workload-partners></app-workload-partners> -->
+<!-- Workload Partners End -->
+
+<!-- Workload Support -->
+<!-- <app-workload-support [data]="efk.support"></app-workload-support> -->
+<section *ngIf="efk.support" class="section-container text-white workload-support">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center flex-column support-section">
+                <h2 class="text-center">{{efk.support.title}}</h2>
+                <p *ngFor="let desc of efk.support.descriptions" class="text-center">{{desc}}</p>
+                <div class="py-3 d-block d-sm-flex justify-content-between align-items-center">
+                    <a class="btn btn-primary hero-btn-primary"
+                        onclick="Calendly.showPopupWidget('https://calendly.com/mayadata/discuss-openebs-and-kubera');return false;"
+                        href="">
+                        Talk to us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Workload Support End -->

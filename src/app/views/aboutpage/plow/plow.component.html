@@ -1,0 +1,35 @@
+<section class="our-culture">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="culture-title">Our work culture</h2>
+        <!-- <p class="text-center">We seek to live by our "PLOW" values</p> -->
+      </div>
+    </div>
+    <div class="culture-box" *ngFor="let workcult of workCulture">
+      <!-- <div class="col-md-12 py-3 py-md-4">
+        <h4 class="culture-block-title">{{workcult.title}}</h4>
+      </div> -->
+      <div
+        class="col-md-6 d-flex justify-content-start justify-content-md-start align-items-start py-3 py-md-0 image-block">
+        <img class="img-fluid" lazyLoad={{workcult.imgUrl}} alt={{workcult.values}} class="work-culture-img">
+      </div>
+      <div class="col-md-6 content-block">
+        <h4 class="culture-block-title">{{workcult.values}}</h4>
+        <p class="culture-block-desc">{{workcult.description}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="plow-checkout">
+      <div class="checkout-doc">
+
+      </div>
+      <div class="checkout-content">
+        <h3 class="doc-title">Checkout our culture docs!</h3>
+        <a href="https://culture.mayadata.io/" class="doc-link" target="_blank" rel="noopener noreferrer">MayaData
+          culture</a>
+      </div>
+    </div>
+  </div>
+</section>

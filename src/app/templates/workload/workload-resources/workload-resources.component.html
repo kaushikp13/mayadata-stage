@@ -1,0 +1,20 @@
+<section *ngIf="resources" class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-white pb-5 resource-intro-section">
+        <h2 class="h1">{{resources.title}}</h2>
+        <p>{{resources.subtitle}}</p>
+      </div>
+      <div class="col-12 resource-cards-block text-white">
+        <div class="p-3 resource-card" *ngFor="let resource of resources.resourceList">
+          <span>{{ resource.category}}</span>
+          <h3>{{ resource.title }}</h3>
+          <p class="resource-desc">{{ resource.description }}</p>
+          <a href={{resource.cta.ctaLink}} target="_blank" rel="noopener noreferrer" class="cta">
+            <button class="btn btn-primary btn-sm">{{resource.cta.ctaText}}</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

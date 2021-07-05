@@ -1,0 +1,56 @@
+/*  Common For All and for mobile */
+.stick-tr {
+  display: none;
+}
+
+.highlight {
+  color: #001959;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {
+  .stick-tr {
+    position: absolute;
+    top: 36px;
+    right: 0px;
+    z-index: -1;
+    display: block;
+  }
+
+  .workloads-hero-section {
+    padding: 120px 0px 120px 0px;
+  }
+
+  .stick-tr img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .stick-tr img {
+    max-width: 820px;
+  }
+
+  .workloads-hero-section {
+    padding: 200px 0px 120px 0px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1922.99998px) {
+  .stick-tr {
+    display: none;
+  }
+}
+
+// optional

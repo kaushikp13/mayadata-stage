@@ -1,0 +1,56 @@
+a.pricing-cta-link,
+a.pricing-cta-link:hover {
+  text-decoration: none;
+}
+
+.pricing-description {
+  flex: 1 0 auto;
+}
+
+.pricing-amount {
+  font-size: 72px;
+}
+
+.exclusive-notes {
+  font-size: 16px;
+}
+
+.overlay {
+  position: absolute;
+  height: 90px;
+}
+
+.overlay:before {
+  content: " \2573";
+  font-size: 32px;
+  font-weight: 900;
+  color: #2c0735;
+}
+
+.new-pricing-amount-standard {
+  font-size: 32px;
+}
+
+
+.enterprise-pricing {
+  font-size: 42px !important;
+}
+
+.nodeprice-currency {
+  font-size: 18px;
+}
+.node-pricing-amount {
+  font-size: 28px;
+}
+
+.badge--popular {
+  position: absolute;
+  height: 42px;
+  background-color: #2c0735;
+  top: -36px;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  right: 18%;
+}

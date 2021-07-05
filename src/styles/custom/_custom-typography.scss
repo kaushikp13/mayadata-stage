@@ -1,0 +1,53 @@
+/*  Common For All and for mobile */
+.hero-title {
+  font-size: 40px;
+}
+
+.h1 {
+  font-size: 36px !important;
+}
+
+.h2 {
+  font-size: 26px !important;
+}
+
+.faq-body-link {
+  color: #A4A8FF;
+
+  &:hover {
+    color: darken($color: #A4A8FF, $amount: 15%);
+  }
+}
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .h1 {
+    font-size: 48px !important;
+  }
+
+  .h2 {
+    font-size: 32px !important;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

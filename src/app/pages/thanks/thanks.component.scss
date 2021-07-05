@@ -1,0 +1,43 @@
+/*  Common For All and for mobile */
+
+.thankyou-wrapper {
+  max-width: 460px;
+}
+
+.thankyou-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(320px, auto);
+  grid-gap: 2rem;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+  .thankyou-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .thankyou-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {
+  .thankyou-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {} // optional

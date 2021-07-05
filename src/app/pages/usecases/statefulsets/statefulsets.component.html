@@ -1,0 +1,57 @@
+<div class="section-container text-white" style="background-color: #191428;">
+  <div class="container">
+    <a routerLink="/resources" class="text-white">&lt; Back</a>
+    <h1 class="pt-2 pb-5" style="max-width: 600px;">Using OpenEBS for StatefulSets</h1>
+  </div>
+  <div class="container bg-white text-dark" style="border-radius: 8px;">
+    <div class="section-container" style="max-width: 600px; margin: auto;">
+      <div class="container pb-5">
+        <div class="section">
+          <h2>Replication by application</h2>
+          <p>Stateful applications on Kubernetes deployed as “statefulset” usually manage the data
+            replication themselves. It is optional to have the replication at storage layer. In this case, OpenEBS
+            volumes
+            will have a single replica.</p>
+        </div>
+      </div>
+      <div class="container pb-5">
+        <div class="section">
+          <h2>StatefulSet example applications</h2>
+          <ul>
+            <li>MongoDB</li>
+            <li>MySql with Galera replication</li>
+            <li>Cassandra</li>
+            <li>Zoo Keeper</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container pb-5">
+        <div class="section">
+          <h2>OpenEBS vs LocalPV for StatefulSet</h2>
+          <p>There are multiple advantages of deploying StatefulSet with OpenEBS PVs as OpenEBS is an
+            integrated solution created to provide answers to storage operations. For example,</p>
+          <p>When compared to LocalPV, OpenEBS volumes are scheduled in co-ordination with Maya-ApiServer,
+            because of which, it is easier to
+            configure the volumes to be scheduled across availability zones.</p>
+          <p>OpenEBS volumes when configured with one replica, it is possible to change the configuration
+            to
+            scale the replicas from ONE to THREE if required.</p>
+          <p>Volumes can be resized easily</p>
+          <p>Upgrade of software associated with the volumes is simple and easier with OpenEBS</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section">
+          <h2>Deploying OpenEBS storage for a StatefulSet on public clouds</h2>
+          <p>Statefulset is used primarily for application doing data replication themselves. High
+            availability of the application is the key goal here. On public clouds operators make use of Availability
+            Zones or AZs to achieve high availability. When application pods of a StatefulSet are scheduled across
+            AZs,
+            corresponding PVs also need to be scheduled across AZs. OpenEBS supports this scenario very well.</p>
+          <p>For documentation on how to configure OpenEBS replicas to be scheduled across zones, <a
+              href="https://docs.openebs.io">https://docs.openebs.io</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

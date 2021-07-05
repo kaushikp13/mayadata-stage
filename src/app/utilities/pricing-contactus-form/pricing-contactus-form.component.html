@@ -1,0 +1,79 @@
+<p>Fill out the form below and our team will get in touch with you with more details:
+</p>
+
+<form (ngSubmit)="applyForPriceInquiry()" [formGroup]="pricingContactForm">
+  <div class="form-field-wrapper">
+    <div class="input-block">
+      <!-- <label for="firstname" class="font-weight-bold">First Name<span>*</span></label> -->
+      <input type="text" class="form-control form-control-lg" [ngClass]="{
+        'invalid_input':firstname.invalid && (firstname.touched || firstname.dirty)
+        }" id="firstname" formControlName="firstname" required placeholder="First Name*">
+      <div class="form-control-feedback" *ngIf="firstname.errors && (firstname.dirty || firstname.touched)">
+        <span *ngIf="firstname.errors.required" class="text-danger"><small>First Name is required</small></span>
+      </div>
+    </div>
+    <div class="input-block">
+      <!-- <label for="lastname" class="font-weight-bold">Last Name<span>*</span></label> -->
+      <input type="text" class="form-control form-control-lg" [ngClass]="{
+        'invalid_input':lastname.invalid && (lastname.touched || lastname.dirty)
+        }" id="lastname" formControlName="lastname" required placeholder="Last Name*">
+      <div class="form-control-feedback" *ngIf="lastname.errors && (lastname.dirty || lastname.touched)">
+        <span *ngIf="lastname.errors.required" class="text-danger"><small>Last Name is required</small></span>
+      </div>
+    </div>
+    <div class="input-block">
+      <input type="email" class="form-control form-control-lg" [ngClass]="{
+        'invalid_input':company_email.invalid && (company_email.touched || company_email.dirty)
+        }" id="company_email" formControlName="company_email" required placeholder="Work Email*">
+      <div class="form-control-feedback" *ngIf="company_email.errors && (company_email.dirty || company_email.touched)">
+        <span *ngIf="company_email.errors.required" class="text-danger"><small>Company Email is required</small></span>
+      </div>
+      <div *ngIf="!company_email.errors?.required">
+        <div class="form-control-feedback"
+          *ngIf="(company_email.invalid && (company_email.dirty || company_email.touched))">
+          <span *ngIf="company_email.invalid" class="text-danger"><small>Invalid format</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-block">
+      <!-- <label for="company" class="font-weight-bold">Company Name<span>*</span></label> -->
+      <input type="text" class="form-control form-control-lg" [ngClass]="{
+        'invalid_input':company.invalid && (company.touched || company.dirty)
+        }" id="company" formControlName="company" required placeholder="Company Name*">
+      <div class="form-control-feedback" *ngIf="company.errors && (company.dirty || company.touched)">
+        <span *ngIf="company.errors.required" class="text-danger"><small>Company Name is required</small></span>
+      </div>
+    </div>
+
+
+
+
+    <div class="input-block">
+      <!-- <label for="contact_number" class="font-weight-bold d-block">Contact Number</label> -->
+      <ngx-intl-tel-input [cssClass]="'contact-field form-control form-control-lg'"
+        [preferredCountries]="preferredCountries" [enableAutoCountrySelect]="false" [enablePlaceholder]="true"
+        [searchCountryFlag]="false" [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+        [selectFirstCountry]="false" [selectedCountryISO]="CountryISO.UnitedStates" [maxLength]="15"
+        [tooltipField]="TooltipLabel.Name" [phoneValidation]="true" [separateDialCode]="separateDialCode"
+        name="contact_number" [ngClass]="{
+          'invalid_input':contact_number.invalid && (contact_number.touched || contact_number.dirty)
+          }" formControlName="contact_number" id="ngx-intl-tel-input" placeholder="Contact Number">
+      </ngx-intl-tel-input>
+      <div class="form-control-feedback" *ngIf="contact_number.invalid">
+        <span *ngIf="contact_number.invalid" class="text-danger"><small>Invalid format</small></span>
+      </div>
+    </div>
+
+    <div class="input-block">
+      <textarea class="form-control tarea" rows="5" id="comments" formControlName="comments"
+        placeholder="Comment"></textarea>
+    </div>
+
+    <div class="row">
+      <div class="col-12 text-left">
+        <button type="submit" [disabled]="!pricingContactForm.valid" class="btn btn-primary">Contact us</button>
+      </div>
+    </div>
+  </div>
+</form>

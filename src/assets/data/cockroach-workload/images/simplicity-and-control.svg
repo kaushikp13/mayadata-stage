@@ -1,0 +1,25 @@
+<svg width="472" height="364" viewBox="0 0 472 364" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.4" x="42.647" y="0.38916" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.9" x="42.647" y="73.04" width="72.6507" height="72.6507" fill="white"/>
+<rect x="42.647" y="218.341" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.9" x="42.647" y="290.993" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.6" x="115.298" y="73.04" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.6" x="115.298" y="290.993" width="72.6507" height="72.6507" fill="white"/>
+<rect x="187.948" y="0.38916" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.5" x="187.948" y="218.341" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.9" x="260.6" y="73.04" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.9" x="260.6" y="218.341" width="72.6507" height="72.6507" fill="white"/>
+<rect x="260.6" y="290.993" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.9" x="333.249" y="0.38916" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.6" x="333.249" y="73.04" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.4" x="333.249" y="218.341" width="72.6507" height="72.6507" fill="white"/>
+<rect opacity="0.6" x="333.249" y="290.99" width="72.6507" height="72.6507" fill="white"/>
+<path d="M423.553 211.057C423.553 216.655 428.013 220.154 431.582 217.355L468.607 188.312C472.176 185.513 472.176 178.516 468.607 175.717L431.582 146.674C428.013 143.875 423.553 147.374 423.553 152.972V167.381H0.712158V194.959H423.553V211.057Z" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="471.284" y1="182.014" x2="0.712159" y2="182.015" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F39242"/>
+<stop offset="0.676028" stop-color="#FF8C2E" stop-opacity="0.81"/>
+<stop offset="1" stop-color="#F39242" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

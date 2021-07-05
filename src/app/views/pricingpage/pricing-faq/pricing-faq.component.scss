@@ -1,0 +1,118 @@
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.05);;
+  padding: 16px;
+  margin-bottom: 32px;
+  color: #2c0735;
+  border-radius: 6px;
+}
+
+.accordion-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.accordion-item-head span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.accordion-item-body {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+/*  Common For All and for mobile */
+.mi-x {
+  transform: rotate(-45deg);
+  transition: transform 0.2s linear;
+}
+
+.rotate-icon {
+  transform: rotate(0deg);
+  transition: transform 0.25s linear;
+}
+
+.accordion-item-body-active {
+  background-color: var(--primary);
+  color: white;
+  transition: transform 0.25s ease-in-out;
+}
+
+.stick-ml {
+  display: none;
+}
+
+.accordion-item-body a {
+  color: var(--secondary);
+}
+
+.faq-option {
+  padding: 4px 10px;
+  border: 1px solid var(--white);
+  margin-right: 24px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.active {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.faq-option:last-of-type {
+  margin-right: 0px;
+}
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .stick-ml {
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    z-index: -1;
+    display: block;
+  }
+
+  .workloads-faq-section {
+    padding: 180px 0px 120px 0px;
+  }
+
+  .stick-ml img {
+    max-width: 500px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

@@ -1,0 +1,254 @@
+.service-24hours {
+    background: linear-gradient(85.69deg, rgba(169, 61, 219, 0.33) 14.03%, rgba(102, 61, 219, 0) 85.66%);
+    padding: 50px 0;
+    position: relative;
+}
+
+.service-block-left h2 {
+    font-size: 53px;
+    color: #fff;
+}
+.service-block-left h3 {
+    color: #aaa;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+.service-block-right ul li {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.service-block-right {
+    background: linear-gradient(rgba(102, 61, 219, 0.1), rgba(169, 61, 219, 0.15));
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(102, 61, 219, 0.72);
+    position: relative;
+    backdrop-filter: blur(80px);
+}
+.support-cube {
+    position: relative;
+    z-index: 1;
+    right: 40px;
+    bottom: -50px;
+}
+.support-cube:after {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 100px;
+    background: url("../../../../assets/images/openebs-support/cube.png") no-repeat;
+    right: 20px;
+    bottom: -19px;
+    z-index: 0;
+}
+
+.level-1 > li {
+    list-style: none;
+    position: relative;
+    padding-left: 23px;
+}
+
+.level-1 > li:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    background: #f39242;
+    left: 0;
+    border-radius: 50%;
+    top: 8px;
+}
+.level-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-between;
+    padding: 0;
+}
+.level-2 li {
+    width: 100%;
+    font-size: 16px !important;
+    line-height: 32px !important;
+    list-style: none;
+    position: relative;
+    max-width: 48%;
+}
+.level-1 {
+    padding-left: 0;
+}
+.level-2 li:before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    background: #fff;
+    left: -20px;
+    top: 14px;
+    border-radius: 50%;
+}
+.level-1 > li span {
+    font-family: "Roboto Slab", sans-serif;
+}
+.service-block-left {
+    background: url("assets/images/openebs-support/get-enterprice.png") no-repeat;
+    position: relative;
+    z-index: 9;
+}
+.service-24hours {
+    background: none;
+    padding: 0px 0 50px;
+    position: relative;
+    z-index: 9;
+}
+.service-block-left h2 {
+    font-size: 36px;
+    color: #fff;
+}
+.service-block-left h2 {
+    font-size: 36px;
+    color: #9d9bbf;
+    margin-top: 200px;
+    max-width: 350px;
+    line-height: 1.3;
+}
+.service-block-left h2 span {
+    color: #fff;
+}
+.kubera-pricing-block p {
+    margin-bottom: 0 !important;
+}
+.support-tringle {
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+    left: -240px;
+    width: 200px;
+    height: 200px;
+}
+::ng-deep .support-tringle .support-tringle {
+    width: 500px !important;
+    position: absolute;
+    left: 0;
+    transform: scale(4);
+}
+
+@media (max-width: 1024px) {
+    .service-block-left h2 {
+        font-size: 43px;
+    }
+    .service-block-left h3 {
+        font-size: 31px;
+        margin-top: 25px;
+    }
+
+    .service-block-right ul li {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .service-block-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .service-block-left {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .service-block-left {
+        max-width: 100%;
+        flex: 0 0 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .service-block-left h2 {
+        font-size: 34px !important;
+        color: #9d9bbf;
+        margin-top: 200px;
+        max-width: 50%;
+        line-height: 1.3;
+    }
+    .service-block-right {
+        background: linear-gradient(rgba(102, 61, 219, 0.1), rgba(169, 61, 219, 0.15));
+        padding: 50px;
+        border-radius: 15px;
+        border: 1px solid rgba(102, 61, 219, 0.72);
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    .service-inner {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .level-2 li {
+        width: 100%;
+        font-size: 16px !important;
+        line-height: 32px !important;
+        list-style: none;
+        position: relative;
+        max-width: 100%;
+    }
+    ::ng-deep .service-block-right {
+        max-width: 90% !important;
+        margin: 50px auto;
+        padding: 15px !important;
+    }
+    .support-tringle {
+        left: -400px;
+    }
+}
+@media (max-width: 480px) {
+    .support-cube:after {
+        right: -20px;
+        bottom: -30px;
+        background-size: 60%;
+        height: 50px;
+        width: 80px;
+    }
+    .support-tringle {
+        top: 55% !important;
+    }
+    .support-tringle {
+        left: -200px;
+    }
+    .service-block-left h2 {
+        font-size: 29px;
+    }
+    .service-block-left h3 {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .support-tringle {
+        top: 60%;
+    }
+    ::ng-deep .support-tringle .support-tringle {
+        transform: scale(2);
+    }
+    .service-block-right {
+        padding: 15px !important;
+        margin: 15px auto 0 !important;
+    }
+    .service-block-left h2 {
+        font-size: 24px !important;
+        max-width: 240px !important;
+        margin-right: auto;
+    }
+    .kubera-pricing-block h2 {
+        font-size: 24px !important;
+        margin-bottom: 10px !important;
+        line-height: 1.3 !important;
+    }
+    ::ng-deep .support-tringle {
+        top: 45% !important;
+    }
+}
+
+@media (max-width: 374px) {
+    ::ng-deep .support-tringle {
+        top: 30% !important;
+        left: -270px !important;
+    }
+}

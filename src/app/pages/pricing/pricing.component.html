@@ -1,0 +1,57 @@
+<div class="section-container">
+  <div class="bg-wrapper" style="z-index: 0;">
+    <div class="bg"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pricing-page">
+        <div class="pricing-page__content text-left">
+          <h1 class="text-white"><span>Enterprise</span> support & licensing</h1>
+          <p class="text-white">Talk to us for 24*7 support for OpenEBS from MayaData engineers to enable the use of
+            Kubernetes itself as a data layer.</p>
+          <div class="d-flex justify-content-start align-items-center pricing-cta-section flex-column flex-md-row pt-4">
+            <a ngClass={{GTM.TRIGGERS.OPENEBSSUPPORT}} class="btn btn-primary hero-btn-primary"
+              onclick="Calendly.showPopupWidget('https://calendly.com/mayadata/discuss-openebs-and-kubera');return false;"
+              href="">
+              Talk to us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pricing-inner-bg">
+  <!-- Kubera Pricing -->
+  <app-kubera-pricing-models></app-kubera-pricing-models>
+  <!-- Kubera Pricing End-->
+
+  <!-- Pricing Kubera Feature -->
+  <app-pricing-kubera-feature></app-pricing-kubera-feature>
+  <!-- Pricing Kubera Feature End -->
+
+  <!-- 24x7 support start -->
+  <section class="section-container">
+    <div class="container">
+      <div *ngIf="buttonShow" class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-center align-items-center flex-column flex-md-row pt-4">
+            <a routerLink="/openebs-support" rel="noopener noreferrer" class="d-inline-block mr-md-5 mb-4">
+              <button class="btn btn-primary">Learn more about OpenEBS</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <app-supportpage [displayBlock]="buttonShow"></app-supportpage> -->
+  <!-- 24x7 support END -->
+
+
+
+  <!-- Pricing Has Questions -->
+  <app-pricing-has-questions></app-pricing-has-questions>
+  <!-- Pricing Has Questions End-->
+
+</div>

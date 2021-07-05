@@ -1,0 +1,89 @@
+.main-product-wrapper {
+  background: url("assets/images/product/product-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*  Common For All and for mobile */
+
+.kubera-donut {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
+}
+
+.kubera-and-engine {
+  max-width: 100%;
+  padding: 0px 30px;
+}
+
+.product-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.desktop-view {
+  display: none;
+}
+
+.mobile-view {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .main-product-wrapper {
+    background: none;
+  }
+}
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+  .kubera-donut {
+    max-width: 360px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .desktop-view {
+    display: block;
+  }
+  .mobile-view {
+    display: none;
+  }
+
+  .kubera-donut {
+    max-width: 420px;
+  }
+  .product-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 700px;
+    padding: 60px 0px;
+    height: calc(100vh - 60px);
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1500px) {
+}
+
+// optional
+
+@media screen and (min-width: 1900px) {
+}
+
+// optional

@@ -1,0 +1,29 @@
+<section class="section-container ability-sec" *ngIf="mayadataStorage">
+  <div class="data-agility-section">
+    <div class="row kubera-connect">
+      <div class="col-md-12 d-flex justify-content-start align-items-start flex-column sec-1-title"
+        style="z-index: 100;">
+        <h2 class="data-title">{{mayadataStorage.title}}<span class="text-white"> OpenEBS? </span></h2>
+      </div>
+    </div>
+  </div>
+  <div class="home-page-slider">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+
+      <div ngxSlickItem *ngFor="let storage of mayadataStorage.storages" class="slide">
+        <!-- <img src="{{ slide.img }}" alt="" width="100%"> -->
+        <div class="col-12 col-md-6 col-lg-6 oep-storages--card">
+          <div class="oep-storages--imgblock">
+            <img src={{storage.imageUrl}} alt={{storage.alt}} class="img-fluid storages-icons" />
+          </div>
+          <div class="box-text-div">
+            <p class="oep-storages-title">
+              {{storage.title}}</p>
+            <p class="benefit-content">{{storage.description}}</p>
+          </div>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</section>

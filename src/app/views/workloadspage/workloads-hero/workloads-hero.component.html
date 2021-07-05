@@ -1,0 +1,17 @@
+<div class="section-container workloads-hero-section" *ngIf="workloadIntro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 py-3 py-lg-0 d-flex justify-content-center align-items-start flex-column">
+        <h1 class="dm-h1"><span class="dm-highlight">{{workloadIntro.titleFirstPart}}</span>
+          {{workloadIntro.titleSecondPart}}</h1>
+        <p class="dm-p">{{workloadIntro.description}}</p>
+      </div>
+      <div class="col-12 col-sm-6 py-3 py-lg-0 d-flex justify-content-center align-items-start flex-column">
+        <img lazyLoad={{workloadIntro.video.thumbnail}} alt={{workloadIntro.titleFirstPart}} style="width: 100%" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="stick-tr">
+  <img lazyLoad="assets/images/workloads/bg-hero.svg" alt="stickly" />
+</div>

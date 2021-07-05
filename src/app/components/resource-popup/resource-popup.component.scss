@@ -1,0 +1,73 @@
+.badge-wrapper {
+  position: relative;
+}
+
+.badge-1 {
+  background-color: #a93ddb;
+  color: white;
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  transform: rotate(-180deg);
+  padding: 16px 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  font-size: 12px;
+  writing-mode: vertical-lr;
+  transition: opacity 0.5s;
+  z-index: 999;
+}
+
+.resource-url,
+.resource-url:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resource_img {
+  border-radius: 4px;
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+
+.close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
+}
+
+.close:focus,
+.close:hover,
+.close:active {
+  outline: none;
+}
+
+.workload-container {
+  max-width: 1000px;
+}
+
+.workload-img {
+  width: 80px;
+}
+
+.embed-video {
+  min-height: 350px;
+}
+
+.padding-14 {
+  padding-right: 14px;
+}

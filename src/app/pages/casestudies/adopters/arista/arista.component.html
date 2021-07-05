@@ -1,0 +1,79 @@
+<section class="section-container text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+        <div class="wrapper">
+          <h1>{{aristaIntro.title}}</h1>
+          <p *ngFor="let desc of aristaIntro.descriptions">{{desc}}</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="d-flex justify-content-center justify-content-lg-end  align-items-center h-100">
+          <img lazyLoad="assets/images/adopters/arista-and-openebs.svg" alt="Arista and OpenEBS" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-container text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+        <div class="wrapper">
+          <h2>{{aristaAndOpenEBS.title}}</h2>
+          <p *ngFor="let desc of aristaAndOpenEBS.intros">{{desc}}</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="d-flex justify-content-center justify-content-lg-end align-items-center flex-column h-100">
+          <h4 class="mb-5">{{aristaAndOpenEBS.subtitle}}</h4>
+          <img lazyLoad="assets/images/adopters/arista-openebs-and-workloads.svg" alt="Arista, OpenEBS and Workloads"
+            class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-container text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="wrapper pb-5">
+          <h2>Why use OpenEBS with Kubernetes:</h2>
+        </div>
+        <div class="gain-wrapper">
+          <div *ngFor="let gain of gainsOfArtisa" class="gain">
+            <h6>{{gain.title}}</h6>
+            <p>{{gain.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-container text-white adopters-section-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center align-items-center flex-column text-center adopters-section">
+          <h3>You can read much more about Arista and their use of OpenEBS on
+            <a href="https://github.com/openebs/openebs/blob/master/ADOPTERS.md" target="_blank"
+              rel="noopener noreferrer" class="text-white">ADOPTERS.md</a>
+          </h3>
+          <p>Arista and MayaData continue to collaborate to extend the capabilities Kubernetes at Arista Networks. In
+            conclusion, Arista evaluated many solutions and selected OpenEBS because it best enabled the use of
+            Kubernetes.</p>
+          <a href="https://github.com/openebs/openebs/blob/master/adopters/arista/README.md" target="_blank"
+            rel="noopener noreferrer">
+            <button class="btn btn-primary">More</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

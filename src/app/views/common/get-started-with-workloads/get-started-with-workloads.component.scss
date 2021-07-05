@@ -1,0 +1,65 @@
+.workload-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.workload-item {
+  display: flex;
+  margin: 1rem;
+}
+
+.workload-card {
+  max-width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  height: 100%;
+  padding: 32px;
+  max-height: 420px;
+}
+
+.section-container {
+  padding: 60px 0px;
+}
+
+.workload-card h4 {
+  flex: 1 0 auto;
+}
+
+
+/*  Common For All and for mobile */
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+  .workload-card {
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .workload-card {
+    max-width: 320px;
+  }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

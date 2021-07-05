@@ -1,0 +1,147 @@
+<section>
+  <picture>
+    <source media="(max-width: 767.99998px)" srcset="assets/images/hacktoberfest2020/bg-mobile.png">
+    <img src="assets/images/hacktoberfest2020/bg.png" alt="Hacktoberfest 2020" class="img-fluid w-100">
+  </picture>
+</section>
+
+<section class="section-container" *ngIf="hacktoberfest.getStarted">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center text-wrap" style="word-wrap: break-word;">
+        <h1>{{hacktoberfest.getStarted.title}}</h1>
+        <p>{{hacktoberfest.getStarted.subtitle}}</p>
+      </div>
+      <div class="col-12 pt-3">
+        <div class="d-flex justify-content-center align-items-center pt-2 m-auto issue-section">
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-center align-items-center pb-3 pb-md-0"
+              *ngFor="let issue of hacktoberfest.getStarted.issuesToSolve">
+              <div class="card text-center p-5 w-100 d-flex justify-content-center align-items-center issue-card">
+                <h4 class="card-title text-secondary issue-card-title">{{issue.title}}</h4>
+                <p>{{issue.description}}</p>
+                <a href={{issue.cta.ctaLink}} target="_blank" rel="noopener noreferrer">
+                  <button class="btn btn-primary">{{issue.cta.ctaText}}</button>
+                </a>
+                <a href={{issue.blog.blogLink}} target="_blank" rel="noopener noreferrer"
+                  class="text-tertiary text-center mt-4">{{issue.blog.blogText}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-secondary section-container" *ngIf="hacktoberfest.hacktoberfestIntroInfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 p-5 text-center"
+        *ngFor="let info of hacktoberfest.hacktoberfestIntroInfo; let i = index;">
+        <i class="mi text-white icon-sizing" [ngClass]="info.icon" aria-hidden="true"></i>
+        <a href={{info.cta.ctaLink}} *ngIf="i == 1" target="_blank" rel="noopener noreferrer"
+          class="text-decoration-none d-block">
+          <p class="text-white h6 pt-3">{{info.title}} <i class="mi mi-arrow-right-circle" aria-hidden="true"></i>
+          </p>
+        </a>
+        <div class="text-white h6 pt-3" *ngIf="i != 1">
+          <p>{{info.title}}</p>
+          <a *ngFor="let cta of info.cta" href={{cta.ctaLink}} class="d-block mb-2 text-decoration-none">
+            <span class="d-block text-white">{{cta.ctaText}} <i class="mi mi-arrow-right-circle"
+                aria-hidden="true"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-container" *ngIf="hacktoberfest.prizes">
+  <div class="container text-center p-3 p-md-0">
+    <div class="row">
+      <div class="col-12 p-3">
+        <h2 class="h1">{{hacktoberfest.prizes.title}}</h2>
+        <p class="font-weight-bold">{{hacktoberfest.prizes.subtitle}}</p>
+      </div>
+    </div>
+    <div class="row px-5">
+      <div class="col-12">
+        <div class="colored-border-bottom">
+          <h3 class="h4">{{hacktoberfest.prizes.laptop.title}}</h3>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12 col-md-12 p-5 d-flex justify-content-center align-items-center flex-column h-100">
+            <img src={{hacktoberfest.prizes.laptop.imgSrc}} alt={{hacktoberfest.prizes.laptop.imgAlt}}
+              class="img-fluid laptop-img m-auto">
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12">
+            <h4>{{hacktoberfest.prizes.otherPrizes.title}}</h4>
+          </div>
+          <div
+            class="col-12 col-lg-4 p-5 d-flex justify-content-between align-items-center flex-column h-100 prize-img-section"
+            *ngFor="let prize of hacktoberfest.prizes.otherPrizes.prizes">
+            <div class="d-flex justify-content-center align-items-center prize-img-block">
+              <img src={{prize.imgSrc}} alt={{prize.imgAlt}} class="img-fluid prize-img">
+            </div>
+            <p>{{prize.title}}</p>
+          </div>
+          <div class="col-12 col-md-12 p-5 d-flex justify-content-center align-items-center flex-column">
+            <h3>{{hacktoberfest.prizes.tshirt.title}}</h3>
+            <div class="tshirt-section mx-auto mt-4">
+              <img src={{hacktoberfest.prizes.tshirt.imgSrc}} alt={{hacktoberfest.prizes.tshirt.imgAlt}}
+                class="img-fluid tshirt">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-tertiary" *ngIf="hacktoberfest.workshops">
+  <div class="container py-5 text-white">
+    <div class="row p-3 p-md-5">
+      <div class="col-12  text-center">
+        <h2 class="h1">{{hacktoberfest.workshops.title}}</h2>
+        <p>{{hacktoberfest.workshops.description}}</p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-12">
+        <div class="colored-border-bottom">
+          <h2 class="h4">{{hacktoberfest.workshops.subtitle}}</h2>
+        </div>
+        <div class="row p-5 d-flex justify-content-center align-items-stretch flex-wrap">
+          <div class="col-12 col-md-4 p-5 cta-section"
+            *ngFor="let event of hacktoberfest.workshops.events; let  i = index;">
+            <a href={{event.cta.ctaLink}} target="_blank" rel="noopener noreferrer"
+              class="text-decoration-none text-white" [id]="setEventId(i)">
+              <img src={{event.img.imgSrc}} alt={{event.img.imgSrc}} class="img-fluid w-50">
+              <p class="font-weight-bold mb-0 pt-2 text-uppercase" *ngIf="event.timing !== ''">{{event.timing}}</p>
+              <p class="mb-0" *ngFor="let desc of event.descriptions">{{desc}}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-container" *ngIf="hacktoberfest.kubera">
+  <div class="container">
+    <div class="row">
+      <div class="col-12  d-flex justify-content-center align-items-center flex-column">
+        <h2 class="text-center pb-3">{{hacktoberfest.kubera.title}}</h2>
+        <a [href]="signUpUrl || hacktoberfest.kubera.cta.ctaLink" target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-primary">{{hacktoberfest.kubera.cta.ctaText}}</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

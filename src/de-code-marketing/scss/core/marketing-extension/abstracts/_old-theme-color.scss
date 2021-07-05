@@ -1,0 +1,31 @@
+$dark-gray: #4d4e5a;
+$dark-blue: #001959;
+$yellow: #f8bb00;
+$light-blue: #d3e9fd;
+$gray: #7d7e8d;
+$blue: #0063ff;
+$white: #ffffff;
+
+// Theme colors
+$primary: $dark-blue;
+$secondary: $blue;
+$tertiary: $yellow;
+$light: $light-blue;
+$dark: $dark-gray;
+
+//Color maps
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "light": $light-blue,
+    "dark": $dark-gray,
+    "white": $white,
+    "gray": $gray,
+    "lightblue": $light-blue,
+    "darkgray": $dark-gray
+  ),
+  $theme-colors
+);

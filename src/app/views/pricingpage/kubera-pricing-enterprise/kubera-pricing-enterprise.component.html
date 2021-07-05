@@ -1,0 +1,109 @@
+<section class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="enterprise-pricing">
+          <div class="box-orange">
+            <div class="business-title" style="height: 50px">
+              <h4 class="text-center text-white">Business</h4>
+            </div>
+            <div class="text-white d-flex flex-column justify-content-center business-pricing-card"
+              style="border: none;border-radius: 40px;background: linear-gradient(324.11deg, #E9700D 20.99%, #F39242 85.68%);">
+              <p>24x7x365 business support is available and can be customized for your needs.</p>
+              <p>Support covers unlimited usage of Kubera and OpenEBS on supported storage nodes.</p>
+              <p>Support options include operational audits, 1 hour SLAs, and proactive monitoring.</p>
+              <ul class="list-unstyled">
+                <li><span><img lazyLoad="assets/images/pricing/ebs.png"></span> OpenEBS</li>
+                <li><span><img lazyLoad="assets/images/pricing/tool.png"></span> Tools - Kubera Propel & others </li>
+                <li><span><img lazyLoad="assets/images/pricing/support.png"></span> Technical Support 24/7</li>
+              </ul>
+              <div class="text-center txt-business-price">
+                <h6>starting at</h6>
+                <div class="txt-wrapper">
+                  <h5 class="business-price">$150</h5>
+                  <p>per node / per month</p>
+                </div>
+                <!-- <button (click)="showContactus()">Contact Us</button> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="box-purple">
+            <div class="teams-title" style="height: 50px">
+              <h4 class="text-center text-white">Standard</h4>
+            </div>
+            <div class="text-white p-3 d-flex flex-column justify-content-center  teams-pricing-card-1"
+              style="border: none;border-radius: 40px;background: linear-gradient(180deg, #A93DDB 0%, #9D36CC 0.01%, #6D0097 100%);">
+              <p>Standard support includes business hour response in your timezone, and access to Kubera for operations.
+              </p>
+              <ul class="list-unstyled">
+                <li><span><img lazyLoad="assets/images/pricing/ebs.png"></span> OpenEBS</li>
+                <li><span><img lazyLoad="assets/images/pricing/tool.png"></span> Tools - Kubera Propel & others </li>
+                <li><span><img lazyLoad="assets/images/pricing/support.png"></span> Technical Support 8/5</li>
+              </ul>
+              <div class="text-center txt-standard-price">
+                <div class="txt-wrapper">
+                  <h5 class="standard-price">$100</h5>
+                  <p>per node / per month</p>
+                </div>
+                <!-- <button (click)="showContactus()">Contact Us</button> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="box-transparent">
+            <div class="free-title" style="height: 50px">
+              <h4 class="text-center text-white">Community</h4>
+            </div>
+            <div class="text-white d-flex flex-column justify-content-center free-pricing-card-1"
+              style="border: none;border-radius: 40px;background: transparent; border: 1px solid #A93DDB;">
+              <p>Free support of OpenEBS is available via the community on Kubernetes Slack.</p>
+              <ul class="list-unstyled">
+                <li><span><img lazyLoad="assets/images/pricing/ebs.png"></span> OpenEBS</li>
+                <li><span><img lazyLoad="assets/images/pricing/support.png"></span>Community Support</li>
+              </ul>
+              <div class="text-center">
+                <h4>Free</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center align-items-center flex-column flex-md-row pt-4">
+          <a (click)="showContactus()" rel="noopener noreferrer" class="d-inline-block mr-md-5 mb-4">
+            <button class="btn btn-primary">Contact Us</button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="contactPricing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex justify-content-center align-items-center flex-column">
+        <app-pricing-contactus-form *ngIf="!failerFlag && !successFlag" (successResponse)="responseFromApi($event)">
+        </app-pricing-contactus-form>
+        <h2 *ngIf="successFlag && !failerFlag" class="text-uppercase text-dark-blue text-center">Thank you for
+          contacting us</h2>
+        <p *ngIf="successFlag && !failerFlag" class="text-dark-blue text-center">Our team will get in touch with you
+          shortly.</p>
+        <h2 *ngIf="failerFlag && !successFlag" class="text-uppercase text-danger text-center text-error-style">Error
+        </h2>
+        <p *ngIf="failerFlag && !successFlag" class="text-danger text-center">please try again.</p>
+      </div>
+    </div>
+  </div>
+</div>

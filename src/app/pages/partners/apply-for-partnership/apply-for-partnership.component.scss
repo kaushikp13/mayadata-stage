@@ -1,0 +1,42 @@
+.apply-title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 120%;
+    color: #ffffff;
+}
+.apply-content p {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    opacity: 0.9;
+    margin-top: 25px;
+}
+.apply-for-partner {
+    padding: 50px 0 100px;
+}
+
+@media (max-width: 1024px) {
+    .apply-title {
+        font-size: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .apply-title {
+        font-size: 40px;
+    }
+    .apply-content p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .checkbox-wrapper .form-check-label:before {
+        left: 20px;
+        top: 4px;
+    }
+}

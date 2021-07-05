@@ -1,0 +1,175 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="benefit-wrapper">
+        <div class="tab-wrapper-top">
+          <div id="Tab1">
+            <ul class="nav nav-pills">
+              <li [ngClass]="{'active':propel1}" (click)="selectTab('propel1')">
+                <div data-toggle="tab" class="h-100">Kubera Propel is Fast</div>
+              </li>
+              <li [ngClass]="{'active':propel2}" (click)="selectTab('propel2')">
+                <div data-toggle="tab" class="h-100">Run Anything, Anywhere</div>
+              </li>
+              <li [ngClass]="{'active':propel3}" (click)="selectTab('propel3')">
+                <div data-toggle="tab" class="h-100">Packed with Features</div>
+              </li>
+            </ul>
+          </div>
+          <div class="propel" [ngClass]="{'opacity-full':propel1}">
+            <div class="propel-left kubera-propel-content">
+              <img lazyLoad="assets/images/product/KuberaPropel.png" alt="propel">
+              <h3 class="kubera-propel-title">Kubera Propel is Fast. Really Fast</h3>
+              <div class="kubera-desc">
+                <div class="kubera-inner">
+                  <p>Kubera Propel is a cloud-native declarative data plane written in Rust. It’s built
+                    on the open source OpenEBS
+                    Mayastor. Kubera Propel combines breakthrough technologies like NVMe, SPDK, and emerging new storage
+                    features
+                    in the Linux kernel.</p>
+                  <p>
+                    OpenEBS managed by Kubera Propel has been shown independent benchmarks to deliver extremely low
+                    latency performance for data bases and other workloads running on Kubernetes.
+                  </p>
+                </div>
+                <div class="mobile-image">
+                  <img lazyLoad="assets/images/product/propel.png" alt="Image" class="img-fluid kubera-feature-image" />
+                </div>
+              </div>
+              <div class="key-benefits">
+                <h3 class="benifit-title">Key Benefits</h3>
+                <ul class="list-group">
+                  <li class="list-group-item"><span>01</span>Low-latency and NVMe support</li>
+                  <li class="list-group-item"><span>02</span>Simple GUI with check and auto-configuration</li>
+                  <li class="list-group-item"><span>03</span>CSI control plane</li>
+                </ul>
+              </div>
+              <div class="propel-btn">
+                <!-- <a href="https://go.mayadata.io/register-for-kubera-chaos-and-propel-technical-preview" target="_blank"
+                  rel="noopener noreferrer">
+                  <button class="btn btn-primary">
+                    Subscribe Now
+                  </button>
+                </a> -->
+                <a class="d-inline-block mb-4 requestademogtm" href=""
+                  onclick="Calendly.showPopupWidget('https://calendly.com/mayadata/15min');return false;">
+                  <button class="btn btn-primary">Talk to us</button>
+                </a>
+              </div>
+            </div>
+            <div class="propel-right">
+              <div class="propel-image">
+                <img lazyLoad="assets/images/product/propel.png" alt="Image" class="img-fluid kubera-feature-image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="propel" [ngClass]="{'opacity-full':propel2}">
+            <div class="propel-left kubera-propel-content">
+              <img lazyLoad="assets/images/product/KuberaPropel.png" alt="propel">
+              <h3 class="kubera-propel-title">Run Anything, Anywhere</h3>
+
+              <div class="kubera-desc">
+                <div class="kubera-inner">
+                  <p>Wherever your code goes, Kubera follows. Kubera Propel is tested and validated with all major
+                    Kubernetes
+                    platforms. Runs on major clouds (EKS, AKS, GKE), and in popular k8s distributions like Red Hat
+                    Openshift,
+                    VMware Tanzu, and Rancher. Bring performance and cloud like convenience on-prem, to your hybrid
+                    cloud,
+                    or to a
+                    multi-cloud strategy.</p>
+                  <p>Kubera Propel complements any modern data workload. From Kafka to Postgres, Kubera Propel is a
+                    great
+                    match
+                    for all of the most popular databases and stateful workloads.</p>
+                </div>
+
+
+
+                <div class="mobile-image">
+                  <img lazyLoad="assets/images/product/propel1.png" alt="Image"
+                    class="img-fluid kubera-feature-image" />
+                </div>
+              </div>
+
+
+              <div class="propel-btn">
+                <!-- <a href="https://go.mayadata.io/register-for-kubera-chaos-and-propel-technical-preview" target="_blank"
+                  rel="noopener noreferrer">
+                  <button class="btn btn-primary">
+                    Subscribe Now
+                  </button>
+                </a> -->
+                <a class="d-inline-block mb-4 requestademogtm" href=""
+                  onclick="Calendly.showPopupWidget('https://calendly.com/mayadata/15min');return false;">
+                  <button class="btn btn-primary">Talk to us</button>
+                </a>
+              </div>
+            </div>
+            <div class="propel-right">
+              <div class="propel-image">
+                <img lazyLoad="assets/images/product/propel1.png" alt="Image" class="img-fluid kubera-feature-image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="propel" [ngClass]="{'opacity-full':propel3}">
+            <div class="propel-left kubera-propel-content">
+              <img lazyLoad="assets/images/product/KuberaPropel.png" alt="propel">
+              <h3 class="kubera-propel-title">Packed with Features</h3>
+
+
+              <div class="kubera-desc">
+                <div class="kubera-inner">
+
+                  <p>Kubera Propel has all of the enterprise features needed to orchestrate storage at scale. It comes
+                    packed with
+                    all of the policy, partitioning, protection, and performance benchmarking features you would expect.
+                  </p>
+                  <p>Kubera Propel is fast, but it’s also featureful. Many of the essential features are enabled out of
+                    the
+                    box,
+                    and adding options requires just a flip of a switch.</p>
+
+                </div>
+                <div class="mobile-image">
+                  <img lazyLoad="assets/images/product/propel2.png" alt="Image"
+                    class="img-fluid kubera-feature-image" />
+                </div>
+              </div>
+              <div class="key-benefits">
+                <h3 class="benifit-title">Key Benefits</h3>
+                <ul class="list-group">
+                  <li class="list-group-item"><span>01</span>Fastest Container Attached Storage</li>
+                  <li class="list-group-item"><span>02</span>Adds resilience via n-way synchronous mirroring</li>
+                  <li class="list-group-item"><span>03</span>Runs on any storage media</li>
+                  <li class="list-group-item"><span>04</span>Delivers extreme performance with NVMe media</li>
+                  <li class="list-group-item"><span>05</span>Built in performance benchmarking</li>
+                </ul>
+              </div>
+              <div class="propel-btn">
+                <!-- <a href="https://go.mayadata.io/register-for-kubera-chaos-and-propel-technical-preview" target="_blank"
+                  rel="noopener noreferrer">
+                  <button class="btn btn-primary">
+                    Subscribe Now
+                  </button>
+                </a> -->
+                <a class="d-inline-block mb-4 requestademogtm" href=""
+                  onclick="Calendly.showPopupWidget('https://calendly.com/mayadata/15min');return false;">
+                  <button class="btn btn-primary">Talk to us</button>
+                </a>
+              </div>
+            </div>
+            <div class="propel-right">
+              <div class="propel-image">
+                <img lazyLoad="assets/images/product/propel2.png" alt="Image" class="img-fluid kubera-feature-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

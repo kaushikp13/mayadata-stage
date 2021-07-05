@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="97px" height="76px" viewBox="0 0 97 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>MC - Ad -01</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="27" y="0" width="21" height="5"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21" height="5" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="MC---Ad--01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-29" transform="translate(3.000000, 2.000000)">
+            <polygon id="Path-15" stroke="#0A025D" stroke-width="3" fill="#FEFEFE" points="8.97168731 43 28.9758493 43 37.2689583 57.1 28.9758493 71.2 8.97168731 71.2 0 57.1"></polygon>
+            <polygon id="Path-15-Copy" stroke="#0A025D" stroke-width="3" fill="#FEFEFE" points="62.9716873 43 82.9758493 43 91.2689583 57.1 82.9758493 71.2 62.9716873 71.2 54 57.1"></polygon>
+            <polygon id="Path-15-Copy-2" stroke="#0A025D" stroke-width="3" fill="#FEFEFE" points="35.9716873 0.3 55.9758493 0.3 64.2689583 14.4 55.9758493 28.5 35.9716873 28.5 27 14.4"></polygon>
+            <g id="Group-11" transform="translate(8.000000, 12.000000)">
+                <use id="Rectangle" stroke="#684FF1" mask="url(#mask-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" xlink:href="#path-1"></use>
+                <rect id="Rectangle-Copy-3" stroke="#684FF1" x="0.5" y="43.5" width="20" height="4"></rect>
+                <path d="M29.5,45 L46,45.1" id="Line-27" stroke="#0A025D" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M16.612945,23.6680762 L32.701986,23.0413717" id="Line-27-Copy" stroke="#0A025D" stroke-width="2" stroke-linecap="round" transform="translate(24.459980, 23.505055) rotate(118.000000) translate(-24.459980, -23.505055) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

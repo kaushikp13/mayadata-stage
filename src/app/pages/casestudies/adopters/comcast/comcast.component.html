@@ -1,0 +1,217 @@
+<!-- <div class="section-container intro-section bg-shadowblue" *ngIf="comcastIntro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center align-items-center flex-column py-5">
+        <img src="assets/images/mayadata-landing/companies/comcast.svg" class="img-fluid comcast-logo" alt="Comcast" />
+      </div>
+      <div class="col-md-12">
+        <div class="wrapper">
+          <p class="dm-p text-center" *ngFor="let intro of comcastIntro">{{intro}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-container" *ngIf="comcastAndOpenEBS">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-center align-items-center flex-column pb-4 wrapper">
+          <h2 class="dm-h2 text-center pb-4">{{comcastAndOpenEBS.title}}</h2>
+          <p class="dm-p text-center" *ngFor="let description of comcastAndOpenEBS.intros">{{description}}</p>
+        </div>
+        <div class="card-lists">
+          <div class="card-item" *ngFor="let workload of comcastAndOpenEBS.workloadsOnOpenEBS; let i = index">
+            <div class="card-item-content bg-shadowblue">
+              <div class="item">
+                <img src={{workload.img_url}} alt={{workload.img_alt}} class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-container comcast-help-section bg-shadowblue">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-center align-items-center flex-column pb-4 heading-section">
+          <h2 class="dm-h2 text-center">Comcast is an avid user of Kubernetes for a variety of use cases, including:
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-12" *ngFor="let item of gainsOfComcast">
+        <div class="gain-block wrapper">
+          <p class="dm-h4 text-center font-weight-bold">{{item.title}}</p>
+          <p class="dm-p text-center">{{item.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-container adopters-section bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-center align-items-center flex-column pb-4 heading-section wrapper">
+          <h2 class="dm-h2 text-center text-white pb-3">You can read much more about Comcast and their use of OpenEBS on
+            <a href="https://github.com/openebs/openebs/blob/master/ADOPTERS.md" target="_blank"
+              rel="noopener noreferrer" class="text-white">ADOPTERS.md</a></h2>
+          <p class="text-white text-center">An excellent resource for simplifying deployment and operations on
+            Kubernetes via the use of OpenEBS is available here: <a class="text-tertiary"
+              href="https://blog.mayadata.io/apache-kafka-on-kubernetes"
+              target="_blank">https://blog.mayadata.io/apache-kafka-on-kubernetes</a>.
+          </p>
+          <p class="text-white text-center">The primary data engines in use at Comcast to date include OpenEBS <a
+              class="text-tertiary" href="https://docs.openebs.io/docs/next/cstor.html" target="_blank">cStor</a> and
+            <a class="text-tertiary" href="https://docs.openebs.io/docs/next/localpv.html" target="_blank">LocalPV</a>.
+          </p>
+          <a href="https://github.com/openebs/openebs/blob/master/adopters/comcast/README.md" target="_blank"
+            rel="noopener noreferrer" class="mt-3">
+            <button class="btn btn-tertiary">Explore more</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-center align-items-center flex-column pb-4 heading-section wrapper">
+          <h2 class="dm-h2 text-center">Kubera is free forever for individual usage.
+            Take a test drive now.</h2>
+          <a href={{signUpUrl}} class="mt-3">
+            <button class="btn btn-secondary">Sign Up Free</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<section class="section-container text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+        <div class="wrapper">
+          <h1>{{comcastIntro.title}}</h1>
+          <p *ngFor="let desc of comcastIntro.descriptions">{{desc}}</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="d-flex justify-content-center justify-content-lg-end  align-items-center h-100">
+          <img lazyLoad={{comcastIntro.img.imgSrc}} alt={{comcastIntro.img.imgAlt}} class="img-fluid p-5" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-container text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+        <div class="wrapper">
+          <h2>{{usecases.title}}</h2>
+          <p>{{usecases.description}}</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="d-flex justify-content-center justify-content-lg-end align-items-center flex-column h-100">
+          <h4 class="mb-5">{{usecases.subtitle}}</h4>
+          <img lazyLoad={{usecases.img.imgSrc}} alt={{usecases.img.imgAlt}} class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-container text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="wrapper pb-5 comcast-aviduser">
+          <h2>{{comcastAvidUser.title}}</h2>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="mt-5">
+          <div *ngFor="let item of comcastAvidUser.items; let i = index;" class="text-white issue"
+            [ngClass]="'issue-' + (i+1)">
+            <p style="font-size: 20px;" class="font-weight-light">{{item}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-container comcast-cta-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-center align-items-center flex-column pb-4 heading-section wrapper">
+          <h3 class="text-center text-white pb-3">You can read much more about Comcast and their use of OpenEBS on
+            <a href="https://github.com/openebs/openebs/blob/master/ADOPTERS.md" target="_blank"
+              rel="noopener noreferrer" class="text-white">ADOPTERS.md</a>
+          </h3>
+          <p class="text-white text-center">An excellent resource for simplifying deployment and operations on
+            Kubernetes via the use of OpenEBS is available here: <a class="text-white"
+              href="https://blog.mayadata.io/apache-kafka-on-kubernetes"
+              target="_blank">https://blog.mayadata.io/apache-kafka-on-kubernetes</a>.
+          </p>
+          <p class="text-white text-center">The primary data engines in use at Comcast to date include OpenEBS <a
+              href="https://docs.openebs.io/docs/next/cstor.html" target="_blank">cStor</a> and
+            <a href="https://docs.openebs.io/docs/next/localpv.html" target="_blank">LocalPV</a>.
+          </p>
+          <a href="https://github.com/openebs/openebs/blob/master/adopters/comcast/README.md" target="_blank"
+            rel="noopener noreferrer" class="mt-3">
+            <button class="btn btn-primary">Explore more</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <ul class="list-unstyled issue-wrapper">
+  <li *ngFor="let issue of issues.issues; let i = index;" class="mb-5 text-white issue"
+    [ngClass]="'issue-' + (i+1)">
+    <p style="font-size: 20px;" class="font-weight-light">{{issue}}</p>
+  </li>
+</ul> -->
+
+
+<!-- <section class="section-container text-white adopters-section-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center align-items-center flex-column text-center adopters-section">
+          <h3>You can read much more about Arista and their use of OpenEBS on
+            <a href="https://github.com/openebs/openebs/blob/master/ADOPTERS.md" target="_blank"
+              rel="noopener noreferrer" class="text-white">ADOPTERS.md</a></h3>
+          <p>Arista and MayaData continue to collaborate to extend the capabilities Kubernetes at Arista Networks. In
+            conclusion, Arista evaluated many solutions and selected OpenEBS because it best enabled the use of
+            Kubernetes.</p>
+          <a href="https://github.com/openebs/openebs/blob/master/adopters/arista/README.md" target="_blank"
+            rel="noopener noreferrer">
+            <button class="btn btn-primary">More</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->

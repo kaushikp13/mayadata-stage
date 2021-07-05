@@ -1,0 +1,302 @@
+/*  Common For All and for mobile */
+.trust-content {
+  width: 100%;
+}
+.global-title span {
+  color: #a1a6c1;
+}
+.trust-wrapper {
+  padding: 100px 0 0;
+  position: relative;
+  background: url("assets/images/home/trust-sec-bg.png") no-repeat;
+  margin-top: -30px;
+  background-size: cover;
+}
+::ng-deep .inner-slider::after {
+  position: absolute;
+  content: "";
+  width: 130px;
+  height: 120px;
+  background: url("assets/images/home/triangle-02.png") no-repeat;
+  right: -70px;
+  top: 60%;
+  background-position: top center;
+  z-index: 9;
+}
+.trust-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  max-width: 625px;
+  margin: 0 auto 30px;
+}
+.trust-btn {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+.content-slider {
+  padding-top: 0 !important;
+}
+::ng-deep {
+  .content-slider {
+    .carousel-indicators {
+      li {
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        cursor: pointer;
+      }
+    }
+    .carousel-control-prev {
+      left: 20%;
+      bottom: 12px;
+      top: auto;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 40px;
+      width: 40px;
+      height: 40px;
+      z-index: 99;
+      cursor: pointer;
+    }
+    .carousel-control-next {
+      right: 20%;
+      bottom: 12px;
+      top: auto;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 40px;
+      width: 40px;
+      height: 40px;
+      z-index: 99;
+      cursor: pointer;
+    }
+  }
+  .carousel-inner:focus,
+  .carousel.slide:focus,
+  .inner-slider:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.lead {
+  font-size: 1.09375rem;
+  font-weight: 300;
+}
+.content-slider h6 {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+
+  text-align: left;
+  margin-bottom: 40px;
+}
+.lead h3 {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: -0.647335px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.lead p {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.554859px;
+  color: #ffffff;
+  opacity: 0.4;
+}
+::ng-deep .inner-slider {
+  background: url("assets/images/home/slider-bg-what.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+::ng-deep .inner-slider:before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 65px;
+  background: url("assets/images/home/home-poly.png") no-repeat;
+  left: -30px;
+  bottom: 30px;
+}
+.slider-wrapper {
+  display: flex;
+  padding: 30px 30px;
+  padding-bottom: 70px;
+  min-height: 500px;
+}
+.slider-image img {
+  width: 160px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.6;
+}
+.slider-image {
+  margin-right: 30px;
+  height: 200px;
+  width: 200px;
+}
+.lead img {
+  margin-bottom: 30px;
+}
+.content-slider {
+  padding-top: 100px;
+}
+.trust-content {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+}
+.global-wrapper {
+  text-align: center;
+}
+.global-wrapper .btn {
+  margin-right: 15px;
+}
+.global-title {
+  max-width: 625px;
+  margin: 0 auto 50px;
+}
+@media (max-width: 1300px) {
+  ::ng-deep .inner-slider {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .inner-slider {
+    width: 85%;
+    margin: 0 auto;
+  }
+  ::ng-deep .inner-slider::after {
+    top: 80%;
+    background-size: 50%;
+  }
+}
+/*  Mobile */
+
+@media (max-width: 767px) {
+  .content-slider h6 {
+    font-size: 16px;
+  }
+  .lead h3 {
+    font-size: 18px;
+  }
+  .lead p {
+    font-size: 16px;
+  }
+  .slider-wrapper {
+    padding: 15px 15px 50px;
+    flex-direction: column;
+  }
+  .global-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .global-wrapper a button {
+    padding: 15px 27px;
+    margin-right: 15px;
+  }
+  .global-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .global-wrapper a:nth-child(2) .btn {
+    margin-right: 0 !important;
+  }
+  ::ng-deep .inner-slider::after {
+    top: 15%;
+    background-size: 40%;
+  }
+  ::ng-deep .inner-slider:before {
+    left: -20px;
+    background-size: 70%;
+  }
+}
+@media (max-width: 480px) {
+  ::ng-deep .inner-slider:before {
+    left: -20px;
+    background-size: 70%;
+    bottom: 10px;
+  }
+}
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  ::ng-deep {
+    .content-slider {
+      .carousel-indicators {
+        li {
+          height: 10px;
+          width: 10px;
+          border-radius: 100%;
+          cursor: pointer;
+        }
+      }
+      .carousel-control-prev {
+        left: 40%;
+        bottom: 12px;
+        top: auto;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 40px;
+        width: 40px;
+        height: 40px;
+        z-index: 99;
+        cursor: pointer;
+      }
+      .carousel-control-next {
+        right: 40%;
+        bottom: 12px;
+        top: auto;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 40px;
+        width: 40px;
+        height: 40px;
+        z-index: 99;
+        cursor: pointer;
+      }
+    }
+    .carousel-inner:focus,
+    .carousel.slide:focus,
+    .inner-slider:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1500px) {
+} // optional
+
+@media screen and (min-width: 1900px) {
+} // optional

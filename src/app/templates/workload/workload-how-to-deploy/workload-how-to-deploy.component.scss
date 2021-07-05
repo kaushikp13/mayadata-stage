@@ -1,0 +1,118 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-of-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.item {
+  min-width: 120px;
+  text-align: center;
+}
+
+.show {
+  display: block !important;
+}
+
+.item-content {
+  display: none;
+}
+
+.mountain-climber {
+  display: none;
+}
+
+.list-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.list-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.active,
+.item:hover {
+  color: var(--white);
+  opacity: 1;
+  background-color: var(--tertiary);
+
+  .list-item-content {
+    background-color: var(--tertiary);
+    color: var(--white);
+  }
+}
+
+.mountain-climber-section {
+  max-width: 650px;
+  margin: auto;
+}
+
+.steps {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.steps-area {
+  max-height: 650px;
+  height: 650px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-right: 20px;
+}
+
+
+.steps-area::-webkit-scrollbar {
+  width: 4px;
+  margin-left: 16px;;
+}
+
+.steps-area::-webkit-scrollbar-track {
+}
+
+.steps-area::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.gradient-border {
+  border: 2px solid rgba(102, 61, 219, 0.72);
+  border-radius: 24px;
+}
+
+.workload-journey {
+  max-width: 520px;
+}
+
+// style="background-color: #191428;"
+
+//  @ 0%
+//  @ 100%

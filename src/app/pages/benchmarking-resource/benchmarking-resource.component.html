@@ -1,0 +1,106 @@
+<!-- Hero Section -->
+<div class="section-container hero-benchmark-section">
+  <div class="container">
+    <div class="row py-md-4">
+      <div
+        class="col-12 col-lg-6 pb-4 pb-lg-0  d-flex justify-content-start justify-content-md-center align-items-center align-items-md-start flex-column ">
+        <h1 class="text-white benchmark-title">
+          Benchmarking Resources for Kubernetes
+        </h1>
+        <h4 class="text-white pb-4 sub-title">TL;DR: Always test your own application in an environment representative
+          of the final target - this is always the best scenario to achieve comparable results to what is expected in a
+          production environment.
+        </h4>
+
+      </div>
+      <div class="col-12 col-lg-6 hero-video">
+        <img lazyLoad="assets/images/benchmark/1.png" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero Section End -->
+
+<!-- middle description -->
+<div class="description-part">
+  <span>
+    While there has been a revolution at the hardware layer, including the emergence of NVMe and NVMe-oF, and in the way
+    that workloads are loosely coupled and scheduled with the help of Kubernetes, benchmarking performance still comes
+    down to being as close as possible to the real world experience of your users and their workloads.
+  </span>
+</div>
+<!-- middle description End -->
+
+
+<!-- benchmark-content -->
+<div class="benchmark-content">
+  <div class="container">
+    <div class="row d-flex justify-content-start justify-content-md-crente align-items-start align-items-md-start">
+      <div class="col-12 col-lg-6 pb-4  bench-con-1">
+        <img lazyLoad="assets/images/benchmark/2.png" />
+      </div>
+      <div class="col-12 col-lg-6 pb-4">
+        <p>One approach that we take at MayaData is to explicitly compare the performance of our software - and the
+          NVMe-oF capable OpenEBS Mayastor in particular - to the theoretical maximum performance of underlying devices
+          and cloud volumes. You can see this approach in benchmarking of OpenEBS Mayastor with our friends at Intel. It
+          is our hope that this approach will provide somewhat of a common denominator for performance comparisons. We
+          also find that users appreciate this - they can trade off the benefits of our software vs. the risks inherent
+          in simply using the raw disk and local persistent volumes without the management or resilience advantages
+          offered by OpenEBS Mayastor.</p>
+        <div class="row">
+          <div class="col-12 d-flex">
+            <a href="https://mayadata.io/casestudies/intel-and-mayadata-benchmarking-of-openEBS-mayastor"
+              target="_blank" rel="noopener referrer">
+              <button class="btn btn-primary">Read the Benchmarking Report</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="row d-flex justify-content-start justify-content-md-center align-items-center align-items-md-start second-row">
+      <div class="col-12 col-lg-6 pb-4 ">
+        <p>A second approach we take is to offer tools that assist in creating this real world environment. In
+          particular, we authored an automation playground that is extensible. It can deploy Kubernetes itself and
+          relevant workloads and relevant benchmarks for those workloads. Please take a look and contribute your
+          thoughts and help this open resource grow in value. </p>
+        <div class="row">
+          <div class="col-12 d-flex ">
+            <a href="https://github.com/mayadata-io/deployment-automation-playground/tree/main/demo-playground"
+              target="_blank" rel="noopener referrer">
+              <button class="btn btn-primary">Explore Automation Playground</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 pb-4 image-wrap bench-con-2">
+        <img lazyLoad="assets/images/benchmark/3.png" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- benchmark-content End -->
+
+
+<!-- Benchmark Resources -->
+<app-workload-benefits [data]="resources"></app-workload-benefits>
+<!-- Benchmark Resources End -->
+
+<!-- Benchmark Has Questions -->
+<section class="section-container">
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-12">
+        <div style="max-width: 420px">
+          <h2>Have Questions</h2>
+          <p>Have a question on benchmarking or want to talk to us to test your application?</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <app-pricing-form></app-pricing-form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Benchmark Has Questions End-->

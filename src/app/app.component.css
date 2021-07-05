@@ -1,0 +1,16 @@
+::ng-deep img {
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+::ng-deep img.ng-lazyloaded {
+    opacity: 1;
+}
+
+::ng-deep markdown img {
+    opacity: 1;
+}
+
+::ng-deep .leadinModal.leadinModal-v3 .dyno-image img {
+    opacity: 1;
+}

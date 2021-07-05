@@ -1,0 +1,43 @@
+/*  Common For All and for mobile */
+
+.bg-wrapper {
+  position: relative;
+}
+
+.bg {
+  background-image: url('assets/images/contactus/contact-bg.png');
+  height: 715px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {
+  .address-section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .address-section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {}
+
+@media screen and (min-width:1900px) {}

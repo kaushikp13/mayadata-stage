@@ -1,0 +1,63 @@
+.meet-kubera-block {
+  max-width: 600px;
+  margin: auto;
+}
+
+.kubera-donut {
+  max-width: 100%;
+  margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/*  Common For All and for mobile */
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+  .kubera-donut {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .kubera-donut {
+    max-width: 480px;
+    margin: auto;
+  }
+
+  ul {
+    padding-inline-start: 40px;
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
+
+
+
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

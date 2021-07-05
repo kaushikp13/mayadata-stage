@@ -1,0 +1,46 @@
+<section *ngIf="operators" class="section-container">
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-12 mb-3">
+        <h2>{{operators.title}}</h2>
+        <p>{{operators.subtitle}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="entity">
+          <div class="line m-0"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row py-4">
+      <div class="col-12 col-md-6" *ngFor="let operator of operators.operatorLists">
+        <div class="pb-3 d-flex justify-content-start w-100" *ngIf="operator.img">
+          <div class="img-block d-flex justify-content-start justify-content-md-center align-items-center">
+            <img lazyLoad={{operator.img}} alt={{operator.title}} class="img-fluid" />
+          </div>
+        </div>
+        <div class="operator-info">
+          <h3>{{operator.title}}</h3>
+          <p [innerHtml]="operator.description"></p>
+        </div>
+        <div class="cta-section">
+          <a *ngIf="operator.cta[0]" href={{operator.cta[0].ctaLink}} target="_blank" rel="noopener noreferrer"
+            class="mr-5">
+            <button class="btn btn-sm btn-primary mb-3">{{operator.cta[0].ctaText}}</button>
+          </a>
+          <a *ngIf="operator.cta[1]" href={{operator.cta[1].ctaLink}} target="_blank" rel="noopener noreferrer">
+            <button class="btn btn-sm btn-outline-primary mb-3">{{operator.cta[1].ctaText}}</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="entity">
+          <div class="line m-0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+/*  Common For All and for mobile */
+.event--img {
+  max-width: 100%;
+}
+.event--badge {
+  max-width: 100%;
+  width: fit-content;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+
+.entity {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  height: 0px;
+  border-top: 1px solid var(--primary);
+  margin-left: 11px;
+  flex-grow: 1;
+}
+
+.current-event p {
+  flex: 1 1 auto;
+}
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {
+  .event--img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width:992px) {}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {} // optional

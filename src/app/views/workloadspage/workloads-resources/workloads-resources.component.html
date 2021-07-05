@@ -1,0 +1,27 @@
+<div class="section-container workloads-resources" *ngIf="workloadResources">
+  <div class="container">
+    <h2 class="text-center pb-4">{{workloadResources.title}}</h2>
+    <!-- <div class="card-lists">
+      <div class="card-item" [class.main-card]="mainCard === i"
+        *ngFor="let resourceItem of workloadResources.resources; let i = index">
+        <div class="card-item-content">
+          <img src={{resourceItem.image_url}} alt="image" [class.gray-img]="mainCard !== i" />
+          <h4 class="dm-h4 text-uppercase pt-3">{{resourceItem.title}}</h4>
+          <p>{{resourceItem.description}}</p>
+        </div>
+      </div>
+    </div> -->
+    <div class="blog-list">
+      <div class="blog-item" *ngFor="let blog of workloadResources.blogs">
+        <div class="blog-card">
+          <img lazyLoad={{blog.img_url}} alt={{blog.img_alt}} class="img-fluid" />
+          <h4 class="text-center py-3">{{blog.title}}</h4>
+          <p class="text-center">{{blog.description}}</p>
+          <a href={{blog.link}} class="pt-4" target="_blank" rel="noopener noreferrer">
+            <button class="btn btn-primary">{{blog.link_text}}</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

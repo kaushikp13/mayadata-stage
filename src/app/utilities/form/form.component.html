@@ -1,0 +1,50 @@
+<form class="form mt-4" (ngSubmit)="formSubmit()" novalidate [formGroup]="leadForm">
+  <div class="">
+    <div class="input-text">
+      <div class="form-group mb-3">
+        <label for="name" class="text-uppercase text-secondary">Name<span class="text-danger">
+            *</span></label>
+        <input type="text" class="form-control form-control-lg" [ngClass]="{
+            'valid_input':name.valid && (name.touched || name.dirty),
+            'invalid_input':name.invalid && (name.touched || name.dirty || isFormEmpty)
+            }" id="name" formControlName="name" required>
+      </div>
+    </div>
+    <div class="input-text">
+      <div class="form-group mb-3">
+        <label for="email" class="text-uppercase text-secondary">Email Address<span class="text-danger">
+            *</span></label>
+        <input type="email" class="form-control form-control-lg" [ngClass]="{
+                'valid_input':email.valid && (email.touched || email.dirty),
+                'invalid_input':email.invalid && (email.touched || email.dirty || isFormEmpty)
+                }" id="email" formControlName="email" required>
+      </div>
+    </div>
+    <div class="input-text">
+      <div class="form-group mb-3">
+        <label for="contact_number" class="text-uppercase text-secondary">Contact Number</label>
+        <input type="tel" class="form-control form-control-lg" [ngClass]="{
+            'valid_input':contact_number.valid && (contact_number.touched || contact_number.dirty),
+            'invalid_input':contact_number.invalid && (contact_number.touched || contact_number.dirty || isFormEmpty)
+            }" id="contact_number" formControlName="contact_number">
+      </div>
+    </div>
+    <div class="input-text">
+      <div class="form-group mb-3">
+        <label for="company" class="text-uppercase text-secondary">Company<span class="text-danger">
+            *</span></label>
+        <input type="text" class="form-control  form-control-lg" [ngClass]="{
+                'valid_input':company.valid && (company.touched || company.dirty),
+                'invalid_input':company.invalid && (company.touched || company.dirty || isFormEmpty)
+                }" id="company" formControlName="company" required>
+      </div>
+    </div>
+  </div>
+  <div>
+    <span class="text-uppercase text-secondary notes"><span class="text-danger">*</span>
+      Required Fields</span>
+  </div>
+  <div class="mt-5 text-center">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>

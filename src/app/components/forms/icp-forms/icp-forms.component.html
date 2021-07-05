@@ -1,0 +1,43 @@
+<p class="text-white">Fill out this form and we will get back to you soon</p>
+<form novalidate [formGroup]="leadForm" (ngSubmit)="SendDetails()">
+  <div class="form">
+    <div class="form-group">
+      <div class="inner-addon right-addon">
+        <input type="text" class="form-control" [ngClass]="{
+          'valid_input':name.valid && (name.touched || name.dirty),
+          'invalid_input':name.invalid && (name.touched || name.dirty || isFormEmpty)
+          }" placeholder="Name" id="name" formControlName="name" required>
+      </div>
+      <div class="form-control-feedback" *ngIf="name.errors && isFormEmpty">
+        <div class="text-danger text-left" *ngIf="name.errors.required">*Name is required
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" [ngClass]="{
+          'valid_input':email.valid && (email.touched || email.dirty),
+          'invalid_input':email.invalid && (email.touched || email.dirty || isFormEmpty)
+          }" placeholder="Email address" id="email" formControlName="email" required>
+      <div class="form-control-feedback" *ngIf="email.errors && isFormEmpty">
+        <div class="text-danger text-left" *ngIf="email.errors.required">*Email is required
+        </div>
+        <div class="text-danger text-left" *ngIf="email.errors.pattern">Email is not of correct format</div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-pp btn-block" [disabled]="!leadForm.valid" data-toggle="modal" data-target="#litmusmodal">Contact me</button>
+  </div>
+</form>
+
+<div class="modal fade" id="litmusmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered rounded-0" role="document">
+    <div class="modal-content">
+      <div class="modal-body d-flex flex-column justify-content-center text-center pd-t-b-heading1">
+        <div class="succes-form-section text-center mt-3">
+          <img src="assets/images/typing .svg" alt="typing-image">
+          <h4 class="tagline mt-3">Thank you for your interest.</h4>
+          <p>We will get back to you with more information</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

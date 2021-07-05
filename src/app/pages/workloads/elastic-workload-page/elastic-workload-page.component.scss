@@ -1,0 +1,100 @@
+::ng-deep img[alt="cookbook"] {
+    max-width: 300px;
+    display: block;
+}
+
+.elastic-company {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 20%;
+}
+
+.elastic-company--image-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.elastic-company--image-block img {
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.elastic-company--image-block:hover img {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.elastic-company:last-of-type {
+    padding-bottom: 0px;
+}
+
+.elastic-company--image-block img {
+    max-width: 100%;
+    // filter: grayscale(1) brightness(0.9) invert(1);
+}
+.elastic-company--image-block {
+    height: auto;
+}
+
+.cloud-title h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*  Common For All and for mobile */
+.why-elastic-workload {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+    grid-gap: 1rem;
+}
+
+.why-elastic-workload-section {
+    background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+}
+::ng-deep .elastic-content li {
+    font-size: 18px;
+    list-style: none;
+}
+
+::ng-deep .elastic-content p {
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+    .elastic-company {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        max-width: unset;
+    }
+}
+
+@media (max-width: 991px) {
+    .elastic-company--image-block {
+        height: 100%;
+    }
+    .elastic-company--image-block {
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .elastic-company--image-block img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .why-elastic-workload {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+}

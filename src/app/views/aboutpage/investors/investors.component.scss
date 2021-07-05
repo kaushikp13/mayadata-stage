@@ -1,0 +1,105 @@
+.investor-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.investor-logo {
+  width: 80%;
+}
+.investor-block:nth-child(2) {
+  padding-left: 40px;
+}
+.investors-inner-block {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.investor-top {
+  width: 100%;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+.investor-block a {
+  display: block;
+}
+.investors__content-block {
+  width: 100%;
+}
+.investors-section {
+  margin-bottom: 200px;
+}
+
+/* Ipad View */
+
+@media (max-width: 1024px) {
+  .investor-title {
+    font-size: 50px;
+  }
+  .investor-top {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .investor-block .advisor-img {
+    width: 70% !important;
+  }
+  .investor-block a:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .second-wrapper {
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 576px) {
+  .investors-inner-block[_ngcontent-serverApp-c10] {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .investor-block {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .investor-block:nth-child(2) {
+    order: 3;
+    margin-top: 0;
+    width: 100%;
+    padding-left: 0;
+  }
+  .investor-block:nth-child(1) .investor-logo,
+  .investor-block:nth-child(4) .investor-logo {
+    width: 45%;
+  }
+  .advisor-designation {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .investor-block:nth-child(2) .advisor-img {
+    width: auto !important;
+    max-width: 100%;
+  }
+  .investors-section {
+    margin-bottom: 130px;
+  }
+  .investors-section {
+    margin-bottom: 80px;
+    padding-top: 110px;
+  }
+  .investor-title {
+    font-size: 40px;
+  }
+  .investor-block:nth-child(3) {
+    order: -1;
+  }
+  .advisor-block {
+    margin-bottom: 20px;
+  }
+}

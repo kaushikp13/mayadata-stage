@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 advisor-top">
+      <h3 class="advisor-title">Advisors</h3>
+    </div>
+    <div class="col-md-12 d-flex justify-content-center align-items-center">
+      <div class="advisor-block-wrapper">
+        <div class="advisor-block" *ngFor="let advisor of advisors">
+          <img lazyLoad={{advisor.advisorImageURL}} class="advisor-img rounded-circle" alt={{advisor.advisorImageAlt}}>
+          <h4 class="advisor-name">{{advisor.advisorName}}</h4>
+          <p class="advisor-designation">{{advisor.advisorDesignation}},
+            {{advisor.advisorCompany}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

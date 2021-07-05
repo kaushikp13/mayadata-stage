@@ -1,0 +1,22 @@
+<section *ngIf="pastEvents" class="pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="mb-5">
+          <h2 class="h1 text-white">{{pastEvents.title}}</h2>
+        </div>
+        <div class="past-events text-white">
+          <div *ngFor="let event of pastEvents.events" class="event-card">
+            <img lazyLoad={{event.image_url}} alt={{event.image_alt}} class="img-fluid" />
+            <span class="text-small d-block py-3">{{event.date}}</span>
+            <h4>{{event.title}}</h4>
+            <p class="text-sm">{{event.description}}</p>
+            <a href={{event.url}} target="_blank" rel="noopener noreferrer">
+              <button class="btn btn-outline-primary btn-sm">{{event.actionText}}</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

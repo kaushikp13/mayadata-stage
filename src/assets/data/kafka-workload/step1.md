@@ -1,0 +1,16 @@
+Kafka is a distributed system consisting of servers and clients that communicate via a high-performance TCP network protocol[[1]](https://kafka.apache.org/intro). It can be deployed on bare-metal hardware, virtual machines, and containers in on-premise as well as cloud environments. Apache Kafka is a community distributed event streaming platform capable of handling a very huge amount of events a day. The event streaming is the practice of capturing data in real-time from event sources like databases, sensors, mobile devices, cloud services, and software applications in the form of streams of events; storing these event streams durably for later retrieval; manipulating, processing, and reacting to the event streams in real-time as well as retrospectively; and routing the event streams to different destination technologies as needed. Event streaming thus ensures a continuous flow and interpretation of data so that the right information is at the right place, at the right time[[2]](https://kafka.apache.org/documentation/).
+
+The KUDO Kafka operator creates, configures and manages Apache Kafka clusters running on Kubernetes. KUDO Kafka is a Kubernetes operator built on KUDO to manage Apache Kafka in a scalable, repeatable, and standardized way over Kubernetes[[3]](https://github.com/kudobuilder/operators/tree/master/repository/kafka). Using Kudo, we will install both Zookeeper and Kafka applications.The Zookeeper is for coordinating the distributed services between Kafka brokers.
+
+This guide explains the basic installation for both KUDO Kafka and KUDO Zookeeper on OpenEBS Local PV device.It also provides a way to monitor the health of Kafka workload using Prometheus and Grafana. Also, users can generate some load using Kafka producers and they can see how Kafka consumers consume these generated messages.
+
+
+## Before Starting
+
+You require an existing Kubernetes cluster. Kubernetes provides platform abstraction, cloud-native software runs, and behaves the same way on a managed Kubernetes service like AWS EKS, Google Cloud GKE, Microsoft AKS, DigitalOcean Kubernetes Service, or self-managed based on Red Hat OpenShift and Rancher. You can also use kubeadm, kubespray, minikube. Since you made it here, we assume you already have one configured. 
+
+MayaData team has proudly over 50 CKAs, years of experience building for enterprises, and running Kubernetes in production. If you need professional help to decide, we can connect you with one of our trusted partners. In case you want to learn more, just schedule a call [schedule a call](https://calendly.com/mayadata/15min) with us and we will send you a best-selling  “Kubernetes - A Complete DevOps Cookbook,” also written by one of our own experts.
+
+| [![cookbook](assets/data/kafka-workload/images/cookbook.png)](https://www.amazon.com/Kubernetes-applications-orchestrate-containers-cloud-native-ebook/dp/B08537GMYW)  | *Free book*: **Kubernetes A Complete DevOps Cookbook**| 
+| ------ | ------ |
+| Schedule a 15-minute call today to speak with one of our partners and receive a FREE copy of our new book. ||

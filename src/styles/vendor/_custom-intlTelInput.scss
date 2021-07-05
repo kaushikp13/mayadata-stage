@@ -1,0 +1,27 @@
+/*  Common For All and for mobile */
+.intl-tel-input {
+  width: 100%;
+}
+
+.valid_input .intl-tel-input input {
+  box-shadow: inset 0 0 0 2px #36b37e;
+}
+
+.invalid_input .intl-tel-input input {
+  box-shadow: inset 0 0 0 2px #ff5630;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {} // optional

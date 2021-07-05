@@ -1,0 +1,22 @@
+<section class="section-container ability-sec" *ngIf="mayadataBenefits">
+  <div class="container data-agility-section">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-start align-items-start flex-column sec-1-title">
+        <h2 class="data-title">{{mayadataBenefits.title}}</h2>
+        <!-- <p class="text-gray-3 text-center" *ngIf="oepBenefits.subtitle">{{oepBenefits.subtitle}}</p> -->
+      </div>
+      <div class="col-12 col-sm-6 col-lg-6 oep-benefits--card" *ngFor="let benefit of mayadataBenefits.benefits">
+
+        <div class="d-flex justify-content-center align-items-center p-3 oep-benefits--imgblock">
+          <img lazyLoad={{benefit.imageUrl}} alt={{benefit.alt}} class="img-fluid benefits-icons" />
+        </div>
+        <div class="d-flex justify-content-start align-items-center flex-column box-text-div">
+          <p class="oep-benefits-title">
+            {{benefit.title}}</p>
+          <p class="benefit-content">{{benefit.description}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

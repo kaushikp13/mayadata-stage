@@ -1,0 +1,13 @@
+<div class="section-container" *ngIf="companies">
+  <div class="container">
+    <h2 class="dm-h2 text-center">{{companies.title}}</h2>
+    <div class="icon-list-container">
+      <div class="icons-list" id="IconLists">
+        <div class="icon" *ngFor="let company of companies.companiesList">
+          <img lazyLoad={{company.imageSrc}} *ngIf="company.name !== companies.fontLogoName" alt={{company.name}} />
+          <h2 class="fontLogoName" *ngIf="company.name === companies.fontLogoName">{{company.name}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

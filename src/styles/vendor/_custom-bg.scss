@@ -1,0 +1,93 @@
+body {
+  background-image: radial-gradient(
+      circle at 100px 150px,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 0.005%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 300px 350px,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 0.005%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 870px 300px,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.8%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 70px 30px,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.8%,
+      transparent 100%
+    ),
+    repeating-radial-gradient(
+      circle at 80% 10%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.8%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 0.005%,
+      transparent 100%
+    ),
+      radial-gradient(
+        circle at 20px 40px,
+        rgba(133, 0, 172, 0.11) 0%,
+        rgba(133, 0, 172, 0.11) 5%,
+        transparent 60%
+      ),
+    radial-gradient(
+      circle at 50px 90%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 20px,
+      transparent 0.005%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 45% 85%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 75% 80%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 45% 80%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 45% 30%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 0.05%,
+      transparent 100%
+    ),
+      linear-gradient(0deg, #191428, #191428);
+}

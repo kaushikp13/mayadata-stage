@@ -1,0 +1,58 @@
+/*  Common For All and for mobile */
+
+.bg-wrapper {
+  position: relative;
+}
+
+.bg {
+  background-image: url('assets/images/resources/bg-mobile-resource.png');
+  height: 740px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -2;
+  right: 0px;
+  margin-top: -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  // background-color: #191428;
+}
+
+.resources-section {
+ max-width: 480px;
+ padding: 60px 0px;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ flex-direction: column;
+ height: 100%;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+
+}
+
+@media screen and (min-width:768px) {
+  .resources-section {
+    padding: 100px 0px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .resources-section {
+    padding: 200px 0px;
+  }
+  .bg {
+    background-image: url('assets/images/resources/bg-3.png');
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {} // optional

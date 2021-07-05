@@ -1,0 +1,36 @@
+.signup-div {
+  background-color: darkblue;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-width: 90px;
+  max-width: 100px;
+  width: 15%;
+}
+
+.icon img {
+  width: 100%;
+}
+
+.partners-subtitle {
+  font-size: 18px;
+}
+
+.workload-partners {
+  background-color: #D3E9FD;
+}

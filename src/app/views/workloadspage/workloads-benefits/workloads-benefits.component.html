@@ -1,0 +1,13 @@
+<div class="section-container" *ngIf="workloadBenefits">
+  <div class="container">
+    <h2 class="dm-h1 text-center pb-4">{{workloadBenefits.title}}</h2>
+    <div class="benefits-list">
+      <div class="benefits-item" *ngFor="let benefitItem of workloadBenefits.benefits">
+        <div class="benefits-item-content">
+          <h4 class="dm-h4 text-uppercase">{{benefitItem.title}}</h4>
+          <p class="dm-p">{{benefitItem.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

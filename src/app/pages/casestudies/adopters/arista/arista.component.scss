@@ -1,0 +1,58 @@
+/*  Common For All and for mobile */
+.wrapper {
+  max-width: 500px;
+}
+
+.adopters-section-wrapper {
+  background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+}
+
+.adopters-section {
+  max-width: 735px;
+  margin: auto;
+}
+
+.gain-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(300px, auto);
+  grid-gap: 1.5rem;
+}
+
+.gain {
+  padding: 16px;
+  border: 1px solid rgba(102, 61, 219, 0.72);
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.gain:hover {
+  background: linear-gradient(90deg, rgba(102, 61, 219, 0.144) 10%,
+  rgba(167, 61, 219, 0.1925) 40%,
+  rgba(168, 61, 219, 0.1932) 60%,
+  rgba(169, 61, 219, 0.194) 100%);
+}
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {
+  .gain-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width:992px) {
+  .gain-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {} // optional

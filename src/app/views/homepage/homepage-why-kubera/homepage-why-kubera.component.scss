@@ -1,0 +1,62 @@
+/*  Common For All and for mobile */
+
+.why-kubera-img {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
+}
+
+.mayadata-logo {
+  height: 30px;
+  width: auto;
+}
+
+.zebra-stripe {
+  background-color: darken($color: #f37207, $amount: 5%);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .checkout-doc {
+    width: 78px;
+    height: 78px;
+    mix-blend-mode: luminosity;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+  .why-kubera-img {
+    max-width: 380px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .why-kubera-img {
+    max-width: 420px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1500px) {
+}
+
+// optional
+
+@media screen and (min-width: 1900px) {
+}
+
+// optional

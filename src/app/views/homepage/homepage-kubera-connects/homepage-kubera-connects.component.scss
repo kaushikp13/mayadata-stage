@@ -1,0 +1,67 @@
+.kubera-connect {
+    position: relative;
+    background: url("assets/images/home/data-home-ability.png") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 70px;
+}
+.kubera-connect::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: rgba(31, 24, 49, 0.9);
+}
+
+.kubera-left-title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120%;
+    color: #ffffff;
+}
+.kubera-left-title span {
+    color: #a1a6c1;
+}
+.what-kubera-left p {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    opacity: 0.9;
+}
+.inner-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 100px 0 30px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+}
+
+@media (max-width: 1024px) {
+    .what-kubera-right {
+        text-align: center;
+    }
+    .kubera-left-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .kubera-left-title {
+        font-size: 30px;
+    }
+    .what-kubera-left p {
+        font-size: 16px;
+    }
+    .oep-storages--card {
+        margin: 0px 10px 10px;
+        flex-direction: column;
+    }
+}

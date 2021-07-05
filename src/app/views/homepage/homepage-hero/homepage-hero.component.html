@@ -1,0 +1,63 @@
+<div class="hero-bg section-container hero-image-display">
+  <h1 class="hero-title-text">Bring Your Data to <span>Kubernetes</span></h1>
+  <div class="hero-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 hero-text-section">
+
+          <p class="subtitle-text">Don’t let an outdated data layer be your bottleneck. Run stateful workloads on
+            <b>Kubernetes</b>, save money and move faster.
+          </p>
+          <p class="hero-content">We lead the development of OpenEBS, the most popular, and fastest, open source storage
+            for Kubernetes. Our
+            customers receive 24x7 support for OpenEBS and for related software, enabling them to use Kubernetes itself
+            as
+            their data layer.
+          </p>
+          <div class="hero-btn-wrapper">
+            <a class="d-inline-block mr-2 mb-4" routerLink="{{ctaUrl}}">
+              <button class="btn btn-primary">OpenEBS Support</button>
+            </a>
+            <a class="d-inline-block mb-4 requestademogtm" routerLink="/get-pricing">
+              <button class="btn btn-outline-primary">Pricing</button>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <span class="hero-image">
+            <img lazyLoad="assets/images/home/home-hero-bg.png" alt="Home" class="home-bg" />
+          </span>
+          <div class="left-window">
+            <!-- LeftWindow -->
+            <ng-lottie containerClass="moving-box moving-box-second-class leftHomebox" [options]="optionsHomeLeftWindow"
+              (animationCreated)="animationCreated($event)">
+            </ng-lottie>
+          </div>
+          <div class="right-window">
+            <!-- RightWindow -->
+            <ng-lottie containerClass="moving-box moving-box-second-class RightHomebox"
+              [options]="optionsHomeRightWindow" (animationCreated)="animationCreated($event)">
+            </ng-lottie>
+          </div>
+          <div class="home-graph">
+            <ng-lottie containerClass="moving-box moving-box-second-class GraphsHome" [options]="optionsHomeGraphs"
+              (animationCreated)="animationCreated($event)">
+            </ng-lottie>
+          </div>
+          <div class="home-poly">
+            <!-- Poly -->
+            <ng-lottie containerClass="moving-box moving-box-second-class PolyHome" [options]="optionsHomePoly"
+              (animationCreated)="animationCreated($event)">
+            </ng-lottie>
+          </div>
+          <div class="home-tringle">
+            <!-- Triangles -->
+            <ng-lottie containerClass="moving-box moving-box-second-class TrianglesHome"
+              [options]="optionsHomeTriangles" (animationCreated)="animationCreated($event)">
+            </ng-lottie>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

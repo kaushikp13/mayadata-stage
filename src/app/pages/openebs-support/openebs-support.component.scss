@@ -1,0 +1,2332 @@
+.page-wrapper {
+    overflow-x: hidden;
+}
+
+.image-poster {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--white);
+    background-position: center center;
+    border: none;
+    min-height: 240px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+    img {
+        height: 270px;
+        object-fit: cover;
+        width: 555px;
+    }
+}
+
+app-testimonial-section {
+    .slider-wrapper {
+        min-height: 360px;
+    }
+}
+.hero-sec {
+    background: url("../../../assets/images/openebs-support/hero-bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 0 100px;
+}
+.page-wrapper .hero-section {
+    padding: 0 !important;
+}
+.video-poster {
+    background-image: url("assets/images/openebs-support/hero-video.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--white);
+    background-position: center center;
+    border: none;
+    // box-shadow: 0px 0px 10px var(--light), 0px 0px 5px var(--light);
+    min-height: 240px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video {
+    height: 70px;
+    width: 70px;
+    background-color: var(--tertiary);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+/*  Common For All and for mobile */
+.video:hover {
+    transition: all 0.35s ease-in-out;
+}
+
+.video span {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: 16px solid transparent;
+    border-top: 16px solid transparent;
+    border-left: 18px solid var(--white);
+}
+
+.overlay {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: var(--tertiary);
+    opacity: 0.1;
+    border-radius: 50%;
+    transition: all 0.15s ease-in-out;
+}
+
+.overlay:hover {
+    height: 110px;
+    width: 110px;
+    opacity: 0.2;
+    transition: all 0.25s ease-in-out;
+}
+
+.bg-img-block,
+.bg-img-block img {
+    display: none;
+    visibility: hidden;
+}
+
+.bg-img-block {
+    position: relative;
+}
+
+.bg-img-block img {
+    position: absolute;
+    top: -100px;
+    right: 0px;
+}
+
+.hero-section {
+    padding: 60px 0px;
+}
+
+.close-x-wrapper {
+    position: relative;
+}
+
+.close-x {
+    display: none;
+    visibility: hidden;
+}
+.kubernete-title {
+    font-size: 50px;
+}
+.kubernete-title span {
+    color: #bbb;
+}
+h4.text-white.pb-4.sub-title {
+    width: 100%;
+}
+.hero-buttons {
+    width: 100%;
+}
+.Workload-right img {
+    width: 100%;
+    margin-right: 90px;
+    border-radius: 15px;
+}
+.supoort-all-time {
+    position: relative;
+}
+.supoort-all-time::before {
+    position: absolute;
+    content: "";
+    background: url("assets/images/openebs-support/usp-background.png") no-repeat;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: top -110px center;
+    left: 0;
+}
+::ng-deep .service-block-wrapper {
+    margin-top: 50px;
+}
+.inner-wrapper {
+    background: url("../../../assets/images/openebs-support/bg-shape.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 60px 0 100px;
+}
+/*  Common For All */
+h3 span {
+    color: #001959;
+    font-weight: 800;
+}
+.Workload-right {
+    text-align: right;
+    // position: relative;
+    z-index: 9;
+    max-width: 50%;
+    width: 100%;
+}
+.service-block-right {
+    background: linear-gradient(rgba(102, 61, 219, 0.1), rgba(169, 61, 219, 0.15));
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(102, 61, 219, 0.72);
+    position: relative;
+}
+.Workload-left {
+    max-width: 50%;
+    width: 100%;
+}
+// ::ng-deep .Workload-right::after {
+//     position: absolute;
+//     content: "";
+//     width: 115%;
+//     height: 110%;
+//     background: url("../../../assets/images/openebs-support/workload-bg.png") no-repeat top right;
+//     left: 5%;
+//     z-index: -1;
+//     top: -20px;
+//     background-size: 100% 100%;
+// }
+// ::ng-deep .Workload-right:before {
+//     position: absolute;
+//     content: "";
+//     height: 100px;
+//     width: 100px;
+//     left: -45px;
+//     bottom: 10px;
+//     background: url("../../../assets/images/openebs-support/blur-cube.png") no-repeat top center;
+// }
+.workload:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("../../../assets/images/openebs-support/halo-home.png") no-repeat top center;
+    top: -130px;
+}
+.work-load-image {
+    position: relative;
+}
+
+// .work-load-image:before {
+//     position: absolute;
+//     content: "";
+//     height: 46px;
+//     width: 60px;
+//     top: -44px;
+//     right: 15px;
+//     background: url("../../../assets/images/openebs-support/poly.png") no-repeat top center;
+// }
+.openEBS-sec {
+    padding-top: 0 !important;
+}
+.company {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.workload-cube {
+    position: absolute;
+    left: 47%;
+}
+.workload-poly {
+    position: absolute;
+    right: -1500px;
+    top: -841px;
+    margin-left: 650px;
+}
+.right-title h2 {
+    color: #9d9abf !important;
+    line-height: 1.1;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    max-width: 80%;
+}
+.right-title h2 span {
+    color: #fff !important;
+    display: block;
+    margin-top: 15px;
+    line-height: 1.2;
+}
+.company--image-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.right-title h3 {
+    font-family: "Muli";
+    font-size: 22px;
+    line-height: 1.5;
+}
+.company--image-block img {
+    opacity: 0.9;
+}
+
+.company--image-block:hover img {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.company:last-of-type {
+    padding-bottom: 0px;
+}
+
+.bloomberg {
+    font-size: 20px;
+    font-weight: 800;
+}
+.cloud-title h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.global-wrapper {
+    text-align: center;
+}
+.global-wrapper .btn {
+    margin-right: 15px;
+}
+.global-title {
+    max-width: 625px;
+    margin: 0 auto 50px;
+}
+
+.kubera-pricing-block {
+    max-width: 700px;
+    margin: auto;
+}
+
+.switch {
+    display: inline-block;
+    height: 48px;
+    position: relative;
+    width: 360px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background: rgba(255, 255, 255, 0.1);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    background: linear-gradient(273.96deg, #e9700d 7.39%, #f39242 99.41%);
+    color: #fff;
+    bottom: 0px;
+    content: "Enterprise";
+    height: 48px;
+    left: 0px;
+    position: absolute;
+    transition: 0.4s;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:checked + .slider:before {
+    transform: translateX(180px);
+    content: "Cloud";
+}
+
+.slider.round {
+    border-radius: 12px;
+}
+
+.slider.round:before {
+    border-radius: 24px;
+}
+
+.switch .label {
+    position: absolute;
+    right: -16px;
+    background-color: #ca2c2c;
+    padding: 2px 8px;
+    width: 48px;
+    height: 16px;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    transform: rotate(45deg);
+}
+.hero-btn-primary {
+    margin-right: 25px;
+    // padding: 16px 25px;
+}
+
+.company--image-block img {
+    max-width: 100%;
+    // filter: grayscale(1) brightness(0.9) invert(1);
+}
+.company--image-block {
+    height: auto;
+}
+.cloud-title h4 {
+    margin-bottom: 50px;
+}
+.story-btn-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.workload {
+    // background: url("assets/images/openebs-support/workload-bg.png") no-repeat top 80px right;
+    position: relative;
+}
+
+.workload-wrapper {
+    display: flex;
+    align-items: center;
+}
+.Workload-left img {
+    max-width: 96%;
+    border-radius: 10px;
+}
+.right-title h2 {
+    color: #fff;
+    line-height: 1.1;
+}
+.right-title h2 span {
+    color: #999;
+    display: block;
+}
+.right-title h3 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 400px;
+}
+.workload-box {
+    display: flex;
+    flex-direction: column;
+}
+.workload-box-top-left {
+    width: 18%;
+    margin-right: 3%;
+}
+.workload-box-top {
+    display: flex;
+    align-items: flex-start;
+    min-height: 80px;
+}
+
+.workload-box-top h2 {
+    color: #fff;
+    font-size: 26px;
+    max-width: 200px;
+}
+.workload-box-top-left img {
+    width: 100%;
+}
+.workload-box-bottom p {
+    color: #fff;
+}
+.workload-box-bottom {
+    margin-top: 10px;
+}
+.workload-box-wrapper {
+    margin-top: 50px;
+}
+.our-customer {
+    margin-top: 100px;
+}
+.inner-box {
+    border: 1px solid #663ddb;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+.inner-box:hover {
+    background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.cust-icon img {
+    filter: brightness(1) invert(1);
+    opacity: 0.5;
+    transition: 0.3s all ease-in-out;
+}
+.cust-desc h2 {
+    font-size: 45px;
+    color: #fff;
+    margin-top: 30px;
+    opacity: 0.6;
+    transition: 0.3s all ease-in-out;
+}
+.cust-desc p {
+    color: #fff;
+    opacity: 0.6;
+}
+.inner-box:hover .cust-desc h2,
+.inner-box:hover .cust-icon img,
+.inner-box:hover .cust-desc p {
+    opacity: 1;
+}
+.service-24hours {
+    background: linear-gradient(85.69deg, rgba(169, 61, 219, 0.33) 14.03%, rgba(102, 61, 219, 0) 85.66%);
+    padding: 50px 0;
+    position: relative;
+}
+
+.service-24hours:before {
+    position: absolute;
+    content: "";
+    background: url("assets/images/openebs-support/usp-background.png") no-repeat;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.service-block-left h2 {
+    font-size: 53px;
+    color: #fff;
+}
+.service-block-left h3 {
+    color: #aaa;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+.service-block-right ul li {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.kubera-pricing-block.usage-workload {
+    max-width: 100%;
+}
+
+.kubera-pricing-block.usage-workload h2 {
+    font-size: 47px;
+    text-transform: capitalize;
+}
+.graph img,
+.table img {
+    max-width: 100%;
+}
+.table h3,
+.graph h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.btn-wrapper {
+    text-align: center;
+    margin: 35px 0 auto;
+}
+.graph-table-wrapper {
+    margin-top: 50px;
+}
+
+/************* Custom CSS *************/
+.kubernete-title {
+    font-size: 47px;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.video-poster {
+    max-width: 100% !important;
+    background-color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 999;
+    margin-top: 30px;
+}
+.overlay {
+    background: linear-gradient(to right, #f5abff 0%, #ffc5ff 45.57%, #ffdeff 100%);
+    opacity: 1;
+}
+.video span {
+    z-index: 9;
+}
+.sub-title {
+    width: 100%;
+    text-align: center;
+    font-family: "Muli";
+    font-size: 16px;
+}
+.hero-text {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: -160px;
+    margin-bottom: 40px;
+}
+.sub-title br {
+    display: none;
+}
+
+::ng-deep .hero-text .bottom-mobile {
+    display: none !important;
+}
+
+.hero-buttons {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+::ng-deep .text-hero {
+    position: absolute;
+    height: 100px;
+    border: none;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    transform: scale(20);
+    top: -334px;
+}
+.hero-btn-primary.openEBSsupport {
+    min-width: 251px;
+    height: 56px;
+    margin-top: 15px;
+}
+.kubera-pricing-block h2 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #a1a6c1;
+    margin-bottom: 0;
+}
+.hero-image-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background: url("assets/images/openebs-support/hero-banner-frame.png") no-repeat top center;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    max-height: 550px;
+}
+
+.left-image,
+.right-image,
+.video-poster {
+    width: 33%;
+}
+.left-image {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+/*  Common For All and for mobile */
+
+.openEBS-storages-icons {
+    height: 100px;
+}
+
+.section-container {
+    padding: 60px 0px 40px 0px;
+}
+
+.openEBS-oep-storages--imgblock {
+    height: 150px;
+}
+
+.openEBS-oep-storages-title {
+    font-size: 14px;
+}
+
+.oep-storages-hr {
+    width: 90%;
+}
+
+.openEBS-oep-storages--card {
+    max-width: 280px;
+    margin: auto;
+}
+
+.horizontal-line {
+    border-top: 1px solid #8500ac;
+}
+.data-title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120%;
+    color: #ffffff;
+    text-align: left;
+    max-width: 768px;
+}
+.openEBS-oep-storages--card {
+    max-width: 96%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.openEBS-oep-storages-title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px !important;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 9px;
+}
+.openEBS-benefit-content {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+.openEBS-oep-storages--card {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #663ddb;
+    margin: 0px 10px 35px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    min-height: 220px;
+}
+.box-text-div {
+    width: 80%;
+}
+.openEBS-oep-storages--card:hover {
+    background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+    backdrop-filter: blur(10px);
+}
+.openEBS-oep-storages--card:hover img {
+    mix-blend-mode: luminosity;
+}
+.openEBS-sec {
+    // background: url("assets/images/aboutus/shape/data-ability.png") no-repeat;
+    background-position: right;
+}
+.sec-1-title {
+    margin-bottom: 100px;
+    padding-left: 0;
+    z-index: 100;
+}
+.openEBS-storages-icons {
+    height: auto;
+}
+.openEBS-oep-storages--imgblock {
+    height: 70px;
+    background: linear-gradient(213.5deg, #8c4d9e 11.38%, #482453 95.44%);
+    mix-blend-mode: luminosity;
+    border-radius: 10px;
+    margin-right: 30px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(1);
+}
+.openEBS-oep-storages--card:hover .openEBS-oep-storages--imgblock {
+    filter: inherit;
+}
+.openEBS-oep-storages--card:nth-child(4) {
+    height: 180px;
+}
+
+.main-content-storage .openEBS-oep-storages--card:nth-child(3) {
+    border: none;
+}
+.main-content-storage .openEBS-oep-storages--card:nth-child(3) .openEBS-oep-storages--imgblock {
+    background: none;
+}
+.main-content-storage .openEBS-oep-storages--card:nth-child(3):hover {
+    background: transparent;
+}
+.service-block-wrapper {
+    position: relative;
+    background: url("assets/images/openebs-support/usp-background.png") no-repeat;
+}
+
+.openebs-logo-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+.openebs-logo-wrapper .row {
+    width: 100%;
+}
+.openebs-logo-title h1 {
+    color: #9d9fc0;
+    font-size: 36px;
+}
+.openebs-logo-title h1 span {
+    color: #fff;
+}
+.openebs-logo-title h6 {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Muli", sans-serif;
+}
+.openebs-logo-image-wrapper img {
+    opacity: 1;
+}
+.customer-wrapper {
+    background: url("assets/images/openebs-support/usp-background.png") no-repeat;
+    padding: 100px 0;
+    background-position: center center;
+}
+.cust-icon {
+    background: linear-gradient(213.5deg, #8c4d9e 11.38%, #482453 95.44%);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px auto 0;
+}
+.customer-wrapper .our-customer {
+    margin-top: 0;
+}
+
+/******* 02-06-2021 ************/
+.ebs-support-hero {
+    position: relative;
+}
+
+/*  Common For All and for mobile */
+
+::ng-deep {
+    .inner-slider {
+        .carousel-indicators {
+            li {
+                height: 10px;
+                width: 10px;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+        }
+        .carousel-control-prev {
+            left: 20%;
+            bottom: 12px;
+            top: auto;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 40px;
+            width: 40px;
+            height: 40px;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .carousel-control-next {
+            right: 20%;
+            bottom: 12px;
+            top: auto;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 40px;
+            width: 40px;
+            height: 40px;
+            z-index: 99;
+            cursor: pointer;
+        }
+    }
+    .carousel-inner:focus,
+    .carousel.slide:focus,
+    .inner-slider:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.lead {
+    font-size: 1.09375rem;
+    font-weight: 300;
+}
+.inner-slider h6 {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+
+    text-align: left;
+    margin-bottom: 40px;
+}
+.lead h3 {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.647335px;
+    color: #ffffff;
+    opacity: 0.6;
+}
+.lead p {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.554859px;
+    color: #ffffff;
+    opacity: 0.4;
+}
+.inner-slider {
+    background: url("../../../assets/images/openebs-support/testimonial-bg.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    backdrop-filter: blur(2000px);
+}
+.testi-cube {
+    position: relative;
+}
+.testi-cube:after {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 100px;
+    bottom: -30px;
+    right: -40px;
+    z-index: 1;
+    background: url("../../../assets/images/openebs-support/testimonial-cube.png") no-repeat;
+}
+
+.slider-wrapper {
+    display: flex;
+    padding: 30px 30px;
+    padding-bottom: 30px;
+    // min-height: 500px;
+}
+.slider-image img {
+    width: 200px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+}
+.slider-image {
+    margin-right: 30px;
+    height: 200px;
+    width: 200px;
+}
+.lead img {
+    margin-bottom: 30px;
+}
+.testimonial-left {
+    background: url("assets/images/openebs-support/left-trim.png") no-repeat;
+    background-position: top left;
+    position: relative;
+}
+.testimonial-left:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: -230px;
+    left: 60px;
+    background: url("../../../assets/images/openebs-support/halo-home.png") no-repeat;
+    background-size: 100% 100%;
+}
+.testimonial-left h3 {
+    color: #a1a6c1;
+    max-width: 230px;
+    margin-left: 180px;
+    margin-top: 15px;
+}
+.testimonial-left h3 span {
+    color: #fff;
+}
+.testimonial-right .slider-wrapper {
+    flex-direction: column;
+}
+.testimonial-right .slider-image {
+    margin-right: 0;
+    height: auto;
+    width: auto;
+    margin-bottom: 30px;
+}
+.testimonial-right .inner-slider h6 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.testimonial-right .lead h3 {
+    font-size: 22px;
+    line-height: 38px;
+    color: #a1a6c1;
+    opacity: 0.6;
+}
+.testimonial-right {
+    position: relative;
+}
+.testimonial-cube {
+    position: absolute;
+    bottom: 0;
+}
+.usage-workload h2 span {
+    color: #fff;
+}
+::ng-deep .testimonial-cube .cube-testi {
+    width: 1200px !important;
+    margin-left: -420px !important;
+    position: static;
+}
+:ng-deep .testimonial-right .inner-slider .carousel-control-prev {
+    left: -48% !important;
+    top: 43% !important;
+}
+.lead img {
+    width: 30px;
+}
+.workload-sec {
+    background: url("assets/images/openebs-support/usp-background.png") no-repeat top -200px center;
+}
+.graph {
+    display: flex;
+    align-items: center;
+}
+.graph span {
+    width: 50%;
+}
+.graph-title {
+    width: 50%;
+}
+.graph-title h3 {
+    width: 340px;
+    font-size: 22px !important;
+    line-height: 1.5;
+    font-family: "Muli";
+}
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.table-title h3 {
+    font-size: 22px;
+    font-family: "Muli", sans-serif;
+    text-align: right;
+    max-width: 350px;
+}
+
+/*********** Open Block *************/
+.main-content-storage:nth-child(3) .openEBS-oep-storages--card {
+    border: none;
+}
+.main-content-storage:nth-child(3):hover .openEBS-oep-storages--card {
+    background: none;
+    backdrop-filter: none;
+}
+
+.main-content-storage .openEBS-oep-storages--card {
+    position: relative;
+}
+
+.main-content-storage:first-child .openEBS-oep-storages--card .openebs-video {
+    position: absolute;
+    left: 0;
+    max-width: 100%;
+    top: 260px;
+    width: 94%;
+    right: 0;
+    margin: auto;
+    opacity: 1;
+    max-height: 250px;
+    overflow: hidden;
+}
+.main-content-storage:nth-child(2) .openEBS-oep-storages--card .openebs-video {
+    position: absolute;
+    left: -105%;
+    width: 95%;
+    top: 225px;
+    right: 0;
+    opacity: 0;
+    max-width: 100%;
+}
+.main-content-storage:nth-child(4) .openEBS-oep-storages--card .openebs-video {
+    position: absolute;
+    left: -105%;
+    max-width: 100%;
+    top: 6px;
+    opacity: 0;
+    width: 95%;
+    max-height: 250px;
+    overflow: hidden;
+}
+.main-content-storage:first-child:hover .openEBS-oep-storages--card .openebs-video {
+    opacity: 1;
+}
+.main-content-storage:nth-child(2):hover .openEBS-oep-storages--card .openebs-video {
+    opacity: 1;
+}
+.main-content-storage:nth-child(4):hover .openEBS-oep-storages--card .openebs-video {
+    opacity: 1;
+}
+.main-content-storage:nth-child(3) {
+    position: relative;
+}
+.main-content-storage:nth-child(3):before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.main-content-storage:nth-child(3) .openEBS-oep-storages--card {
+    opacity: 0;
+}
+
+::ng-deep .openebs-video .landing-page-video {
+    width: 100%;
+}
+
+/*  Mobile */
+
+@media (max-width: 767px) {
+    .inner-slider h6 {
+        font-size: 16px;
+    }
+    .lead h3 {
+        font-size: 18px;
+    }
+    .lead p {
+        font-size: 16px;
+    }
+    .slider-wrapper {
+        padding: 15px 15px 50px;
+        flex-direction: column;
+    }
+}
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+    ::ng-deep {
+        .inner-slider {
+            .carousel-indicators {
+                li {
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 100%;
+                    cursor: pointer;
+                }
+            }
+            .carousel-control-prev {
+                left: 40%;
+                bottom: 12px;
+                top: auto;
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 40px;
+                width: 40px;
+                height: 40px;
+                z-index: 99;
+                cursor: pointer;
+            }
+            .carousel-control-next {
+                right: 40%;
+                bottom: 12px;
+                top: auto;
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 40px;
+                width: 40px;
+                height: 40px;
+                z-index: 99;
+                cursor: pointer;
+            }
+        }
+        .carousel-inner:focus,
+        .carousel.slide:focus,
+        .inner-slider:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .testimonial-right .inner-slider .carousel-control-prev {
+            left: -48% !important;
+            top: 250px !important;
+        }
+        .testimonial-right .inner-slider .carousel-control-next {
+            left: -38%;
+            top: 250px;
+        }
+
+        .testimonial-right .carousel-indicators {
+            display: none;
+        }
+    }
+}
+
+/******** Animation Object CSS ********/
+::ng-deep .leftbox {
+    width: 1400px !important;
+}
+.left-window {
+    width: 100%;
+    position: absolute;
+    top: -260px;
+}
+::ng-deep .cube-animate {
+    width: 940px !important;
+}
+::ng-deep .poly-animate {
+    width: 600px !important;
+}
+.poly {
+    position: absolute;
+    left: 53%;
+    top: 3%;
+}
+
+.right-image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 33% !important;
+}
+
+.right-top {
+    position: static;
+    width: 100%;
+}
+::ng-deep .right-win-animate {
+    width: 100% !important;
+    margin-left: -130% !important;
+    transform: scale(4);
+    margin-top: 60px !important;
+}
+
+.right-bottom {
+    position: absolute;
+    left: -890px !important;
+    top: -420px;
+}
+::ng-deep .graph-animate {
+    width: 1400px !important;
+}
+
+::ng-deep .tringle-cube {
+    width: 1500px !important;
+    position: absolute;
+    top: -3%;
+    right: 0;
+}
+.openEBS-oep-storages--card:nth-child(3):hover {
+    background: none;
+    -webkit-backdrop-filter: blur(00px);
+    backdrop-filter: blur(0px);
+}
+.video-storage {
+    display: none;
+}
+::ng-deep .main-content-staorage .openEBS-oep-storages--card {
+    max-width: 100%;
+    width: calc(100% / 1 - 10px);
+}
+::ng-deep .Workload-right img {
+    width: 120% !important;
+    margin-right: 0;
+    border-radius: 15px;
+}
+@media (min-width: 1500px) and (max-width: 1900px) {
+    .left-window {
+        width: 100%;
+        position: absolute;
+        top: -470px;
+    }
+    ::ng-deep .leftbox {
+        width: 2100px !important;
+    }
+    ::ng-deep .right-win-animate {
+        width: 2300px !important;
+    }
+    ::ng-deep .right-top {
+        top: -411px !important;
+    }
+    ::ng-deep .graph-animate {
+        width: 1600px !important;
+    }
+    ::ng-deep .right-bottom {
+        position: absolute;
+        left: -910px !important;
+        top: -420px;
+    }
+    ::ng-deep .right-top {
+        position: absolute;
+        left: -260% !important;
+        width: 100%;
+        top: -470px !important;
+    }
+}
+
+@media (max-width: 1220px) {
+    .main-content-storage:first-child .openEBS-oep-storages--card .openebs-video {
+        top: 245px;
+    }
+}
+@media (max-width: 1300px) {
+    .testimonial-left h3 {
+        color: #a1a6c1;
+        max-width: 230px;
+        margin-left: 220px;
+        margin-top: 15px;
+    }
+    .workload-poly {
+        position: absolute;
+        right: -1000px;
+        top: -541px;
+        margin-left: 650px;
+    }
+
+    // .Workload-right::after {
+    //     left: 2%;
+    // }
+}
+
+@media (max-width: 1220px) {
+    .openEBS-oep-storages--card {
+        min-height: 250px;
+    }
+    .main-content-storage:first-child .openEBS-oep-storages--card .openebs-video {
+        top: 285px;
+    }
+    .main-content-storage:nth-child(2) .openEBS-oep-storages--card .openebs-video {
+        top: 285px;
+    }
+}
+@media (max-width: 1200px) {
+    .data-title {
+        font-size: 50px !important;
+    }
+    .landing-page-video {
+        width: 100%;
+    }
+    .openEBS-oep-storages--card {
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .openEBS-oep-storages-title {
+        font-size: 22px !important;
+    }
+    .culture-box:nth-child(2) .content-block,
+    .culture-box:nth-child(4) .content-block,
+    .culture-box:nth-child(6) .content-block {
+        position: relative;
+        left: -50px;
+    }
+    .right-top {
+        left: -378% !important;
+    }
+    .workload-poly {
+        position: absolute;
+        right: -800px;
+        top: -404px;
+        margin-left: 650px;
+    }
+    .testimonial-left h3 {
+        margin-left: 160px;
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .workload-poly {
+        position: absolute;
+        right: -800px;
+        top: -454px;
+        margin-left: 510px;
+    }
+}
+@media (max-width: 1024px) {
+    .company {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .kubernete-title {
+        font-size: 48px;
+    }
+    .right-title h2 {
+        color: #fff;
+        line-height: 1.1;
+        font-size: 44px;
+        margin-bottom: 20px;
+    }
+    .cust-desc h2 {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+    .service-block-left h2 {
+        font-size: 43px;
+    }
+    .service-block-left h3 {
+        font-size: 31px;
+        margin-top: 25px;
+    }
+    .service-block-right ul li {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .image-poster img {
+        height: 200px;
+        width: 535px;
+    }
+    .hero-btn-primary {
+        margin-right: 20px;
+        // padding: 10px 13px;
+    }
+    .table h3,
+    .graph h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .openEBS-sec {
+        background-size: 100% 100%;
+    }
+
+    .openEBS-oep-storages--card {
+        background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(0);
+        img {
+            mix-blend-mode: luminosity;
+        }
+        .openEBS-oep-storages--imgblock {
+            margin: auto 15px auto 0;
+        }
+    }
+
+    .culture-box:nth-child(2) .content-block,
+    .culture-box:nth-child(4) .content-block,
+    .culture-box:nth-child(6) .content-block {
+        left: 0px;
+    }
+    .openEBS-oep-storages-title {
+        font-size: 17px !important;
+    }
+    .openEBS-oep-storages--imgblock {
+        margin-right: 15px;
+    }
+    .sec-1-title {
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+    .openEBS-benefit-content {
+        font-size: 14px;
+    }
+    .openEBS-oep-storages--card {
+        background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(0);
+    }
+    .overlay {
+        height: 50px;
+        width: 50px;
+    }
+
+    .Workload-left {
+        margin-bottom: 50px;
+        padding: 0;
+        text-align: center;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .right-title h2 {
+        font-size: 30px;
+        max-width: 100%;
+        text-align: left;
+    }
+    .Workload-right {
+        text-align: right;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+    .Workload-right img {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 15px;
+    }
+    .workload-wrapper {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+    .right-title h3 {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: left;
+        margin-right: 35px;
+    }
+    .openEBS-oep-storages--card {
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding: 15px;
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    ::ng-deep .workload {
+        background-position: top 31px right !important;
+        position: relative;
+        background-size: 53% 30% !important;
+    }
+    .openebs-logo-image-wrapper img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .testimonial-wrapper .row {
+        width: 100%;
+        flex-direction: column;
+    }
+    .testimonial-left {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    .testimonial-right {
+        position: relative;
+        flex: 0 0 58%;
+        max-width: 100%;
+    }
+    .testimonial-left h3 {
+        max-width: 240px;
+    }
+    ::ng-deep .testimonial-right .inner-slider .carousel-control-prev {
+        left: 70% !important;
+        top: -20% !important;
+    }
+    ::ng-deep .testimonial-right .inner-slider .carousel-control-next {
+        left: 79% !important;
+        top: -20% !important;
+    }
+    .graph {
+        flex-direction: column;
+    }
+    .graph-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .graph-title h3 {
+        max-width: 340px;
+
+        margin: 0 auto;
+    }
+    .graph span {
+        width: 100%;
+    }
+    .table {
+        flex-direction: column;
+    }
+    .table-title {
+        order: -1;
+        margin: 20px 0;
+    }
+    .table-title h3 {
+        text-align: center;
+        max-width: 420px;
+    }
+
+    .video-poster {
+        width: 60%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0%;
+        min-height: 350px !important;
+    }
+    .left-image,
+    .right-image {
+        width: 50% !important;
+    }
+    ::ng-deep .support-tringle .support-tringle {
+        left: 300px !important;
+    }
+
+    .video-storage {
+        display: none;
+        height: 0;
+    }
+    .main-content-storage {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .main-content-storage:first-child .openEBS-oep-storages--card .openebs-video,
+    .main-content-storage:nth-child(2) .openEBS-oep-storages--card .openebs-video,
+    .main-content-storage:nth-child(4) .openEBS-oep-storages--card .openebs-video {
+        display: none;
+    }
+    .main-content-storage:nth-child(3) {
+        display: none;
+    }
+    .main-content-storage.devices_storage.device_active1 .video-storage,
+    .main-content-storage.devices_storage.device_active2 .video-storage,
+    .main-content-storage.devices_storage.device_active3 .video-storage {
+        opacity: 1;
+        display: block;
+        height: auto;
+    }
+    ::ng-deep .openEBS-oep-storages--card .openEBS-oep-storages--imgblock {
+        margin: 0 25px 0 0 !important;
+    }
+    .openEBS-oep-storages--card {
+        min-height: 0;
+    }
+    .video-storage video {
+        width: 100%;
+    }
+    ::ng-deep .workload-cube .cube-workload {
+        transform: scale(2.5);
+        position: relative;
+        left: 236px;
+        top: 100px;
+    }
+    ::ng-deep .carousel-indicators {
+        display: none !important;
+    }
+    .right-top {
+        left: -249% !important;
+    }
+    .right-bottom {
+        left: -789px !important;
+    }
+
+    // .Workload-right::after {
+    //     left: -5%;
+    // }
+    .content-slider {
+        padding-top: 0 !important;
+    }
+    .testimonial-left:before {
+        top: -50px;
+        left: 0;
+    }
+}
+@media (max-width: 991px) {
+    .workload-wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .image-poster {
+        margin-top: 50px;
+    }
+    .company--image-block {
+        height: 100%;
+    }
+    .Workload-left {
+        margin-bottom: 50px;
+        padding: 0;
+        text-align: center;
+        flex: 0 0 auto;
+    }
+    .right-title h2 span {
+        margin-top: 15px;
+    }
+    .cust-desc h2 {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    .company--image-block {
+        height: 100%;
+    }
+
+    .openEBS-sec::before {
+        display: none;
+    }
+    ::ng-deep .support-tringle .support-tringle {
+        left: 0 !important;
+    }
+    .right-top {
+        left: -297% !important;
+    }
+
+    .openEBS-sec {
+        background-size: 100% 100%;
+        background: none;
+        margin-top: 100px;
+    }
+    ::ng-deep .workload {
+        position: relative;
+        overflow: hidden !important;
+    }
+    .openEBS-sec {
+        background: none;
+        margin-top: 0px;
+        padding: 100px 0 40px;
+    }
+    ::ng-deep .openEBS-oep-storages--card {
+        margin: 0 0px 20px !important;
+    }
+}
+@media (max-width: 767px) {
+    .openEBS-oep-storages--card img {
+        width: 40px !important;
+    }
+    .data-title {
+        font-size: 40px !important;
+    }
+    .openEBS-oep-storages--card {
+        max-width: 94%;
+    }
+    .sec-1-title {
+        margin-bottom: 30px;
+        padding-left: 15px;
+    }
+    .openEBS-oep-storages--card {
+        margin: 0 0 15px 0;
+    }
+    .openEBS-oep-storages--card img {
+        width: 100px;
+    }
+    .openEBS-oep-storages--imgblock {
+        padding: 10px !important;
+    }
+    .section-container {
+        padding: 60px 0px 0px 0px;
+    }
+    .company--image-block img {
+        max-width: 100%;
+    }
+    .hero-section {
+        padding: 60px 0px 0;
+    }
+    .workload-box-top h2 {
+        color: #fff;
+        font-size: 26px;
+        max-width: 200px;
+        margin-bottom: 0;
+    }
+    .workload-box {
+        margin-bottom: 25px;
+    }
+    .customer-box {
+        margin-bottom: 15px;
+    }
+    .footer-menu-wrapper {
+        flex-direction: column !important;
+    }
+    .graph,
+    .table {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .table {
+        margin-bottom: 0px;
+    }
+    ::ng-deep .ebs-support-hero .kubernete-title {
+        font-size: 24px;
+    }
+    ::ng-deep .service-block-left {
+        flex-direction: column !important;
+    }
+    ::ng-deep .workload .workload-wrapper {
+        flex-direction: column !important;
+    }
+    ::ng-deep .service-block-wrapper .pricing-cta-section {
+        width: 100% !important;
+    }
+    ::ng-deep .service-block-wrapper .pricing-cta-section a {
+        width: 100% !important;
+    }
+    ::ng-deep .service-block-wrapper .pricing-cta-section a .btn {
+        width: 100% !important;
+    }
+    ::ng-deep .Workload-left {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
+    }
+    ::ng-deep .Workload-right {
+        text-align: right;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        padding: 15px;
+    }
+    ::ng-deep .company-section .row {
+        justify-content: center !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .Workload-right {
+        text-align: center !important;
+    }
+    .Workload-right img {
+        width: 123% !important ;
+    }
+    .openEBS-oep-storages--card {
+        max-width: 100%;
+    }
+    ::ng-deep .testimonial-right .inner-slider .carousel-control-next {
+        left: 50% !important;
+        top: 105% !important;
+    }
+    ::ng-deep .testimonial-right .inner-slider .carousel-control-prev {
+        left: 35% !important;
+        top: 105% !important;
+    }
+    .workload {
+        position: relative;
+        background-size: 100% 23% !important;
+        background-position: top 380px center !important;
+    }
+
+    ::ng-deep .service-block-left h2 {
+        max-width: 100% !important;
+    }
+    ::ng-deep .level-2 {
+        flex-direction: column;
+    }
+    ::ng-deep .level-2 li {
+        width: 100% !important;
+    }
+    ::ng-deep .openebs-logo-title h1 {
+        margin-top: 50px;
+    }
+    .service-block-right {
+        flex: 0 0 94% !important;
+        max-width: 94% !important;
+        margin: 0 auto !important;
+    }
+    .openEBS-sec::before {
+        display: none;
+    }
+    ::ng-deep .workload-cube .cube-workload {
+        left: -27px;
+        top: 400px;
+    }
+
+    ::ng-deep .hero-text .bottom-desktop {
+        display: none !important;
+    }
+    .video-poster {
+        width: 80%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 22%;
+        min-height: 260px !important;
+    }
+
+    ::ng-deep .hero-text .bottom-mobile {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        transform: scale(2);
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .support-tringle .support-tringle {
+        left: -100px;
+    }
+    ::ng-deep .box-wrapper {
+        width: 90% !important;
+        height: auto;
+        border-radius: 10px !important;
+    }
+    // .Workload-right::after {
+    //     left: 60px;
+    // }
+    .openEBS-sec {
+        margin-top: 100px !important;
+    }
+    .work-load-image:before {
+        top: -59px;
+    }
+    // .Workload-right:before {
+    //     left: -7px;
+    // }
+    .openebs-logo-title h1 {
+        margin-top: 0;
+    }
+    .testimonial-left {
+        background-position: top left -50px;
+    }
+    .left-window {
+        width: 100%;
+        position: absolute;
+        top: -260px;
+        left: -350px;
+    }
+    .right-top {
+        left: -516% !important;
+    }
+    .right-bottom {
+        left: -879px !important;
+    }
+    .workload-poly {
+        position: absolute;
+        right: -800px;
+        top: -244px;
+        margin-left: 210px;
+    }
+    .right-top,
+    .right-bottom,
+    .left-window,
+    .cube,
+    .poly,
+    .left-image,
+    .right-image {
+        display: none;
+    }
+    .video-poster {
+        width: 80%;
+        position: static;
+        margin-top: 25px;
+        min-height: 350px !important;
+    }
+    .hero-text {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    ::ng-deep .support-cube {
+        bottom: 0 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .workload-poly {
+        right: -880px;
+        top: -244px;
+        margin-left: 90px;
+    }
+}
+@media (max-width: 480px) {
+    .video-poster {
+        min-height: 200px !important;
+    }
+    .testi-cube:after {
+        bottom: -70px;
+        right: -51px;
+        background-size: 60%;
+    }
+    ::ng-deep .hero-text .bottom-mobile {
+        display: block !important;
+        position: static !important;
+        transform: scale(1.3);
+        height: 100px !important;
+        margin-top: 0;
+        width: 100% !important;
+    }
+    ::ng-deep .leftbox {
+        width: 1000px !important;
+    }
+    ::ng-deep .left-window {
+        width: 100%;
+        position: absolute;
+        top: -194px !important;
+        left: -135%;
+    }
+    .workload {
+        background-position: top 332px left 30px !important;
+    }
+    .workload-poly {
+        position: absolute;
+        right: -80%;
+        top: 150px;
+        margin-left: 420px;
+        transform: scale(4);
+    }
+    .kubernete-title {
+        font-size: 24px !important;
+    }
+
+    .testimonial-left {
+        background-position: top left -80px;
+    }
+    .testimonial-left h3 {
+        margin-left: 100px;
+    }
+    .kubernete-title {
+        font-size: 32px;
+    }
+    .hero-btn-primary {
+        margin-right: 0 !important;
+        padding: 16px 43px;
+        margin-bottom: 20px;
+    }
+    .right-title h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .right-title h3 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .workload-box-top h2 {
+        color: #fff;
+        font-size: 22px;
+        max-width: 200px;
+        margin-bottom: 0;
+    }
+    .our-customer {
+        margin-top: 20px;
+    }
+    .service-block-left h2 {
+        font-size: 29px;
+    }
+    .service-block-left h3 {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .kubera-pricing-block h2 {
+        font-size: 33px;
+        margin-bottom: 15px;
+    }
+    .business-pricing-card {
+        padding: 35px 15px 40px !important;
+    }
+    .global-title {
+        font-size: 30px;
+    }
+    .global-wrapper .btn-primary {
+        margin-right: 0;
+        padding: 16px 47px;
+        margin-bottom: 20px;
+    }
+    .global-wrapper .btn {
+        margin-right: 0;
+    }
+    .teams-pricing-card-1 {
+        padding: 35px 15px 40px !important;
+    }
+    .hero-buttons {
+        flex-direction: column;
+    }
+    .hero-btn-primary {
+        margin-right: 0 !important;
+        padding: 16px 43px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .image-poster img {
+        height: 170px;
+        width: 100%;
+    }
+    .image-poster {
+        margin-top: 0;
+    }
+    .btn-wrapper .btn {
+        padding: 16px 20px;
+        word-break: break-word;
+        font-size: 17px;
+        white-space: normal;
+    }
+    .graph svg {
+        width: 100%;
+    }
+    .table h3,
+    .graph h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .kubera-pricing-block.usage-workload h2 {
+        font-size: 43px;
+        text-transform: capitalize;
+    }
+    ::ng-deep .workload-wrapper {
+        flex-direction: column !important;
+    }
+    ::ng-deep .service-block-left h2 {
+        max-width: 100% !important;
+    }
+    .level-2 li {
+        width: 100%;
+        font-size: 16px !important;
+        line-height: 32px !important;
+        list-style: none;
+        position: relative;
+    }
+    ::ng-deep .level-2 {
+        flex-direction: column !important;
+    }
+    ::ng-deep .level-2 li {
+        width: 100% !important;
+    }
+    ::ng-deep .service-block-right {
+        padding: 30px !important;
+        flex: 0 0 94% !important;
+        max-width: 94% !important;
+        margin: 30px auto 0;
+    }
+    ::ng-deep .hero-image-wrapper {
+        background-size: 170%;
+    }
+
+    .hero-buttons {
+        width: 70%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .kubera-pricing-block {
+        margin: auto;
+        width: 73%;
+    }
+    .kubera-pricing-block h2 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .service-block-left h2 {
+        font-size: 25px !important;
+        max-width: 260px !important;
+        margin-right: auto;
+    }
+    .service-block-right {
+        margin-top: 15px;
+        padding: 15px !important;
+    }
+    .right-title h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .Workload-left {
+        margin-bottom: 0;
+    }
+    .openEBS-oep-storages--imgblock {
+        height: 50px;
+        width: 50px;
+    }
+    .openEBS-oep-storages--card {
+        margin: 0px 0px 20px 0;
+        max-width: 100%;
+    }
+    .main-content-storage {
+        padding: 0;
+    }
+    .openebs-logo-title h1 {
+        font-size: 27px;
+    }
+    .cust-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .cust-icon img {
+        width: 60% !important;
+    }
+    .cust-desc h2 {
+        font-size: 28px;
+        margin-top: 11px;
+        opacity: 1;
+    }
+    .content-slider {
+        padding-top: 0 !important;
+    }
+    .company-section {
+        padding: 0 !important;
+    }
+    .testimonial-left h3 {
+        margin-left: 100px;
+        font-size: 24px;
+    }
+    .testimonial-left h3 span {
+        display: block;
+    }
+    .testimonial-right {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .workload-sec {
+        margin-top: 100px;
+    }
+    .kubera-pricing-block.usage-workload h2 {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    .graph-title h3 {
+        font-size: 18px !important;
+    }
+    .table h3,
+    .graph h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    ::ng-deep .hero-image-wrapper {
+        width: 110%;
+    }
+    .hero-image-wrapper {
+        background-size: auto 50% !important;
+    }
+    .right-bottom {
+        top: -610px;
+    }
+    ::ng-deep .cube-animate {
+        width: 650px !important;
+        opacity: 0 !important;
+    }
+    ::ng-deep .poly {
+        left: -22% !important;
+        top: -37% !important;
+    }
+    ::ng-deep .poly-animate {
+        width: 600px !important;
+        transform: scale(2);
+    }
+    .kubera-pricing-block h2 {
+        font-size: 25px !important;
+        margin-bottom: 10px;
+        line-height: 30px !important;
+    }
+    .hero-text {
+        margin-top: 0;
+    }
+    .kubera-connect {
+        padding: 15px;
+    }
+    .right-bottom {
+        top: -640px;
+        left: -950px !important;
+    }
+    .right-top {
+        left: -706% !important;
+    }
+    .left-window {
+        left: -260px;
+    }
+    .workload-poly {
+        right: -80%;
+        top: 190px;
+        margin-left: 420px;
+    }
+    .right-title {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 374px) {
+    .image-poster img {
+        height: 150px;
+        width: 100%;
+    }
+    .right-top {
+        left: -826% !important;
+    }
+}
+// optional but preferable
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+    .bloomberg {
+        font-size: 24px;
+    }
+    .section-container {
+        padding: 100px 0px 80px 0px;
+    }
+}
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+    .hero-section {
+        padding: 80px 0px;
+    }
+    .image-poster {
+        min-height: 350px;
+    }
+    .video-poster {
+        min-height: 320px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-section {
+        padding: 50px 0px;
+    }
+    .close-x {
+        position: absolute;
+        display: block;
+        visibility: visible;
+        top: -31px;
+        right: -30px;
+        height: 40px;
+        width: 40px;
+        outline: none;
+    }
+
+    .image-poster {
+        max-width: 100%;
+    }
+
+    .video-poster {
+        max-width: 90%;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+    .bg-img-block,
+    .bg-img-block img {
+        display: block;
+        visibility: visible;
+    }
+}
+@media screen and (min-width: 1500px) {
+} // optional
+
+@media screen and (min-width: 1900px) {
+} // optional
+
+@media screen and (min-width: 2500px) {
+    .bg-img-block,
+    .bg-img-block img {
+        display: none;
+        visibility: hidden;
+    }
+}

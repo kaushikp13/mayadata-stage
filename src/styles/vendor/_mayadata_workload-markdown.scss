@@ -1,0 +1,69 @@
+/*  Common For All and for mobile */
+
+
+// Global Style for workloads pages
+
+.workload-markdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  line-height: 1.5;
+}
+
+.workload-markdown img {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.workload-markdown h1,
+.workload-markdown h2,
+.workload-markdown h3,
+.workload-markdown h4,
+.workload-markdown h5,
+.workload-markdown h6 {
+  padding-top: 32px;
+  line-height: 1.75;
+}
+
+.code-toolbar {
+  padding-bottom: 16px;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+  .workload-markdown img {
+    max-width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .workload-markdown img {
+    max-width: 640px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

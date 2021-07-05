@@ -1,0 +1,47 @@
+/*  Common For All and for mobile */
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.benefits-item {
+  display: flex;
+  min-width: 300px;
+  width: 300px;
+  justify-content: center;
+}
+
+.benefits-item-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .benefits-item {
+    display: flex;
+    min-width: 180px;
+    width: 15%;
+    justify-content: center;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

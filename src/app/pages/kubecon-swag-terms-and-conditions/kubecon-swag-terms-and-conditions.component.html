@@ -1,0 +1,13 @@
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pb-4">
+        <h1 class="text-primary">{{title}}</h1>
+      </div>
+      <div class="col-12">
+        <markdown [src]="'./assets/data/pages/kubecon-swag-terms-and-conditions.md'" (error)="onError($event)">
+        </markdown>
+      </div>
+    </div>
+  </div>
+</div>

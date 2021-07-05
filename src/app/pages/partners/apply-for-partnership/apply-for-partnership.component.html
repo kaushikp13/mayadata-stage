@@ -1,0 +1,38 @@
+<!-- <div class="section-container bg-secondary" *ngIf="applyForPartnershipIntro">
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-md-12 py-5">
+        <h1 class="text-white font-weight-normal text-center">{{applyForPartnershipIntro.title}}</h1>
+        <p class="text-white text-center">{{applyForPartnershipIntro.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-container">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-secondary pb-4 text-center" style="max-width: 900px;margin: auto;">Please use this form to
+          contact MayaData about our partnership program.</h2>
+        <app-partnership-form></app-partnership-form>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="apply-for-partner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 apply-left" *ngIf="applyForPartnershipIntro">
+        <h1 class="apply-title">{{applyForPartnershipIntro.title}}</h1>
+        <div class="apply-content">
+          <p>{{applyForPartnershipIntro.description}}</p>
+        </div>
+      </div>
+      <div class="col-lg-6 apply-right">
+        <app-partnership-form></app-partnership-form>
+      </div>
+    </div>
+  </div>
+</div>

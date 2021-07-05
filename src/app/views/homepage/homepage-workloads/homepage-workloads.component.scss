@@ -1,0 +1,102 @@
+/*  Common For All */
+h3 span {
+  color: #001959;
+  font-weight: 800;
+}
+
+.workload-section {
+  background-color: #EFEFF2;
+}
+
+.workload {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.workload--image-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.workload__page-link {
+  text-decoration: none;
+  display: block;
+  border: 1px solid transparent;
+  padding: 16px;
+  border-radius: 8px;
+
+  .workload--image-block img {
+    max-height: 80px;
+    width: auto;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.workload__page-link:hover {
+  // border-color: #2c0735;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0px 46px 0 rgba(0, 0, 0, .09);
+
+  .workload--image-block img {
+    cursor: pointer;
+    filter: grayscale(0%);
+    transform: scale3d(1.015);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+
+
+.workload--image-block p {
+  color: #4d4e5a;
+  text-decoration: none;
+}
+
+
+
+.workload--image-block:hover p {
+  color: #2c0735;
+  transition: all 0.2s ease-in-out;
+}
+
+.workload:last-of-type {
+  padding-bottom: 0px;
+}
+
+.subtitle {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+
+// optional but preferable
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .bloomberg {
+    font-size: 24px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

@@ -1,0 +1,49 @@
+.structures {
+  position: relative;
+}
+
+.bg-wrapper {
+  position: relative;
+}
+
+.bg {
+  background-image: url('assets/images/not-found/structure-cube-bg.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  height: 633px;
+  width: 100%;
+}
+
+/*  Common For All and for mobile */
+.four-zero-four {
+  font-size: 60px;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+  .four-zero-four {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .four-zero-four {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width:992px) {}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {
+  .four-zero-four {
+    font-size: 300px;
+  }
+}
+@media screen and (min-width:1500px) {}
+
+@media screen and (min-width:1900px) {}
+

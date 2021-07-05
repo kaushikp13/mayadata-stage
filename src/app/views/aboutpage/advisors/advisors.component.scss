@@ -1,0 +1,86 @@
+.advisor-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 80px;
+}
+.advisor-block-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.advisor-block {
+  width: 21%;
+  display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.rounded-circle {
+  border-radius: 20px !important;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.advisor-name {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  opacity: 0.9;
+  max-width: 100px;
+  margin: 28px auto 4px;
+}
+.advisor-designation {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  opacity: 0.9;
+  max-width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+@media(max-width: 576px)
+{
+  .leadership-section {
+    padding-bottom: 50px;
+}
+.advisor-title 
+{
+  font-size: 40px;
+  
+}
+.advisor-block
+{
+  width: 100%;
+}
+.advisor-block {
+  width: 50%;
+}
+.advisor-designation
+{
+  max-width: 100%;
+}
+.advisor-block
+ {
+  margin-bottom: 40px;
+}
+.advisor-designation {
+  max-width: 100%;
+  margin-bottom: 0;
+  line-height: 125%;
+}
+}

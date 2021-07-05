@@ -1,0 +1,15 @@
+<div class="section-container">
+  <div class="container">
+    <div class="workload-list">
+      <div class="workload-item" *ngFor="let workload of getStartedWithWorkloads">
+        <div class="workload-card">
+          <img lazyLoad={{workload.img_url}} alt={{workload.img_alt}} class="img-fluid" />
+          <h4 class="dm-p text-center font-weight-bold py-3">{{workload.title}}</h4>
+          <a routerLink={{workload.cta_link}}>
+            <button class="btn btn-dark btn-small text-capitalize">{{workload.cta_text}}</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

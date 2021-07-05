@@ -1,0 +1,337 @@
+<div class="navbar-wrapper" #navbarWrapper>
+  <div class="fixed-top" #navbarInside>
+    <app-banner></app-banner>
+    <nav class="navbar navbar-expand-lg navbar-light px-0 px-lg-5 py-0 navbar-block" #navbar>
+      <a class="navbar-brand ml-3 ml-lg-0" routerLink="/">
+        <img lazyLoad="assets/images/home/mayadata-logo.svg" alt="MayaData Logo" style="height: 32px" />
+      </a>
+      <button class="navbar-toggler collapsed  mr-2 mr-lg-0" type="button" data-toggle="collapse" id="mobile-toggle"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa fa-bars text-white navbar-toggler-icon" aria-hidden="true"></i>
+        <i class="text-white close-icon" aria-hidden="true">
+          <img lazyLoad="assets/images/header/x.png" alt="Close" />
+        </i>
+      </button>
+      <div class="collapse navbar-collapse text-white pl-0 pl-md-5 h-lg-100 navbar-collapse-mobile"
+        id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto full-space">
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Product
+              <i class="fa fa-angle-down down-icon"></i>
+              <i class="fa fa-angle-up up-icon"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div>
+                <div class="dropdown-wrapper">
+                  <div>
+                    <h1 class="mb-4" style="font-size: 24px !important;">
+                    </h1>
+                  </div>
+                  <div class="dropdown-wrapper-inside">
+                    <!-- <ul class="list-unstyled">
+                      <li>
+                        <a routerLink="/product" (click)="hideclass()">Product</a>
+                        <p>Trust Kubernetes for Data</p>
+                      </li>
+                    </ul> -->
+                    <ul class="list-unstyled">
+                      <li>
+                        <a routerLink="/local-persistent-volume-openebs" (click)="hideclass()">Local Persistent Volumes-
+                          OpenEBS</a>
+                        <p>Dynamic LocalPV Provisioners for Kubernetes</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/product" (click)="hideclass()">Product</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Open source
+              <i class="fa fa-angle-down down-icon"></i>
+              <i class="fa fa-angle-up up-icon"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div>
+                <div class="dropdown-wrapper">
+                  <!-- <div>
+                    <p class="mb-4 header-title-dropdown">Open source</p>
+                  </div> -->
+                  <div class="dropdown-wrapper-inside">
+                    <ul class="list-unstyled top">
+                      <li>
+                        <a href="https://www.openebs.io" target="_blank" rel="noopener noreferrer"
+                          (click)="hideclass()">
+                          OpenEBS
+                        </a>
+                        <p>The most popular open source Container Attached Storage</p>
+                      </li>
+                      <li>
+                        <a href="https://litmuschaos.io" target="_blank" rel="noopener noreferrer"
+                          (click)="hideclass()">LitmusChaos</a>
+                        <p>The most popular open source chaos engineering project built on Kubernetes</p>
+                      </li>
+                      <li>
+                        <a [routerLink]="['/open-source']" (click)="hideclass()" fragment="ndm">Node Disk Manager</a>
+                        <p>Manage local disks on Kubernetes for provisioning and monitoring</p>
+                      </li>
+                      <li>
+                        <a [routerLink]="['/open-source']" (click)="hideclass()" fragment="kubernetes">Kubernetes</a>
+                        <p>We contribute fixes & enhancements to Kubernetes and for example maintain the NFS provisioner
+                        </p>
+                      </li>
+                      <li>
+                        <a [routerLink]="['/open-source']" (click)="hideclass()" fragment="weavescope">Weave Scope</a>
+                        <p>We help maintain this project and have contributed persistent volumes support</p>
+                      </li>
+                      <li>
+                        <a [routerLink]="['/open-source']" (click)="hideclass()" fragment="velero">Velero</a>
+                        <p>We contribute to Velero to improve performance and resilience</p>
+                      </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                      <li>
+                        <h6>
+                          <a routerLink="/getting-started" (click)="hideclass()">
+                            Collaborate
+                          </a>
+                        </h6>
+                        <p>Connect with the community of Kubera, <br>LitmusChaos, <br>and OpenEBS users and
+                          contributors.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Workloads
+              <i class="fa fa-angle-down down-icon"></i>
+              <i class="fa fa-angle-up up-icon"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div>
+                <div class="dropdown-wrapper">
+                  <!-- <div>
+                    <p class="mb-4 header-title-dropdown">Workloads</p>
+                  </div> -->
+                  <div class="dropdown-wrapper-inside">
+                    <ul class="list-unstyled top">
+                      <li>
+                        <a routerLink="/workloads/kafka-on-kubernetes" (click)="hideclass()">Kafka</a>
+                        <p>Deploying Kafka on Kubernetes</p>
+                      </li>
+                      <li>
+                        <a routerLink="/workloads/elasticsearch-on-kubernetes" (click)="hideclass()">ElasticSearch /
+                          EFK</a>
+                        <p>Deploying ElasticSearch / EFK on Kubernetes</p>
+                      </li>
+                      <li>
+                        <a routerLink="/workloads/magento-on-kubernetes" (click)="hideclass()">Magento</a>
+                        <p>Deploying Magento on Kubernetes</p>
+                      </li>
+                      <li>
+                        <a routerLink="/workloads/percona-on-kubernetes" (click)="hideclass()">Percona</a>
+                        <p>Deploying Percona on Kubernetes</p>
+                      </li>
+
+                      <li>
+                        <a routerLink="/workloads/cassandra-on-kubernetes" (click)="hideclass()">Cassandra</a>
+                        <p>Deploying Cassandra on Kubernetes</p>
+                      </li>
+                      <li>
+                        <a routerLink="/workloads/minio-on-kubernetes" (click)="hideclass()">MinIO</a>
+                        <p>Deploying MinIO on Kubernetes</p>
+                      </li>
+                      <li>
+                        <a routerLink="/workloads/prometheus-on-kubernetes" (click)="hideclass()">Prometheus</a>
+                        <p>Deploying Prometheus on Kubernetes</p>
+                      </li>
+                      <li>
+                        <a routerLink="/workloads/cockroachDB-on-kubernetes" (click)="hideclass()">CockroachDB </a>
+                        <p>Deploying CockroachDB on Kubernetes</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Company
+              <i class="fa fa-angle-down down-icon"></i>
+              <i class="fa fa-angle-up up-icon"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div>
+                <div class="dropdown-wrapper">
+                  <!-- <div>
+                    <p class="mb-4 header-title-dropdown">Company</p>
+                  </div> -->
+                  <div class="dropdown-wrapper-inside">
+                    <ul class="list-unstyled top">
+                      <li>
+                        <a routerLink="/aboutus" (click)="hideclass()">About Us</a>
+                        <p>Our team and our values</p>
+                      </li>
+                      <li>
+                        <a routerLink="/careers" (click)="hideclass()">Careers</a>
+                        <p>Our culture puts people first above everything. Join our team to dramatically improve the
+                          management of cloud native data.</p>
+                      </li>
+                      <li>
+                        <a routerLink="/partners" (click)="hideclass()">Partners</a>
+                        <p>We partner with companies that offer Kubernetes hosting, adjacent technologies, stateful
+                          workloads, and consulting practices</p>
+                      </li>
+
+                      <li>
+                        <a routerLink="/news" (click)="hideclass()">News</a>
+                        <p>Read about MayaData product announcements, OpenEBS releases and more.</p>
+                      </li>
+                      <li>
+                        <a routerLink="/contactus" (click)="hideclass()">Contact Us</a>
+                        <p>Fill in the form. We will be happy to answer your queries and set up a meeting with you.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="#" id="navbarDropdownResources" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Resources
+              <i class="fa fa-angle-down down-icon"></i>
+              <i class="fa fa-angle-up up-icon"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
+              <div>
+                <div class="dropdown-wrapper">
+                  <!-- <div>
+                    <p class="mb-4 header-title-dropdown">Resources</p>
+                  </div> -->
+                  <div class="dropdown-wrapper-inside">
+                    <ul class="list-unstyled top">
+                      <li>
+                        <a routerLink="/resources" (click)="hideclass()">Resource Center</a>
+                        <p>Learn about the Use Cases, Solution Guides, workshops and more on Kubernetes, OpenEBS and
+                          CAS.</p>
+                      </li>
+                      <li>
+                        <a routerLink="/benchmarking-resources-for-Kubernetes" (click)="hideclass()">Benchmarking
+                          Resources</a>
+                        <p>Explore benchmarking tools, results and other resources for Kubernetes.</p>
+                      </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="https://blog.mayadata.io" (click)="hideclass()" target="_blank"
+                          rel="noopener noreferrer">Blog</a>
+                        <p>Learn more about latest trends on Kubernetes, <br>Container Attached Storage (CAS) and more.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pricing
+              <i class="fa fa-angle-down down-icon"></i>
+              <i class="fa fa-angle-up up-icon"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div>
+                <div class="dropdown-wrapper">
+                  <!-- <div>
+                    <h1 class="mb-4" style="font-size: 24px !important;">Pricing</h1>
+                  </div> -->
+                  <div class="dropdown-wrapper-inside">
+                    <ul class="list-unstyled top">
+                      <li>
+                        <a routerLink="/get-pricing" (click)="hideclass()">Get Pricing</a>
+                        <p>Pick your level of support from community to 24/7</p>
+                      </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a routerLink="/professional-services-mayadata-openebs" (click)="hideclass()">Professional
+                          Services</a>
+                        <p>MayaData offers professional services for users of OpenEBS & Stateful Workloads</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/openebs-support" (click)="hideclass()">OpenEBS Support</a>
+          </li>
+          <!-- <li class="nav-item login-section-mobile">
+            <div>
+              <p class="mb-4 header-title-dropdown text-center">Log in or Sign Up to <strong>MayaData</strong>
+              </p>
+              <div class="text-center">
+                <a href="https://account.mayadata.io/signup-classic" target="_blank" rel="noopener noreferrer"
+                  class="mr-5" (click)="hideclass()">
+                  <button class="btn btn-primary btn-sm">Login</button>
+                </a>
+                <a href="https://go.mayadata.io/register-for-kubera-chaos-and-propel-technical-preview" target="_blank"
+                  rel="noopener noreferrer" (click)="hideclass()">
+                  <button class="btn btn-outline-primary btn-sm">Sign Up Free</button>
+                </a>
+              </div>
+            </div>
+          </li> -->
+          <!-- .navbar-toggler -->
+
+        </ul>
+        <!-- <div class="nav-item-remove-height nav-item dropdown my-2 my-lg-0 login-section-desktop">
+          <a class="nav-link  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/images/header/user.svg" alt="user" /> Login
+            <i class="fa fa-angle-down down-icon"></i>
+            <i class="fa fa-angle-up up-icon"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <div class="dropdown-wrapper">
+              <div>
+                <p class="mb-4 header-title-dropdown">Log in or Sign Up to <strong>MayaData</strong>
+                </p>
+                <div>
+                  <a href="https://account.mayadata.io/signup-classic" target="_blank" rel="noopener noreferrer"
+                    class="mr-5">
+                    <button class="btn btn-primary btn-sm">Login</button>
+                  </a>
+                  <a href="https://go.mayadata.io/register-for-kubera-chaos-and-propel-technical-preview"
+                    target="_blank" rel="noopener noreferrer">
+                    <button class="btn btn-outline-primary btn-sm">Sign Up Free</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<section class="pb-5 text-white" *ngIf="currentEvent">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="entity">
+          <div class="text text-primary">{{currentEvent.dateDesc}}</div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row py-5">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div>
+          <img lazyLoad={{currentEvent.img.imgSrc}} alt={{currentEvent.img.imgAlt}} class="img-fluid img" />
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-8 d-flex flex-column current-event">
+        <h2 class="mb-4">{{currentEvent.title}}</h2>
+        <p class="mb-4">{{currentEvent.description}}</p>
+        <a href={{currentEvent.cta.ctaLink}} target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-primary">{{currentEvent.cta.ctaText}}</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="entity">
+          <div class="line m-0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

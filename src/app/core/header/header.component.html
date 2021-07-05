@@ -1,0 +1,611 @@
+<div #headerWrapper class="navbar-block">
+  <div #headerVar class="static-nav w-100"
+    [ngStyle]="isScrolled ? ( routerUrl ? toggleHeader(true) : toggleHeaderNonLandingPage(true) ) : ( routerUrl ? toggleHeader(!isHidden || !isHidden2 || !isHidden3 || !isHidden4 || !isHidden5) : toggleHeaderNonLandingPage(!isHidden || !isHidden2 || !isHidden3 || !isHidden4 || !isHidden5))">
+    <app-banner></app-banner>
+    <div class="px-3 px-lg-2 px-xl-5">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+          <img
+            [src]="(isScrolled || (!isHidden || !isHidden2 ||  !isHidden3 || !isHidden4  || !isHidden5 )) ? ('assets/images/mayadata-landing/mayadata-logo-dark.svg') : ( 'assets/images/mayadata-landing/mayadata-logo.svg')">
+        </a>
+        <button #navbarToggler aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"
+          class="navbar-toggler collapsed p-0" data-target="#navbarTogglerDemo01" data-toggle="collapse" type="button">
+          <span class="mi mi-hamburger" [ngClass]="(!isScrolled) ? 'text-white' : 'text-black'"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li data-category="component" class="nav-item menu-link my-auto" [ngClass]="{
+            'beforeDropdown' : (isHeaderHidden),
+            'afterDropdown' : (!isHeaderHidden || isScrolled)
+          }" id="1">
+              <a #first class="nav-link d-inline-flex align-items-center" (click)="onProductClick()">Product
+                <span class="mi mi-chevron-down ml-2" [ngStyle]="rotateMe(isHidden)"></span>
+              </a>
+            </li>
+            <li data-category="component" class="nav-item menu-link my-auto" [ngClass]="{
+            'beforeDropdown' : isHeaderHidden,
+            'afterDropdown' : (!isHeaderHidden || isScrolled)
+          }" id="2">
+              <a #second class="nav-link d-inline-flex align-items-center" (click)="onOpenSourceClick()">Open
+                Source
+                <span class="mi mi-chevron-down ml-2" [ngStyle]="rotateMe(isHidden2)"></span>
+              </a>
+            </li>
+            <li data-category="component" class="nav-item menu-link my-auto" [ngClass]="{
+              'beforeDropdown' : isHeaderHidden,
+              'afterDropdown' : (!isHeaderHidden || isScrolled)
+            }" id="5">
+              <a #third class="nav-link d-inline-flex align-items-center" (click)="onWorkloadsClick()">Workloads
+                <span class="mi mi-chevron-down ml-2" [ngStyle]="rotateMe(isHidden3)"></span>
+              </a>
+            </li>
+            <li data-category="component" class="nav-item menu-link my-auto" [ngClass]="{
+            'beforeDropdown' : isHeaderHidden,
+            'afterDropdown' : (!isHeaderHidden || isScrolled)
+          }" id="5">
+              <a #fifth class="nav-link d-inline-flex align-items-center" (click)="onCompanyClick()">Company
+                <span class="mi mi-chevron-down ml-2" [ngStyle]="rotateMe(isHidden5)"></span>
+              </a>
+            </li>
+            <li data-category="component" class="nav-item menu-link my-auto" [ngClass]="{
+            'beforeDropdown' : isHeaderHidden,
+            'afterDropdown' : (!isHeaderHidden || isScrolled)
+          }">
+              <a class="nav-link" href="/resources">Resources</a>
+            </li>
+            <li class="nav-item menu-link my-auto" [ngClass]="{
+            'beforeDropdown' : isHeaderHidden,
+            'afterDropdown' : (!isHeaderHidden || isScrolled)
+          }">
+              <a class="nav-link" href="https://blog.mayadata.io/" target="_blank" rel="noopener">Blog</a>
+            </li>
+            <li class="nav-item menu-link my-auto" [ngClass]="{
+            'beforeDropdown' : isHeaderHidden,
+            'afterDropdown' : (!isHeaderHidden || isScrolled)
+          }">
+              <a class="nav-link" href="/get-pricing">Pricing</a>
+            </li>
+
+            <ng-container
+              *ngIf="((!userDetails || userDetails === undefined) && (isUserAvatarLoading === true)); else userDetailsBlock">
+              <li class="nav-item menu-link my-auto" [ngClass]="{
+                    'beforeDropdown' : isHeaderHidden,
+                    'afterDropdown' : (!isHeaderHidden || isScrolled)
+                  }">
+                <div>
+                  <button class="btn btn-secondary dropdown-toggle moving-donut" (click)="expandDropMenu()"
+                    type="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="lds-ring">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </button>
+                </div>
+              </li>
+            </ng-container>
+            <ng-template #userDetailsBlock>
+              <ng-container *ngIf="((userDetails) && (isUserAvatarLoading === false)); else loginSignupButtonBlock">
+                <li class="nav-item menu-link my-auto" [ngClass]="{
+                  'beforeDropdown' : isHeaderHidden,
+                  'afterDropdown' : (!isHeaderHidden || isScrolled)
+                }">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle px-3 avatar-button" (click)="expandDropMenu()" type="button"
+                      id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="avatar avatar-md" *ngIf="userDetails.profilePicture"
+                        src={{userDetails.profilePicture}} />
+                      <img class="avatar avatar-md"
+                        [src]="'https://ui-avatars.com/api/?bold=true&name=' + userDetails.name"
+                        *ngIf="!userDetails.profilePicture" />
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-custom-width user-details" #dropmenu
+                      aria-labelledby="dropmenu">
+                      <div class="user-name-block" *ngIf="userDetails">
+                        <p class="m-0 text font-weight-bold text-white">{{userDetails.name}}</p>
+                      </div>
+                      <a class="dropdown-item userportal-link" (click)="goToMyPortal()">
+                        <p class="m-0">My Portal</p>
+                      </a>
+                      <a class="dropdown-item logout-link" (click)="logOut()">
+                        <p class="m-0">Logout</p>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ng-container>
+            </ng-template>
+            <ng-template #loginSignupButtonBlock>
+              <li class="nav-item menu-link my-auto pr-0" [ngClass]="{
+              'beforeDropdown' : isHeaderHidden,
+              'afterDropdown' : (!isHeaderHidden || isScrolled)
+            }">
+                <a href={{loginUrl}} ngClass={{GTM.TRIGGERS.LOGIN}} id="login_button">
+                  <button class="btn btn-outline-tertiary btn-sm" [ngClass]="{
+                    'btn-outline__white' : (!isScrolled) && (isHeaderHidden),
+                    'btn-dark' : (isScrolled || !isHeaderHidden)
+                  }" #authButton1>Login</button>
+                </a>
+                <a href={{signupUrl}} class="ml-3" ngClass={{GTM.TRIGGERS.SIGNUP}}>
+                  <button class="btn btn-outline-tertiary btn-sm" [ngClass]="{
+                    'btn-light' : (!isScrolled) && (isHeaderHidden),
+                    'btn-dark' :  (isScrolled || !isHeaderHidden)
+                  }" #authButton2>Sign Up Free</button>
+                </a>
+              </li>
+            </ng-template>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<ng-template [mdDropdown]="isHidden">
+  <div #firstRef class="nav-dropdown" id="navmain1">
+    <div class="w-100">
+      <div class="row px-lg-5 my-5">
+        <div class="col-12">
+          <h3>Product</h3>
+        </div>
+        <div class="col-4">
+          <div class="nav-item">
+            <a href="/product">
+              <span>Kubera</span>
+            </a>
+            <p>Kubera helps operate Kubernetes as your data layer. Learn more now.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="nav-item">
+            <a href="/getting-started">
+              <span>Collaborate</span>
+            </a>
+            <p>Connect with the community of Kubera, LitmusChaos, and OpenEBS users and contributors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template [mdDropdown]="isHidden2">
+  <div #secRef class="nav-dropdown" id="navmain2">
+    <div class="w-100">
+      <div class="row px-lg-5 my-5">
+        <div class="col-4">
+          <h3>Sponsored by MayaData</h3>
+          <div class="nav-item">
+            <a href="https://openebs.io" target="_blank">
+              <span>OpenEBS</span>
+            </a>
+            <p>Containerized storage for containers. Most popular OpenSource Container Attached Storage</p>
+          </div>
+          <div class="nav-item">
+            <a href="https://litmuschaos.io" target="_blank" rel="noopener">
+              <span>LitmusChaos</span>
+            </a>
+            <p>Chaos engineering for Stateful workloads on Kubernetes</p>
+          </div>
+          <div class="nav-item">
+            <a href="/open-source#ndm" target="_blank">
+              <span>Node Disk Manager</span>
+            </a>
+            <p>Manage local disks on Kubernetes for provisioning and monitoring </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <h3>Contributions</h3>
+          <div class="nav-item">
+            <a href="/open-source#kubernetes">
+              <span>Kubernetes</span>
+            </a>
+            <p>We love Kubernetes. In addition to NDM, we have made some smaller contributions</p>
+          </div>
+          <div class="nav-item">
+            <a href="/open-source#weavescope">
+              <span>Weave Scope</span>
+            </a>
+            <p>Persistent volumes and storage operations support</p>
+          </div>
+          <div class="nav-item">
+            <a href="/open-source#velero">
+              <span>Velero</span>
+            </a>
+            <p>Improving the performance and resilience of velero backup engine</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template [mdDropdown]="isHidden3">
+  <div #thirdRef class="nav-dropdown" id="navmain3">
+    <div class="w-100">
+      <div class="row px-lg-5 my-5">
+        <div class="col-12">
+          <h3>Workloads</h3>
+        </div>
+        <div class="col-4">
+          <div class="nav-item">
+            <a href="/workloads/kafka">
+              <span>Kafka</span>
+            </a>
+            <p>Deploying Kafka on Kubernetes</p>
+          </div>
+          <div class="nav-item">
+            <a href="/workloads/elasticsearch">
+              <span>ElasticSearch / EFK</span>
+            </a>
+            <p>Deploying ElasticSearch / EFK on Kubernetes</p>
+          </div>
+          <div class="nav-item">
+            <a href="/workloads/magento">
+              <span>Magento</span>
+            </a>
+            <p>Deploying Magento on Kubernetes</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="nav-item">
+            <a href="/workloads/cassandra">
+              <span>Cassandra</span>
+            </a>
+            <p>Deploying Cassandra on Kubernetes</p>
+          </div>
+          <div class="nav-item">
+            <a href="/workloads/minio">
+              <span>MinIO</span>
+            </a>
+            <p>Deploying MinIO on Kubernetes</p>
+          </div>
+          <div class="nav-item">
+            <a href="/workloads/prometheus">
+              <span>Prometheus</span>
+            </a>
+            <p>Deploying Prometheus on Kubernetes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template [mdDropdown]="isHidden5">
+  <div #fifthRef class="nav-dropdown" id="navmain5">
+    <div class="w-100">
+      <div class="row px-lg-5 my-5">
+        <div class="col-12">
+          <h3>Company</h3>
+        </div>
+        <div class="col-4">
+          <div class="nav-item">
+            <a href="/aboutus">
+              <span>About Us</span>
+            </a>
+            <p>Our team and our values</p>
+          </div>
+          <div class="nav-item">
+            <a href="/careers">
+              <span>Careers</span>
+            </a>
+            <p>Our culture puts people first above everything. Join our team to dramatically improve the management
+              of cloud native data.</p>
+          </div>
+          <div class="nav-item">
+            <a href="/partners">
+              <span>Partners</span>
+            </a>
+            <p>We partner with companies that offer Kubernetes hosting, adjacent technologies, stateful workloads, and
+              consulting practices</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="nav-item">
+            <a href="/news">
+              <span>News</span>
+            </a>
+            <p>Read about MayaData product announcements, OpenEBS releases and more.</p>
+          </div>
+          <div class="nav-item">
+            <a href="/contactus">
+              <span>Contact Us</span>
+            </a>
+            <p>Fill in the form. We will be happy to answer your queries and set up a meeting with you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+
+<div #mobileNav class="mobile-view bg-white" id="mobile-nav"
+  style="position:fixed;display:none;height:100%;width:100%;top:0;">
+  <div class="container-fluid px-3">
+    <div class="row">
+      <div class="col-12 p-0">
+        <div id="mobileView" class="bg-white">
+          <div id="buttonDiv">
+            <div class="pl-3 pb-3 clearfix" style="height:60px;padding-right: 16px;
+            padding-top: 16px;">
+              <div class="d-inline-flex" style="width:200px">
+                <img id="logo" src="assets/images/mayadata-landing/mayadata-logo-dark.svg" alt="maya-logo"
+                  class="img-fluid" style="height:30px;width:auto">
+              </div>
+              <div class="d-inline-flex" style="float:right">
+                <span #navbarTogglerCross style="cursor:pointer;" data-toggle="collapse"
+                  data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                  aria-label="Toggle navigation" class="text-dark">
+                  <span class="mi mi-x" style="font-size:28px;"></span>
+                </span>
+              </div>
+            </div>
+            <div id="main-list">
+              <div class="dropdown-divider"></div>
+              <div class="py-1 px-3">
+                <div id="click" style="cursor:pointer;" class="text-primary"><span class="pr-2">Product</span>
+                  <span class="mi mi-chevron-right" aria-hidden="true" style="float:right"></span>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="py-1 px-3">
+                <div id="click2" style="cursor:pointer;" class="text-primary"><span class="pr-2">Open Source</span>
+                  <span class="mi mi-chevron-right" aria-hidden="true" style="float:right"></span>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="py-1 px-3">
+                <div id="workloadsMob" style="cursor:pointer;" class="text-primary"><span class="pr-2">Workloads</span>
+                  <span class="mi mi-chevron-right" aria-hidden="true" style="float:right"></span>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="py-1 px-3">
+                <div id="company" style="cursor:pointer;" class="text-primary"><span class="pr-2">Company</span>
+                  <span class="mi mi-chevron-right" aria-hidden="true" style="float:right"></span>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="py-1 px-3">
+                <div style="cursor:pointer;">
+                  <a class="text-primary" href="/resources">Resources</a>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="py-1 px-3">
+                <div style="cursor:pointer;">
+                  <a class="text-primary" href="https://blog.mayadata.io" target="_blank">Blog</a>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="py-1 px-3">
+                <div style="cursor:pointer;">
+                  <a class="text-primary" href="/get-pricing">Pricing</a>
+                </div>
+              </div>
+              <div class="p-0">
+                <ng-container *ngIf="((!userDetails) && (isUserAvatarLoading === true)); else userDetailsBlockMob">
+                  <button class="btn btn-secondary dropdown-toggle" (click)="expandDropMenu()"
+                    style="background-color: transparent;border: none;box-shadow: none;" type="button" id="dropmenu"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="lds-ring">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </button>
+                </ng-container>
+                <div id="user" class="py-1 text-center" style="cursor:pointer;">
+                  <i class="fa fa-arrow-right text-primary ml-2 font-weight-bold" aria-hidden="true"
+                    *ngIf="((userDetails) && (isUserAvatarLoading === false))"></i>
+                  <ng-template #userDetailsBlockMob>
+                    <ng-container
+                      *ngIf="((userDetails) && (isUserAvatarLoading === false)); else loginSignupButtonBlockMob">
+                      <div class="d-flex align-items-center bg-gray p-3 my-2" style="background-color: #D1D2D9">
+                        <img class="avatar avatar-md" style="height:48px; width:48px;"
+                          *ngIf="userDetails.profilePicture" src={{userDetails.profilePicture}} />
+                        <span class="avatar avatar-md" style="height:48px; width:48px;"
+                          *ngIf="!userDetails.profilePicture">{{userDetails.name.charAt(0)}}</span>
+                        <span class="pl-3 font-weight-bold">{{userDetails.name}}</span>
+                      </div>
+                      <div>
+                        <div class="py-1 pr-3" style="padding-left:80px">
+                          <div style="cursor:pointer;">
+                            <a class="text-dark font-weight-bold" (click)="goToMyPortal()">My Portal</a>
+                          </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="py-1 pr-3" style="padding-left:80px">
+                          <div style="cursor:pointer;">
+                            <a class="text-dark font-weight-bold" (click)="logOut()">Logout</a>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-container>
+                  </ng-template>
+                </div>
+                <ng-template #loginSignupButtonBlockMob>
+                  <div class="d-flex">
+                    <div class="p-3 m-auto">
+                      <a href={{loginUrl}} ngClass={{GTM.TRIGGERS.LOGIN}}>
+                        <button class="btn btn-primary mr-4 mb-3">Login</button>
+                      </a>
+                      <a href={{signupUrl}} ngClass={{GTM.TRIGGERS.SIGNUP}}>
+                        <button class="btn btn-outline-primary mb-3">Sign Up Free</button>
+                      </a>
+                    </div>
+                  </div>
+                </ng-template>
+              </div>
+              <div class="py-3"></div>
+            </div>
+          </div>
+          <div class="slide-div" id="slide-div" style="width:100%">
+            <div class="pl-3 pb-3" style="height:60px;padding-right: 20px;
+            padding-top: 20px;">
+              <div class="d-inline-flex">
+                <span id="go-back" style="cursor:pointer; font-size:20px;" class="text-primary">
+                  <span class="mi mi-chevrons-left" style="font-size:28px;"></span>
+                </span>
+              </div>
+              <div class="d-inline-flex" style="float:right">
+                <span #navbarTogglerCross2 class="text-dark" style="cursor:pointer" data-toggle="collapse"
+                  data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="mi mi-x" style="font-size:28px;"></span>
+                </span>
+              </div>
+            </div>
+            <div id="DivPass">
+              <div class="dropdown-divider"></div>
+              <ul style="list-style-type:none;" class="p-0">
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/product" class="text-primary">
+                    <span>Kubera</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/getting-started" class="text-primary">
+                    <span>Get Started</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="py-5"></div>
+              </ul>
+            </div>
+            <!-- -->
+            <div id="DivPass2">
+              <div class="dropdown-divider"></div>
+              <ul style="list-style-type:none;" class="p-0 text-primary">
+                <div class="dropdown-link px-3 py-2">
+                  <a href="https://openebs.io" class="text-primary" target="_blank" rel="noopener">
+                    <span>OpenEBS</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="https://litmuschaos.io" class="text-primary" target="_blank" rel="noopener">
+                    <span>LitmusChaos</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/open-source#ndm" class="text-primary">
+                    <span>Node Disk Manager</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/open-source#kubernetes" class="text-primary">
+                    <span>Kubernetes</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/open-source#weavescope" class="text-primary">
+                    <span>Weave Scope</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/open-source#velero" class="text-primary">
+                    <span>Velero</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="py-5"></div>
+              </ul>
+            </div>
+            <!-- -->
+
+            <div id="DivPass3">
+              <div class="dropdown-divider"></div>
+              <ul style="list-style-type:none;" class="p-0 text-primary">
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/workloads/kafka" class="text-primary">
+                    <span>Kafka</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/workloads/elasticsearch" class="text-primary">
+                    <span>ElasticSearch / EFK</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/workloads/magento" class="text-primary">
+                    <span>Magento</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/workloads/cassandra" class="text-primary">
+                    <span>Cassandra</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/workloads/minio" class="text-primary">
+                    <span>MinIO</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/workloads/prometheus" class="text-primary">
+                    <span>Prometheus</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="py-5"></div>
+              </ul>
+            </div>
+            <!-- -->
+            <!-- -->
+            <!-- -->
+            <div id="DivPass4">
+              <div class="dropdown-divider"></div>
+              <ul style="list-style-type:none;" class="p-0">
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/aboutus" class="text-primary">
+                    <span>About Us</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/careers" class="text-primary">
+                    <span>Careers</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/partners" class="text-primary">
+                    <span>Partners</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/news" class="text-primary">
+                    <span>News</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-link px-3 py-2">
+                  <a href="/contactus" class="text-primary">
+                    <span>Contact Us</span>
+                  </a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="py-5"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,121 @@
+.professional-services-hero {
+    background: url("assets/images/professional-services/hero-bg-with-shadow-ps.png") no-repeat;
+    background-position: top right;
+    background-size: cover;
+    padding: 0;
+}
+.professional-services-hero .hero-inner {
+    position: relative;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    top: 0;
+    overflow: hidden;
+}
+.professional-services-companies {
+    background: url("assets/images/professional-services/hero-bg-with-shadow-ps.png") no-repeat;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+    background-size: cover;
+}
+
+.professional-services-hero img {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: color-dodge;
+}
+.professional-services-hero .container {
+    max-width: 1200px;
+}
+.professional-services-hero .hero-right {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+}
+
+.professional-services-hero .hero-inner:after {
+    background: url("assets/images/professional-services/hero-image-ps.png") 0 0 / cover no-repeat;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    mix-blend-mode: color-dodge;
+    width: 600px;
+    height: 100%;
+    bottom: 0;
+    box-shadow: 0 0 20px 20px #000000 inset;
+}
+.hero-left {
+    h1 {
+        text-align: left;
+        font-size: 36px;
+        color: #a1a6c1;
+        line-height: 120%;
+        span {
+            color: #fff;
+        }
+    }
+    p {
+        color: #fff;
+        max-width: 670px;
+        font-size: 22px;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1200px) {
+    .professional-services-hero .hero-inner:after {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .hero-left {
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 22px;
+        }
+    }
+    .professional-services-hero .hero-inner:after {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-left {
+        h1 {
+            font-size: 24px;
+            color: #a1a6c1;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .professional-services-hero .hero-inner:after {
+        width: 400px;
+    }
+    .professional-services-hero {
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .hero-left {
+        h1 {
+            font-size: 22px;
+            color: #a1a6c1;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .professional-services-hero .hero-inner:after {
+        width: 300px;
+    }
+}

@@ -1,0 +1,83 @@
+<section class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <a routerLink="/" class="text-white"><i class="fa fa-chevron-left" aria-hidden="true"></i><span
+            class="pl-2">Back</span></a>
+        <h1 class="text-white">Mulebot</h1>
+      </div>
+      <div class="col-12 bg-white" style="border-radius: 40px;">
+        <div class="text-center py-4">
+          <img src="assets/images/integrations/mulebot-header.png" class="img-fluid px-2 mulebot">
+        </div>
+        <div class="text-left mulebot-section">
+          <h6>{{'integrations.title' | translate}}</h6>
+          <p>{{'integrations.description' | translate}}</p>
+        </div>
+        <div class="text-center" class="mulebot-screen">
+          <img src="assets/images/integrations/slack-screen.png" class="img-fluid">
+        </div>
+        <div class="mulebot-section">
+          <div>
+            <h6>{{'integrations.whatappdoes.title' | translate}}</h6>
+          </div>
+          <div class="mb-5">
+            <p [innerHTML]="'integrations.whatappdoes.description.passage1' | translate"></p>
+            <p>{{'integrations.whatappdoes.description.passage2' | translate}}</p>
+          </div>
+          <div>
+            <h6>{{'integrations.integrate.title' | translate}}</h6>
+          </div>
+          <div class="mb-5">
+            <p>{{'integrations.integrate.instruction' | translate}}</p>
+            <div>
+              <ol>
+                <li [innerHTML]="'integrations.integrate.steps.step1' | translate"></li>
+
+                <li>{{'integrations.integrate.steps.step2' | translate}}</li>
+
+                <li>{{'integrations.integrate.steps.step3' | translate}}</li>
+
+                <li>{{'integrations.integrate.steps.step4' | translate}}</li>
+
+                <li>{{'integrations.integrate.steps.step5' | translate}}</li>
+
+                <li>{{'integrations.integrate.steps.step6' | translate}}</li>
+
+                <li>{{'integrations.integrate.steps.step7' | translate}}</li>
+
+                <li>{{'integrations.integrate.steps.step8' | translate}}</li>
+              </ol>
+              <p>{{'integrations.integrate.note' | translate}}</p>
+            </div>
+          </div>
+          <div>
+            <h5>{{'integrations.listofslashcommands.title' | translate}}</h5>
+          </div>
+          <p>{{'integrations.listofslashcommands.instruction' | translate}}</p>
+          <div>
+            <ol class="slash-commands">
+              <li>
+                <mark>{{'integrations.listofslashcommands.commands.command1.command' | translate}}</mark>{{'integrations.listofslashcommands.commands.command1.brief' | translate}}
+              </li>
+              <li>
+                <mark>{{'integrations.listofslashcommands.commands.command2.command' | translate}}</mark>{{'integrations.listofslashcommands.commands.command2.brief' | translate}}
+              </li>
+              <li><mark>{{'integrations.listofslashcommands.commands.command3.command' | translate}}</mark>
+                {{'integrations.listofslashcommands.commands.command3.brief' | translate}}
+              </li>
+            </ol>
+          </div>
+          <div class="py-5">
+            <p>{{'integrations.listofslashcommands.havequestion' | translate}} <a
+                href="{{'integrations.listofslashcommands.link.href' | translate}}">{{'integrations.listofslashcommands.link.content' | translate}}</a>
+            </p>
+            <div>
+              <a href="/product/integrations/mulebot/policy#top">Mulebot Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

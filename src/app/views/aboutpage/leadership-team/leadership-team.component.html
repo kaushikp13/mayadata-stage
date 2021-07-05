@@ -1,0 +1,45 @@
+<div class="bg-gray-1 section-container leadership-section">
+  <div class="container leadership-section-container">
+    <div class="row">
+      <div class="col-md-12 leadership-team-div">
+        <h3 class="leadership-title">Leadership Team
+        </h3>
+      </div>
+
+      <div *ngIf="leaderShipTeamMembers" class="leader-block-wrapper">
+        <div class="leader-box" *ngFor="let leader of  leaderShipTeamMembers;let i= index" [ngClass]="{
+        'active-member':leader.active}" (click)="leaderContent(leader,i)">
+          <div class="d-flex justify-content-center align-items-center flex-column avatars">
+            <img lazyLoad="{{leader.leaderImage}}" [alt]="leader.leaderAlt" class="leader" [ngClass]="{
+            'leader-background-class':!leader.active}">
+            <div class="leaders-detail">
+              <p class="leader-text">{{leader.leaderName}}</p>
+              <p class="leader-position">{{leader.leaderPosition}}</p>
+            </div>
+          </div>
+          <div *ngIf="(leader.leaderid==selectedContent.leaderid)&& selectedContent&&selectedContent.active"
+            class="tab-content team-tabs mobile-dispplay" [ngClass]="{
+        'active-first':firstDatacurve,
+        'active-last':lastDatacurve}">
+            <div role="tabpanel" class="tab-pane vivify">
+
+              <div class="col-md-12 cnt-txt text-gray-3" [innerHtml]="selectedContent.leaderContent">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="selectedContent" class="tab-content team-tabs" [ngClass]="{
+      'active-first':firstDatacurve,
+      'active-last':lastDatacurve}">
+        <div role="tabpanel" class="tab-pane vivify">
+          <div class="col-md-12 cnt-txt text-gray-3" [innerHtml]="selectedContent.leaderContent">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

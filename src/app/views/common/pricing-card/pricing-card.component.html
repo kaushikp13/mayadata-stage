@@ -1,0 +1,33 @@
+<ng-container>
+  <div class="d-flex flex-column justify-content-between h-100 pt-4" style="position: relative;">
+    <div class="badge--popular bg-purple" *ngIf="pricingLevelObj.title === 'Standard'">Most Popular</div>
+    <div class="text-white text-decoration-none pricing-cta-link d-flex flex-column h-100" style="flex: 1;">
+      <h3 *ngIf="pricingLevelObj.title ==='Enterprise'">{{pricingLevelObj.title}}*</h3>
+      <h3 *ngIf="pricingLevelObj.title !=='Enterprise'">{{pricingLevelObj.title}}</h3>
+      <p class="pricing-description">{{pricingLevelObj.description}}</p>
+      <div class="h5 d-flex justify-content-center align-items-start" *ngIf="pricingLevelObj.title === 'Standard'">
+        <span>{{pricingLevelObj.pricingRate.latestPrice.currency}}</span><span
+          class="new-pricing-amount-standard">{{pricingLevelObj.pricingRate.latestPrice.amount}}</span>
+        <div class="overlay"></div>
+      </div>
+      <div class="h1 d-flex justify-content-center align-items-start" *ngIf="pricingLevelObj.title !=='Enterprise'">
+        <span>{{pricingLevelObj.pricingRate.price.currency}}</span><span
+          class="pricing-amount">{{pricingLevelObj.pricingRate.price.amount}}</span>
+      </div>
+
+      <div class="h1 enterprise-pricing" *ngIf="pricingLevelObj.title ==='Enterprise'">
+        <span>{{pricingLevelObj.pricingRate.price.currency}}</span><span>{{pricingLevelObj.pricingRate.price.amount}}</span>
+        <br />
+        <div class="d-flex justify-content-center align-items-start h2 pt-3 mb-0">
+          <span class="nodeprice-currency">{{pricingLevelObj.pricingRate.nodePrice.currency}}</span><span
+            class="node-pricing-amount">{{pricingLevelObj.pricingRate.nodePrice.amount}}</span>
+        </div>
+      </div>
+      <p class="mb-0">{{pricingLevelObj.pricingRate.per}}</p>
+      <br>
+      <div *ngIf="pricingLevelObj.exclusiveNotes">
+        <p *ngFor="let note of pricingLevelObj.exclusiveNotes" class="exclusive-notes p-0 m-0">{{note}}</p>
+      </div>
+    </div>
+  </div>
+</ng-container>

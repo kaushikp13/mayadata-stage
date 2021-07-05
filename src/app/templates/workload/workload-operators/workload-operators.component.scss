@@ -1,0 +1,45 @@
+.img-block {
+  height: auto;
+  width: 150px;
+  border-radius: 10px;
+  padding: 32px 0px 10px 0px;
+}
+
+.operator-info {
+  max-width: 420px;
+  flex: 1 1 auto;
+}
+.cta-section {
+  max-width: 100%;
+}
+
+
+.line {
+  height: 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: 11px;
+  flex-grow: 1;
+}
+
+
+/*  Common For All and for mobile */
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {
+  .cta-section {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width:992px) {}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {} // optional

@@ -1,0 +1,51 @@
+.form-control-lg {
+  font-size: 14px;
+  height: 34px;
+  border-radius: 0;
+}
+
+.submit-btn {
+  background-color: #8d8df9;
+  border-color: #8d8df9;
+  color: #fefefe;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 5px 25px;
+}
+
+label {
+  font-size: 12px;
+}
+
+.left-input {
+  width: 47.5%;
+  margin-right: 2%;
+  display: inline-block;
+}
+
+.right-input {
+  width: 47.5%;
+  margin-left: 2%;
+  display: inline-block;
+}
+
+.full-input {
+  width: 99.5%;
+}
+
+.notes {
+  font-size: 12px;
+}
+
+@media screen and (max-width:768px) {
+
+  .left-input,
+  .right-input {
+    width: 100%;
+    margin: 0;
+  }
+
+  .full-input {
+    width: 100%
+  }
+}

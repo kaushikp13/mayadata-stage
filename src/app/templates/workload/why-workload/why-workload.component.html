@@ -1,0 +1,12 @@
+<section class="section-container why-workload-section" *ngIf="whyWorkload">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="why-workload">
+          <h2 class="text-white">{{whyWorkload.title}}</h2>
+          <p class="text-white" [innerHtml]="whyWorkload.description"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,107 @@
+/*  Common For All and for mobile */
+
+.hacktoberfest-logo {
+  max-width: 320px;
+  margin: auto;
+}
+
+.colored-border-bottom {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-image: linear-gradient(0.25turn, rgb(255, 249, 34), rgb(255, 0, 128), rgba(56, 2, 155, 0));
+  border-image-slice: 1;
+  width: fit-content;
+}
+
+.issue-section {
+  max-width: 800px;
+}
+
+.issue-card {
+  min-height: 360px;
+  max-width: 320px;
+}
+
+.issue-card-title {
+  flex: 1 1 auto;
+}
+
+.icon-sizing {
+  font-size:80px;
+}
+
+.laptop-img {
+  max-width: 100%;
+}
+
+.prize-img-section {
+  min-height: auto;
+}
+
+.prize-img {
+  max-width: 100%;
+}
+
+.tshirt-section {
+  max-width: 100%
+}
+
+.cta-section {
+  max-width: 100%;
+}
+
+// TODO --remove it from here and have support in decode-marketing
+
+.text-decoration-none {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+  .laptop-img {
+    max-width: 360px;
+  }
+
+  .prize-img-section {
+    min-height: 375px;
+  }
+
+  .prize-img {
+    max-width: 260px;
+  }
+
+  .tshirt-section {
+    max-width: 400px;
+  }
+
+  .cta-section {
+    max-width: 300px;
+  }
+  .prize-img-block {
+    height: 200px;
+  }
+
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .hacktoberfest-logo {
+    max-width: 420px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {} // optional

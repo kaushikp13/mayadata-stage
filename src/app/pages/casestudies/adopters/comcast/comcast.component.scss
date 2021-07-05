@@ -1,0 +1,156 @@
+// .section-container {
+//   padding: 32px 0px;
+// }
+
+// .wrapper {
+//   max-width: 900px;
+//   margin: auto;
+// }
+
+// .intro-section {
+//   background-color: #D3E9FD;
+// }
+
+// .workloads-card {
+//   padding: 24px;
+//   background-color: #D3E9FD;
+//   display: flex;
+// }
+
+// .card-lists {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: auto;
+//   justify-content: center;
+// }
+
+// .card-item {
+//   display: flex;
+//   width: 100%;
+//   min-height: 180px;
+//   height: 180px;
+// }
+
+// .card-item-content {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   margin: 1rem;
+//   border-radius: 8px;
+//   background-color: #D3E9FD;
+// }
+
+// .card-item-content img {
+//   max-width: 120px;
+//   width: 100%;
+//   height: auto;
+//   margin: auto;
+// }
+
+// .card-item-content p {
+//   flex: 1 0 auto;
+// }
+
+// .item {
+//   margin: auto;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .adopters-section {
+//   background-color: #0063FF;
+// }
+
+// .heading-section {
+//   max-width: 900px;
+//   margin: auto;
+// }
+
+// .comcast-help-section {
+//   background-color: #D3E9FD;
+// }
+
+// .gain-block {
+//   max-width: 480px;
+//   margin: auto;
+//   margin-bottom: 30px;
+// }
+// .comcast-logo {
+//   height: 90px;
+// }
+
+// @media all and (min-width: 576px) {
+//   .card-item {
+//     width: 50%;
+//   }
+// }
+
+// @media all and (min-width: 768px) {
+//   .card-item {
+//     width: 33.33%;
+//   }
+
+//   .section-container {
+//     padding: 64px 0px;
+//   }
+// }
+
+// @media all and (min-width: 992px) {
+//   .card-item {
+//     width: 25%;
+//   }
+
+//   .section-container {
+//     padding: 96px 0px;
+//   }
+// }
+
+
+.issue-wrapper {
+  margin-top: 40px;
+}
+
+.issue {
+ margin-bottom: 80px;
+}
+
+.issue-1::before, .issue-2::before, .issue-3::before, .issue-4::before {
+  content: url(/assets/images/usecases/one.svg);
+  height: 120px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -40px;
+  margin-top: -40px;
+}
+
+.issue-1::before {
+  content: url(/assets/images/usecases/one.svg);
+}
+
+.issue-2::before {
+  content: url(/assets/images/usecases/two.svg);
+}
+
+
+.issue-3::before {
+  content: url(/assets/images/usecases/three.svg);
+}
+
+
+.issue-4::before {
+  content: url(/assets/images/usecases/four.svg);
+}
+
+
+.comcast-aviduser {
+  max-width: 420px;
+}
+
+
+.comcast-cta-section {
+  background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+}

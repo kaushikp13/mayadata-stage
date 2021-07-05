@@ -1,0 +1,44 @@
+<div class="section-container" *ngIf="workloadJourney" id="deploy">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <h2 class="text-white workload-journey">{{workloadJourney.title}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="row gradient-border">
+          <div class="col-12 col-md-3 px-0  steps">
+            <div class="py-3 mountain-climber-section" id="mountainClimber">
+              <img lazyLoad={{step.image_url}} alt="mountain" class="img-fluid mountain-climber p-4"
+                *ngFor="let step of workloadJourney.steps; let i = index" [class.show]="selectedIndex === i"
+                (click)="setIndex(i)" />
+            </div>
+            <div class="list-container">
+              <div class="list-of-items" id="listOfItems">
+                <div class="item list-item text-white d-flex justify-content-start align-items-center pl-4"
+                  *ngFor="let step of workloadJourney.steps; let i = index" [class.active]="selectedIndex === i"
+                  (click)="setIndex(i)">
+                  <div class="list-item-content text-left">
+                    <span class="mb-0">{{i+1}}. {{step.stepTitle}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="steps-area">
+              <div class="item-content-list pt-3 text-white" id="listOfItemContents">
+                <div class="workload-markdown item-content" *ngFor="let step of workloadJourney.steps; let i = index"
+                  [class.show]="selectedIndex === i" (click)="setIndex(i)">
+                  <markdown [src]="step.linkToMdFile" (error)="onError($event)">
+                  </markdown>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

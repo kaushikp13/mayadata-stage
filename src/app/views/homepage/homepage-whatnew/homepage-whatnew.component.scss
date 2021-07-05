@@ -1,0 +1,71 @@
+.new-title {
+    margin-bottom: 60px;
+}
+.new-title h2 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 72px;
+}
+.new-box-title {
+    color: #fff;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+.new-box-date {
+    color: #fff;
+    font-weight: 600;
+    min-height: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.new-box-content {
+    color: #fff;
+    /* max-width: 310px; */
+    min-height: 70px;
+    font-size: 20px;
+}
+
+.whats-new {
+    padding: 100px 0;
+}
+
+@media (max-width: 991px) {
+    .new-box-date {
+        font-size: 18px;
+    }
+    .new-box-title {
+        color: #fff;
+        font-size: 30px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+    .new-box-content {
+        color: #fff;
+        min-height: 70px;
+        font-size: 17px;
+    }
+
+    ::ng-deep {
+        .new-box-content {
+            min-height: 0;
+            font-size: 20px;
+        }
+        .new-block.event {
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 30px;
+            margin: 15px;
+        }
+        .new-block.event:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .new-box-date:empty {
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+<section class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+        <div class="text-white">
+          <h1>{{intro.title}}</h1>
+          <p class="mb-5">{{intro.description}}</p>
+          <a href={{intro.cta.ctaLink}} target="_blank" rel="noopener noreferrer" *ngIf="intro.cta">
+            <button class="btn btn-primary">{{intro.cta.ctaText}}</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="p-5">
+          <img lazyLoad={{intro.img.imgSrc}} alt={{intro.img.imgAlt}} class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

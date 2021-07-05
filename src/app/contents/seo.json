@@ -1,0 +1,375 @@
+{
+  "pages": {
+    "homePageSeo": {
+      "title": "MayaData | Data Agility Delivered",
+      "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+      "url": "/",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "14/05/2020"
+    },
+    "aboutPageSeo": {
+      "title": "About - MayaData | Data Agility Delivered",
+      "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+      "url": "/aboutus",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "18/09/2020"
+    },
+    "careerPageSeo": {
+      "title": "Careers - MayaData | Data Agility Delivered",
+      "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+      "url": "/careers",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "14/05/2020",
+      "technical-marketing-engineer": {
+        "title": "Job: Technical Marketing Engineer - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/technical-marketing-engineer",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "14/05/2020"
+      },
+      "support-engineer": {
+        "title": "Job: Support Engineer - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/support-engineer",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "14/05/2020"
+      },
+      "program-manager": {
+        "title": "Job: Program Manager - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/program-manager",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "14/05/2020"
+      },
+      "solution-architect": {
+        "title": "Job: Solution Architect - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/solution-architect",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "14/05/2020"
+      },
+      "solution-engineer": {
+        "title": "Job: Solution Engineer - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/solution-engineer",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "14/05/2020"
+      },
+      "technical-writer": {
+        "title": "Job: Technical Writer - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/technical-writer",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "21/12/2020"
+      },
+      "developer-advocate": {
+        "title": "Job: Developer Advocate - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/developer-advocate",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "28/01/2021"
+      },
+      "community-manager": {
+        "title": "Job: Community Manager - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/community-manager",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "28/01/2021"
+      },
+      "community-plow": {
+        "title": "Job: Community Manager - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/community-manager/plow",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "28/01/2021"
+      },
+      "principal-software-engineer": {
+        "title": "Job: Principal Software Engineer - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/principal-software-engineer",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "20/04/2021"
+      },
+      "system-engineer": {
+        "title": "Job: System Engineer - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/system-engineer",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "20/04/2021"
+      },
+      "senior-program-manager": {
+        "title": "Job: Senior Program Manager - MayaData | Data Agility Delivered",
+        "description": "Join us at one of the fastest-growing companies providing containerized storage solutions and supporting open source projects.",
+        "url": "/careers/senior-program-manager",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "20/04/2021"
+      }
+    },
+    "newsPageSeo": {
+      "title": "In the News - MayaData | Data Agility Delivered",
+      "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+      "url": "/news",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "14/05/2020",
+      "growth-in-community": {
+        "title": "MayaData announces record growth in community adoption and revenues",
+        "description": "MayaData today announced mid-year 2020 results, including 419% growth in adoption of the CNCF project OpenEBS and the inclusion of the LitmusChaos project into the CNCF. Additionally, MayaData products including Kubera - with capabilities that include per workload back-ups - have delivered over 400% growth in sales during the first half of 2020 compared to the first half of 2019.",
+        "url": "/news/mayadata-announces-record-growth-in-community-adoption-and-revenues",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "17/08/2020"
+      }
+    },
+    "partnersPageSeo": {
+      "title": "Partners - Join us in helping the world adopt Kubernetes as data plane",
+      "description": "MayaData partners with companies offering Kubernetes hosting, adjacent technologies, stateful workloads and consulting practices",
+      "url": "/partners",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "22/09/2020",
+      "apply-for-partnership": {
+        "title": "Apply For Partnership - MayaData | Data Agility Delivered",
+        "description": "MayaData works with partners to create a robust platform that delivers persistent and containerized block storage for DevOps and container environments.",
+        "url": "/partners/apply-for-partnership",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "14/05/2020"
+      }
+    },
+    "icpPageSeo": {
+      "title": "ICP - MayaData | Data Agility Delivered",
+      "description": "MayaData works with IBM Cloud Private to bring the ease of use and granularity of control of OpenEBS to IBM Cloud Private users.",
+      "url": "/icp",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "14/05/2020"
+    },
+    "productPageSeo": {
+      "title": "Kubera builds on top of OpenEBS to use Kubernetes as data layer",
+      "description": "Kubera lets team building CI/CD to operate their Kubernetes as data layer having more agility and less risk.",
+      "url": "/product",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "18/09/2020"
+    },
+    "opensourcePageSeo": {
+      "title": "MayaData proudly sponsors & contributes to Open Source projects",
+      "description": "MayaData is proud sponsor of two open source projects- OpenEBS & Litmus and contributor to NDM, Weave Scope & Velero",
+      "url": "/open-source",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "22/09/2020"
+    },
+    "gettingstartedPageSeo": {
+      "title": "Learn more about data agility with MayaData",
+      "description": "Start your journey to data agility with OpenEBS and run stateful applications on Kubernetes",
+      "url": "/getting-started",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "22/09/2020"
+    },
+    "contactusPageSeo": {
+      "title": "Contact Us - MayaData | Data Agility Delivered",
+      "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+      "url": "/contactus",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "14/05/2020"
+    },
+    "getpricingPageSeo": {
+      "title": "OpenEBS Support & Professional Services Pricing & Features- MayaData",
+      "description": "OpenEBS Support comes in three packages- Basic, Standard and Enterprise based on individual needs when running data on Kubernetes",
+      "url": "/get-pricing",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "09/09/2020"
+    },
+    "resourcesPageSeo": {
+      "title": "Resources Library",
+      "description": "Learn about Kubernetes as your data plane with MayaData through these resources about Cassandra, MongoDB, Redis, EFK, Kafka, Magento, Prometheus & so much more.",
+      "url": "/resources",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "09/09/2020"
+    },
+    "hacktoberfestPageSeo": {
+      "title": "Hacktoberfest - MayaData | Data Agility Delivered",
+      "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+      "url": "/hacktoberfest",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "14/05/2020",
+      "2020": {
+        "title": "Hacktoberfest 2020 - MayaData | Data Agility Delivered",
+        "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+        "url": "/hacktoberfest/2020",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "28/09/2020"
+      }
+    },
+    "workloadsPageSeo": {
+      "title": "MayaData | Data Agility Delivered",
+      "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+      "url": "/workloads",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "14/05/2020",
+      "kafka": {
+        "title": "Step by step guide to deploy Kafka on Kubernetes",
+        "description": "Follow this detailed step by step guide to run Kafka on Kubernetes",
+        "url": "/workloads/kafka",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "22/09/2020"
+      },
+      "elastic": {
+        "title": "How to run Elasticsearch on Kubernetes using OpenEBS LocalPV",
+        "description": "Running Elasticsearch on Kubernetes using OpenEBS LocalPV has many benefits like provisioning data storage for Elasticsearch clusters.",
+        "url": "/workloads/elastic",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "25/05/2021"
+      },
+      "magento": {
+        "title": "Deploying Magento on Kubernetes - MayaData | Data Agility Delivered",
+        "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+        "url": "/workloads/magento",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "28/05/2020"
+      },
+      "cassandra": {
+        "title": "How to run stateful workload Cassandra on Kubernetes",
+        "description": "Cassandra is one of the most popular stateful workloads to run on Kubernetes. Follow this guide to run Cassandra.",
+        "url": "/workloads/cassandra",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "22/09/2020"
+      },
+      "minio": {
+        "title": "How to run MinIo on Kubernetes- OpenEBS",
+        "description": "Running MinIO on Kubernetes with OpenEBS provides the perfect cloud- native environment to sustain scalability.",
+        "url": "/workloads/minio",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "28/07/2020"
+      },
+      "prometheus": {
+        "title": "Deploying Prometheus on Kubernetes - MayaData | Data Agility Delivered",
+        "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+        "url": "/workloads/prometheus",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "14/05/2020"
+      },
+      "percona": {
+        "title": "How to run Percona Operators on Kubernetes- OpenEBS",
+        "description": "Percona Operators on Kubernetes optimize database performance and reduce risk, and minimize operational cost and complexity in running databases.",
+        "url": "/workloads/percona",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "14/12/2020"
+      },
+      "cockroachDB": {
+        "title": "How to run CockroachDB on Kubernetes using OpenEBS LocalPV",
+        "description": "Running CockroachDB on Kubernetes using OpenEBS LocalPV has many benefits like persistent storage for CockroachDB clusters.",
+        "url": "/workloads/cockroachdb",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "25/05/2021"
+      }
+    },
+    "usecasesPageSeo": {
+      "title": "Usecases - MayaData | Data Agility Delivered",
+      "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+      "url": "/usecases",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "14/05/2020",
+      "blue-green-deployment": {
+        "title": "Blue Green Deployment for Stateful Applications",
+        "description": "Roll out stateful applications with Blue Green Deployment using OpenEBS",
+        "url": "/usecases/blue-green-deployment",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "09/09/2020"
+      },
+      "ci-cd": {
+        "title": "Deploy CI/CD using OpenEBS to save time and improve accuracy",
+        "description": "Ensure the accuracy of your CI/CD pipeline by using clones - and deploy and redeploy quickly",
+        "url": "/usecases/ci-cd",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "09/09/2020"
+      },
+      "multi-cloud": {
+        "title": "Move stateful applications freely across clusters in multi-cloud",
+        "description": "OpenEBS builds upon the any-cloud capabilities of Kubernetes to remove lock-in to save money and retain developer choice",
+        "url": "/usecases/multi-cloud",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "09/09/2020"
+      },
+      "hyper-scale": {
+        "title": "Deploy Native Hyperscale Infrastructure using OpenEBS",
+        "description": "Integrate OpenEBS with Hyperscale to scale compute and storage independently as demand increases",
+        "url": "/usecases/hyper-scale",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "09/09/2020"
+      },
+      "cross-az": {
+        "title": "Advantage of using Mayadata with AWS Cross AZ Use Cases",
+        "description": "OpenEBS replication across zones, you can now easily run your stateful application across zones on AWS",
+        "url": "/usecases/cross-az",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "09/09/2020"
+      },
+      "statefulsets": {
+        "title": "Use OpenEBS with Kubernetes Statefulsets like Cassandra and others",
+        "description": "There are multiple advantages of deploying StatefulSet with OpenEBS PVs as it is created to provide answers to storage operations",
+        "url": "/usecases/statefulsets",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "09/09/2020"
+      },
+      "deployments": {
+        "title": "Stateful applications on Kubernetes deployed as Deployment",
+        "description": "OpenEBS can be used for deployment of Stateful applications like Grafana, Prometheus and MySql",
+        "url": "/usecases/deployments",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "09/09/2020"
+      }
+    },
+    "casestudyPageSeo": {
+      "title": "Case Study - MayaData | Data Agility Delivered",
+      "description": "At MayaData, we believe containerization, Kubernetes and other trends such as DevOps enable a fundamentally better approach to delivering data management.",
+      "url": "/casestudies",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "22/05/2020",
+      "arista": {
+        "title": "Arista uses OpenEBS to run several stateful applications",
+        "description": "Arista uses OpenEBS to run several stateful applications on Kubernetes, including Gerrit (multiple flavors), NPM, Maven, Redis, NFS, and Sonarqube.",
+        "url": "/casestudies/adopters/arista",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "22/09/2020"
+      },
+      "comcast": {
+        "title": "Comcast Case Study - MayaData | Data Agility Delivered",
+        "description": "Comcast is a Fortune 50 company, one of the word’s largest media and infrastructure companies, and includes such brands such as NBC Universal and Sky.",
+        "url": "/casestudies/adopters/comcast",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "06/07/2020"
+      },
+      "intelbenchmark": {
+        "title": " OpenEBS Mayastor is a low-latency, low-overhead open source storage for Kubernetes - MayaData | Data Agility Delivered",
+        "description": "This benchmarking case study demonstrated that OpenEBS Maystor achieves full performance potential of Intel® OptaneTM SSD P5800X delivering 1.424 Million IOPS for 100% random reads",
+        "url": "/casestudies/intel-and-mayadata-benchmarking-of-openEBS-mayastor",
+        "image": "/assets/images/mayadata.png",
+        "lastUpdateOn": "24/03/2021"
+      }
+    },
+    "getopenEBSPageSeo": {
+      "title": "OpenEBS Support",
+      "description": "Kubera comes in three packages- Basic, Standard and Enterprise based on individual needs when running data on Kubernetes",
+      "url": "/openebs-support",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "09/02/2021getopenEBSPageSeo"
+    },
+    "getbenchmarkPageSeo": {
+      "title": "Benchmarking performance of NVme-oF capable OpenEBS Mayastor",
+      "description": "NVMe-oF capable OpenEBS Mayastor performance results vs various underlying devices like Intel, Volterra & workloads like PostgreSQL, Percona & others",
+      "url": "/benchmarking-resources-for-Kubernetes",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "13/05/2021getbenchmarkPageSeo"
+    },
+    "getlocalVolPageSeo": {
+      "title": "OpenEBS- Dynamic Local Persistent Volume for Kubernetes",
+      "description": "OpenEBS LocalPV - Deploy & operate performance based workloads like Elasticsearch, Kafka, PostgreSQL, MySQL, MinIO, Gitlab & others at any scale",
+      "url": "/local-persistent-volume-openebs",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "13/05/2021getlocalVolPageSeo"
+    },
+    "professionalServicePageSeo": {
+      "title": "Accelerate your next data on Kubernetes project by partnering with the experts at MayaData",
+      "description": "Enhance performance and efficiency of your stateful workloads by using container attached storage OpenEBS",
+      "url": "/professional-services-mayadata-openebs",
+      "image": "/assets/images/mayadata.png",
+      "lastUpdateOn": "11/06/2021professionalServicePageSeo"
+    }
+  }
+}

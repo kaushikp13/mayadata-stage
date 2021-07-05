@@ -1,0 +1,12 @@
+.main-wrapper {
+    background: url("assets/images/home/home-bg.png") no-repeat;
+    background-color: #1f1831;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+}

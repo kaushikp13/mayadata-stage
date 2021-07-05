@@ -1,0 +1,22 @@
+<section class="section-container ability-sec pr">
+  <div class="container data-agility-section">
+    <div class="row kubera-connect card-wrapper">
+      <div class="col-12 d-flex text-center flex-column sec-1-title price-block-title">
+        <h2 class="data-title  text-center" [innerHtml]="titles"></h2>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6 oep-storages--card pricing-card"
+        *ngFor="let feature of kuberaPricingFeatures">
+        <div class="oep-storages--imgblock pricing-card-img">
+          <img lazyLoad={{feature.img.imgSrc}} alt={{feature.img.imgAlt}} class="img-fluid storages-icons" />
+        </div>
+        <div class="box-text-div">
+          <p class="oep-storages-title">
+            {{feature.title}}</p>
+          <p class="benefit-content">{{feature.description}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

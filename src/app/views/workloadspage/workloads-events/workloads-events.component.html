@@ -1,0 +1,27 @@
+<div class="section-container" *ngIf="workloadEvents">
+  <div class="container">
+    <div class="row pb-4">
+      <div class="col-12 col-md-7">
+        <img lazyLoad="assets/images/workloads/workload-webinar.png" alt="workloads webinar" class="img-fluid" />
+      </div>
+      <div class="col-12 col-md-5 d-flex">
+        <div class="d-flex justify-content-center align-items-start text-left flex-column">
+          <h3 class="dm-h1 pb-3 pt-4 pt-md-0">{{workloadEvents.title}}</h3>
+          <span class="dm-event-hightlight mb-4">{{workloadEvents.currentEvent.date}}</span>
+          <h4 class="dm-h2">{{workloadEvents.currentEvent.title}}</h4>
+          <p class="dm-p">{{workloadEvents.currentEvent.description}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-lists pt-5">
+      <div class="card-item" [class.main-card]="mainCard === i"
+        *ngFor="let event of workloadEvents.pastEvents; let i = index">
+        <div class="card-item-content">
+          <img lazyLoad={{event.img_url}} [class.gray-card]="mainCard !== i" alt="webinar" />
+          <h4 class="dm-h4 text-uppercase pt-3">{{event.title}}</h4>
+          <p>{{event.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

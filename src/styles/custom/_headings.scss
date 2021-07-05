@@ -1,0 +1,64 @@
+/*  Common For All and for mobile */
+h1, .h1 {
+  font-size: 48px;
+}
+
+h2, .h2 {
+  font-size: 40px;
+}
+
+h3, .h3 {
+  font-size: 30px;
+}
+
+h4, .h4 {
+  font-size: 24px;
+}
+
+h5, .h5 {
+  font-size: 22px;
+}
+
+h6, .h6 {
+  font-size: 20px;
+}
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  h1, .h1 {
+    font-size: 70px;
+  }
+
+  h2, .h2 {
+    font-size: 60px;
+  }
+
+  h3, .h3 {
+    font-size: 36px;
+  }
+
+  h4, .h4 {
+    font-size: 30px;
+  }
+
+  h5, .h5 {
+    font-size: 24px;
+  }
+
+  h6, .h6 {
+    font-size: 22px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1500px) {} // optional
+
+@media screen and (min-width:1900px) {} // optional

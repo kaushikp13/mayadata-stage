@@ -1,0 +1,41 @@
+.subpad button {
+  border-radius: 33px;
+  width: 175px;
+  background-color: #663399;
+  border-color: #663399;
+  color: #fefefe;
+}
+
+input {
+  color: #001959;
+  border-radius: 0;
+  height: 100%;
+}
+
+.form-control-lg {
+  font-size: 1rem;
+}
+
+label {
+  font-size: 14px;
+}
+
+.submit-btn {
+  border-radius: 3rem;
+  background-color: #8d8df9;
+  color: #fefefe;
+}
+
+@media screen and (max-width:768px) {
+  .form-group {
+    font-size: 12px;
+  }
+
+  .subpad button {
+    border-radius: 33px;
+    width: 155px;
+    background-color: #663399;
+    border-color: #663399;
+    color: #fefefe;
+  }
+}

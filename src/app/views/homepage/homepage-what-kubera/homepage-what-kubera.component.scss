@@ -1,0 +1,154 @@
+.kubera-left-title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120%;
+    color: #ffffff;
+}
+.what-kubera-left p {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    opacity: 0.9;
+}
+.inner-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 100px 0 30px;
+}
+.tech-wrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 0;
+}
+.tech-left p,
+.tech-right p {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 348px;
+    margin-top: 15px;
+    min-height: 60px;
+}
+.tech-left {
+    padding-left: 0;
+}
+.tech-wrapper a {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #f17610;
+    transition: 0.3s all ease-in-out;
+}
+.tech-wrapper a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.plow-checkout {
+    margin: 50px 0;
+    background: linear-gradient(85.69deg, rgba(169, 61, 219, 0.33) 14.03%, rgba(102, 61, 219, 0) 85.66%);
+    // backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.doc-title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+.doc-link {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #e9700d;
+}
+.checkout-doc {
+    width: 68px;
+    height: 78px;
+    mix-blend-mode: luminosity;
+    margin-right: 30px;
+}
+.checkout-content p {
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 663px;
+}
+.checkout-doc img {
+    max-width: none;
+}
+.what-kubera-bg {
+    position: relative;
+}
+.what-kubera-bg::before {
+    position: absolute;
+    content: "";
+    height: 77px;
+    width: 77px;
+    background: url("assets/images/home/triangle-half.png") no-repeat;
+    left: 0;
+    bottom: -40px;
+}
+.litmus-css {
+    margin-top: 1px;
+    margin-bottom: 4px;
+}
+@media (max-width: 1024px) {
+    .kubera-left-title {
+        font-size: 40px;
+    }
+    .what-kubera-right {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .inner-wrapper {
+        padding: 00px 0 30px;
+    }
+    .kubera-left-title {
+        font-size: 30px;
+    }
+    .what-kubera-left p {
+        font-size: 16px;
+    }
+    /* Mobile */
+
+    .plow-checkout {
+        padding: 15px;
+        flex-direction: column;
+    }
+    .checkout-doc {
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}

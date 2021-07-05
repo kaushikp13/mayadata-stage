@@ -1,0 +1,74 @@
+<section *ngIf="benefits" class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-white benefit-intro-section">
+        <h2 class="h1">{{benefits.title}}</h2>
+        <p>{{benefits.subtitle}}</p>
+      </div>
+    </div>
+    <div *ngIf="benefits.benefitList" class="resource-list-main">
+      <div class="row pt-4 text-white" *ngFor="let benefit of benefits.benefitList; let i = index">
+        <div class="col-12">
+          <div class="d-flex align-items-center resource-block-inner"
+            [ngClass]="((i % 2) === 0) ? 'justify-content-start' : 'justify-content-end'">
+            <div [ngClass]="((i % 2) === 0) ? 'order-1 order-md-1' : 'order-2 order-md-2'">
+              <div class="benefit-block--img">
+                <img lazyLoad={{benefit.image.imageLink}} alt={{benefit.image.imageAlt}} />
+              </div>
+            </div>
+            <div [ngClass]="((i % 2) === 0) ? 'order-1 order-md-2' : 'order-2 order-md-1'">
+              <div class="benefit-block d-flex justify-content-center align-items-start flex-column h-100 pt-4 pt-md-0">
+                <h3 [innerHtml]="benefit.title"></h3>
+                <p *ngFor="let desc of benefit.description" [innerHtml]="desc"></p>
+
+              </div>
+            </div>
+          </div>
+          <div class="lining" *ngIf="(benefits.benefitList.length -1) != i"
+            [ngClass]="((i % 2) === 0) ? 'line-1 line-num-' +  i : 'line-2 line-num-' +  i"></div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="benefits.resourceList" class="resource-list-main">
+      <div class="row pt-4 text-white" *ngFor="let benefit of benefits.resourceList; let i = index">
+        <div class="col-12">
+          <div class="d-flex align-items-center resource-block-inner"
+            [ngClass]="((i % 2) === 0) ? 'justify-content-start' : 'justify-content-end'">
+            <div [ngClass]="((i % 2) === 0) ? 'order-1 order-md-1' : 'order-2 order-md-2'">
+              <div class="benefit-block--img">
+                <img lazyLoad={{benefit.image.imageLink}} alt={{benefit.image.imageAlt}} />
+              </div>
+            </div>
+            <div [ngClass]="((i % 2) === 0) ? 'order-1 order-md-2' : 'order-2 order-md-1'">
+              <div class="benefit-block d-flex justify-content-center align-items-start flex-column h-100 pt-4 pt-md-0">
+                <h3 [innerHtml]="benefit.title"></h3>
+
+                <p *ngFor="let desc of benefit.description" [innerHtml]="desc">
+
+                </p>
+                <div class="row" *ngIf="benefit.CTA">
+                  <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a href={{benefit.CTA.ctaLink}} target="_blank" rel="noopener referrer">
+                      <button class="btn btn-primary">{{benefit.CTA.ctaText}}</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lining" *ngIf="(benefits.resourceList.length -1) != i"
+            [ngClass]="((i % 2) === 0) ? 'line-1 line-num-' +  i : 'line-2 line-num-' +  i"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="benefits.cta">
+      <div class="col-12 d-flex justify-content-center align-items-center py-5 mt-5">
+        <a href={{benefits.cta.ctaLink}} target="_blank" rel="noopener referrer">
+          <button class="btn btn-primary">{{benefits.cta.ctaText}}</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

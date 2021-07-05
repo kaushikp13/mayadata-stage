@@ -1,0 +1,17 @@
+<section class="section-container company-section" style="padding: 50px 0px" *ngIf="companies">
+
+  <div class="col-12 cloud-title">
+    <h4>{{companies.title}}</h4>
+  </div>
+  <div class="company-list-wrapper">
+
+    <div *ngFor="let company of companies.list" class="company-list-item">
+      <!-- <a routerLink={{company.cta.ctaLink}}> -->
+      <div class="company--image-block" *ngIf="company.name !== companies.bloomberg">
+        <img lazyLoad={{company.imageSrc}} alt={{company.name}} />
+      </div>
+      <!-- </a> -->
+    </div>
+  </div>
+
+</section>

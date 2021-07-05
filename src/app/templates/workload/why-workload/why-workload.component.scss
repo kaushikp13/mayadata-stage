@@ -1,0 +1,39 @@
+/*  Common For All and for mobile */
+.why-workload {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: max-content;
+  grid-gap: 1rem;
+}
+
+.why-workload-section {
+  background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+}
+::ng-deep .why-workload li {
+  list-style: none;
+}
+
+/*  Tablet  */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .why-workload {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1500px) {
+} // optional
+
+@media screen and (min-width: 1900px) {
+} // optional

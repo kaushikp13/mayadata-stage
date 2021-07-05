@@ -1,0 +1,3 @@
+### Conclusion
+
+The intention of this guide is to do the basic deployment of Magento application in kubernetes using OpenEBS cStor engine as the persistent storage solution which indeed requires ReadWriteMany support when it scales. With the help of OpenEBS, we have created a persistent storage solution using OpenEBS cStor and used OpenEBS NFS provisioner to provide NFS support on cStor storage for Magento applications. We are able to deploy the Magento web application successfully on an EKS cluster and able to access its web console. It is necessarily important to monitor the web traffic, status and resource utilisation of web servers, so we used Prometheus and Grafana to monitor the same. 

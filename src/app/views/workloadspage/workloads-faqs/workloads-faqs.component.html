@@ -1,0 +1,20 @@
+<div class="section-container workloads-faq-section" *ngIf="workloadFaqs" style="position: relative;">
+  <div class="container">
+    <h2 class="dm-h1">{{workloadFaqs.titleFirstPart}} <span class="dm-highlight">{{workloadFaqs.titleSecondPart}}</span>
+    </h2>
+    <div class="accordion-list pt-5" id="listOfAccordion">
+      <div class="accordion-item" *ngFor="let faq of workloadFaqs.faqs">
+        <div class="accordion-item-head">
+          <span class="icon mi mi-x" aria-hidden="true"></span>
+          <p class="text mb-0">{{faq.head}}</p>
+        </div>
+        <div class="accordion-item-body">
+          <p>{{faq.body}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stick-ml">
+    <img lazyLoad="assets/images/workloads/yellow-oval-2.svg" alt="stickly" />
+  </div>
+</div>

@@ -1,0 +1,164 @@
+// Base class
+//
+// Kickstart any navigation component with a set of style resets. Works with
+// `<nav>`s or `<ul>`s.
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: $nav-link-padding-y $nav-link-padding-x;
+  @include hover-focus {
+    text-decoration: none;
+  }
+  // Disabled state lightens text
+  &.disabled {
+    color: $nav-link-disabled-color;
+  }
+}
+//
+// Tabs
+//
+
+.nav-tabs {
+  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+
+  .nav-item {
+    margin-bottom: -$nav-tabs-border-width;
+  }
+
+  .nav-link {
+    border: $nav-tabs-border-width solid transparent;
+    @include border-top-radius($nav-tabs-border-radius);
+    @include hover-focus {
+      border-color: $nav-tabs-link-hover-border-color;
+    }
+
+    &.disabled {
+      background-color: transparent;
+      border-color: transparent;
+      color: $nav-link-disabled-color;
+    }
+  }
+
+  .nav-item.show .nav-link,
+  .nav-link.active {
+    background-color: $nav-tabs-link-active-bg;
+    border-color: $nav-tabs-link-active-border-color;
+    color: $nav-tabs-link-active-color;
+  }
+
+  .dropdown-menu {
+    // Make dropdown border overlap tab border
+    margin-top: -$nav-tabs-border-width;
+    // Remove the top rounded corners here since there is a hard edge above the menu
+    @include border-top-radius(0);
+  }
+}
+//
+/// Default
+/// default tab with a line on bottom of each nav-link
+//
+
+.nav-default {
+  border-bottom: 1px solid $gray-100;
+
+  .nav-link {
+    color: $gray-700;
+    cursor: pointer;
+    font-size: 16px;
+    height: 30px;
+    line-height: 20px;
+    margin-right: 22px;
+    padding: 0;
+  }
+
+  .nav-link.active {
+    border-bottom: 2px solid $primary;
+    color: $nav-link-active-color;
+  }
+}
+//Segmented nav
+//Navigation menu like ios
+//https://developer.apple.com/design/human-interface-guidelines/ios/controls/segmented-controls/
+
+.nav-segmented {
+  .nav-link {
+    box-shadow: $segment-control-color-box-shadow;
+    color: $segment-control-color;
+    cursor: pointer;
+    display: block;
+    margin: 0 -1px -1px 0; // -1px margin removes double-thickness borders between items */
+    text-align: center;
+
+    &:hover {
+      background: $segment-control-color-hover-bg;
+    }
+  }
+
+  .nav-link.active {
+    background: $segment-control-color-active-color-bg;
+    color: $segment-control-color-active-color;
+  }
+
+  .nav-link:first-child {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+  .nav-link:last-child {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+}
+// Pills
+//
+
+.nav-pills {
+  .nav-link {
+    @include border-radius($nav-pills-border-radius);
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    background-color: $nav-pills-link-active-bg;
+    color: $nav-pills-link-active-color;
+  }
+}
+//
+// Justified variants
+//
+
+.nav-fill {
+  .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+.nav-justified {
+  .nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+// Tabbable tabs
+//
+// Hide tabbable panes to start, show them when `.active`
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}

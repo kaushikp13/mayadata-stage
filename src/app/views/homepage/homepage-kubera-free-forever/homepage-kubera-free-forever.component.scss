@@ -1,0 +1,50 @@
+.section-container {
+  padding: 60px 0px;
+}
+
+.support-btn-block {
+  max-width: 600px;
+  margin: auto;
+}
+
+.free-forever {
+  max-width: 100%;
+  padding: 0px 20px;
+}
+
+/*  Common For All and for mobile */
+
+
+/*  Tablet  */
+
+@media screen and (min-width:576px) {
+  .free-forever {
+    max-width: 360px;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {
+  .free-forever {
+    max-width: 460px;
+  }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {
+  .free-forever {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width:1500px) {}
+
+// optional
+
+@media screen and (min-width:1900px) {}
+
+// optional

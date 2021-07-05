@@ -1,0 +1,12 @@
+<div *ngIf="resource">
+  <a href={{resource.url}} class="text-white resource-url" *ngIf="!resource.modalDataTarget">
+    <div class="badge-wrapper">
+      <div class="badge-1" [innerHTML]="resource.name"></div>
+    </div>
+    <img lazyLoad={{resource.image_url}} alt={{resource.image_alt}} class="img-fluid resource_img"
+      [ngClass]="{'height-image': resource.image_alt === 'Case Study Intel' || resource.image_alt === 'Solution WordPress Docs'|| resource.image_alt === 'Solution CockroachDB Docs'|| resource.image_alt === 'Solution Elasticsearch Docs'}" />
+    <h5 class="pt-3" [innerHTML]="resource.title"></h5>
+    <p class="resource-subtitle" [innerHTML]="resource.subtitle"></p>
+  </a>
+  <app-resource-popup [data]="resource" *ngIf="resource.modalDataTarget"></app-resource-popup>
+</div>
