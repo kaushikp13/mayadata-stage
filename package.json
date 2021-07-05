@@ -2,9 +2,6 @@
   "name": "mayadata",
   "version": "0.0.0",
   "license": "MIT",
-  "engines": {
-    "node": "12.x"
-  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config src/proxy.conf.json",
@@ -15,7 +12,8 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run mayadata:server:production"
+    "build:client-and-server-bundles": "ng build --prod && ng run mayadata:server:production",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -35,7 +33,7 @@
     "@nguniversal/module-map-ngfactory-loader": "0.0.0",
     "@ngx-translate/core": "^9.1.1",
     "@ngx-translate/http-loader": "^2.0.1",
-    "@types/node": "^10.17.60",
+    "@types/node": "^10.12.15",
     "@types/pdfjs-dist": "^2.1.7",
     "@vimeo/player": "^2.10.0",
     "angular-font-awesome": "^3.1.2",
@@ -96,5 +94,9 @@
     "tslint": "~5.7.0",
     "typescript": "^3.4.5",
     "webpack-cli": "^3.1.0"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
   }
 }

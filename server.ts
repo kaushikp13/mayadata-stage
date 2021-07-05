@@ -14,6 +14,14 @@ enableProdMode();
 // Express server
 const app = express();
 app.disable('x-powered-by');
+
+// Serve only the static files form the dist directory
+app.use(express.static('./dist/angular-app-heroku'));
+
+app.get('/*', (req, res) =>
+  res.sendFile('index.html', { root: 'dist/angular-app-heroku/' }),
+);
+
 const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), 'dist/browser');
 
