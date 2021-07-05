@@ -32,7 +32,7 @@
     "@nguniversal/module-map-ngfactory-loader": "0.0.0",
     "@ngx-translate/core": "^9.1.1",
     "@ngx-translate/http-loader": "^2.0.1",
-    "@types/node": "^10.12.15",
+    "@types/node": "^10.17.60",
     "@types/pdfjs-dist": "^2.1.7",
     "@vimeo/player": "^2.10.0",
     "angular-font-awesome": "^3.1.2",
